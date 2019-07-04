@@ -1,6 +1,32 @@
 // Primary button
+a.primaryButton, button.primaryButton{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: $color-primary;
+    color: $background-color;
+    font-family: $font-secondary;
+    font-weight: bold;
+}
+
+button.primaryButton{
+    border: none;
+    border-radius: 5px;   
+}
 
 // Secondary button
+a.secondaryButton, button.secondaryButton{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: $color-primary;
+    font-family: $font-secondary;
+    font-weight: bold;
+}
+
+button.secondaryButton{
+    border: 2px solid $color-primary;
+    border-radius: 5px;
+}
 
 // H1
 h1{
