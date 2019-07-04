@@ -8,7 +8,24 @@ h1{
 }
 
 // H2
+h2{
+    font-family: $font-primary;
+    font-size: $font-size-title;
+    color: $text-color;
+}
 
 // H3
+h3{
+    font-family: $font-primary;
+    font-size: $font-size-subtit;
+    color: $text-color;
+    margin-bottom: 12px;
+}
 
-//p
+// Body
+p{
+    font-family: $font-secondary;
+    font-size: $font-size-body;
+    color: $text-color;
+    margin: 12px 0px 15px 0px;
+}
