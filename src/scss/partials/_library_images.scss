@@ -1,23 +1,63 @@
-// Conatainer for images
-.containerBigImage{
-    width: 100vw;
-    height: 50vw;
+// Degraded bottom
+.degradeBottomLigthDark{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: $background-color-dark;
+    background-image:linear-gradient(to bottom, $background-color-dark 100%, $background-color-dark 0%);
 }
 
-.containerValueImage{
-    width: 9vw;
-    height: 9vw;
+.degradeBottomDark{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: $background-color;
+    background-image:linear-gradient(to bottom, $background-color 100%, $background-color 0%);
 }
 
-.containerFooterImage{
-    width: 50vw;
-    height: 11vw;
+// Degraded right
+.degradeRightLigthDark{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background-color: $background-color-dark;
+    background-image:linear-gradient(to right, $background-color-dark 100%, $background-color-dark 0%);
 }
 
-// Degraded for images
-// .degradeBottomLigthDark{
-    
-// }
-// .degradeBottomDark{
-    
-// }
+.degradeRightDark{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background-color: $background-color;
+    background-image:linear-gradient(to right, $background-color 100%, $background-color 0%);
+}
+
+// Degraded left
+.degradeLeftLigthDark{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background-color: $background-color-dark;
+    background-image:linear-gradient(to left, $background-color-dark 100%, $background-color-dark 0%);
+}
+
+.degradeLeftDark{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background-color: $background-color;
+    background-image:linear-gradient(to left, $background-color 100%, $background-color 0%);
+}
+
+// Filters
+.filterLigthDark{
+    position: absolute;
+    background-color: $background-color-dark;
+    opacity: 0.4;
+}
+
+.filterBottomDark{
+    position: absolute;
+    background-color: $background-color;
+    opacity: 0.4;
+}
