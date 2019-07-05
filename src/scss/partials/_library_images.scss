@@ -7,7 +7,7 @@
         left: 0;
         display: inline-block;
         height: 60px;
-        background-image:linear-gradient(to top, $background-color-dark, rgba(0,0,0,0));
+        background-image:linear-gradient(to top, $background-color-lighter, rgba(0,0,0,0));
         content: " ";
     }
     &.degradeBottomDark::before{
@@ -27,7 +27,7 @@
         bottom: 0;
         display: inline-block;
         width: 60px;
-        background-image:linear-gradient(to right, $background-color-dark, rgba(0,0,0,0));
+        background-image:linear-gradient(to right, $background-color-lighter, rgba(0,0,0,0));
         content: " ";
     }
     &.degradeRightDark::before{
@@ -46,7 +46,7 @@
         bottom: 0;
         display: inline-block;
         width: 60px;
-        background-image:linear-gradient(to left, $background-color-dark, rgba(0,0,0,0));
+        background-image:linear-gradient(to left, $background-color-lighter, rgba(0,0,0,0));
         content: " ";
     }
     &.degradeLeftDark::before{
@@ -65,7 +65,7 @@
         bottom: 0;
         left: 0;
         display: inline-block;
-        background-color: $background-color-dark;
+        background-color: $background-color-lighter;
         content: " ";
         opacity: 0.4;
     }
