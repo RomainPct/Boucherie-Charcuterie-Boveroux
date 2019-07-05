@@ -49,7 +49,7 @@ a.tertiaryButton:hover, button.tertiaryButton:hover{
     color: $color-primary;
 }
 
-a.tertiaryButton.active, button.tertiaryButton.active{
+a.tertiaryButton.selected, button.tertiaryButton.selected{
     color: $color-primary;
     border: 2px solid $color-primary;
 }
