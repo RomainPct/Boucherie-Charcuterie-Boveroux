@@ -3,6 +3,7 @@
 @import "partials/header";
 @import "partials/footer";
 @import "partials/library";
+@import "partials/library_images";
 
 body, html {
   height: 100%;
@@ -11,6 +12,6 @@ body {
   margin: 0;
   background-color: $background-color;
   color: $text-color;
-  font-family: $font-primary;
   font-size: $font-size-body;
+  font-family: $font-primary;
 }
