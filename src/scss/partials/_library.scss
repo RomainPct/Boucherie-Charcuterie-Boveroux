@@ -11,6 +11,11 @@ a.primaryButton, button.primaryButton{
     cursor: pointer; 
 }
 
+a.primaryButton:hover, button.primaryButton:hover{
+    background-color: #6EC475;
+    transition: 0.5s;
+}
+
 // Secondary button
 a.secondaryButton, button.secondaryButton{
     text-decoration: none;
@@ -22,6 +27,31 @@ a.secondaryButton, button.secondaryButton{
     border: 2px solid $color-primary;
     border-radius: 5px;
     padding: 10px 20px;
+}
+
+a.secondaryButton:hover, button.secondaryButton:hover{
+    color: #6EC475;
+    border: 2px solid #6EC475;
+    transition: 0.5s;
+}
+
+// Tertiary button
+a.tertiaryButton, button.tertiaryButton{
+    text-decoration: none;
+    font-family: $font-secondary;
+    cursor: pointer;
+    background-color: transparent;
+    color: $text-color;
+    padding: 10px 20px;
+}
+
+a.tertiaryButton:hover, button.tertiaryButton:hover{
+    color: $color-primary;
+}
+
+a.tertiaryButton.active, button.tertiaryButton.active{
+    color: $color-primary;
+    border: 2px solid $color-primary;
 }
 
 // H1
@@ -39,7 +69,7 @@ h2{
 // H3
 h3{
     font-family: $font-primary;
-    font-size: $font-size-subtit;
+    font-size: $font-size-subtitle;
     color: $text-color;
     margin-bottom: 12px;
 }
