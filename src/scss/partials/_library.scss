@@ -1,15 +1,13 @@
 // Primary button
 a.primaryButton, button.primaryButton{
-    text-decoration: none;
+    padding: 10px 20px;  border: none;
+    border-radius: 5px; background-color: $color-primary;
     color: $background-color;
-    font-family: $font-secondary;
+    text-decoration: none;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px; 
-    background-color: $color-primary;
+    font-family: $font-secondary;
     cursor: pointer; 
-}
+    }
 
 a.primaryButton:hover, button.primaryButton:hover{
     background-color: #6EC475;
@@ -18,31 +16,31 @@ a.primaryButton:hover, button.primaryButton:hover{
 
 // Secondary button
 a.secondaryButton, button.secondaryButton{
-    text-decoration: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: $color-primary;
-    font-family: $font-secondary;
-    font-weight: bold;
+    padding: 10px 20px;
     border: 2px solid $color-primary;
     border-radius: 5px;
-    padding: 10px 20px;
+    background-color: transparent;
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: $font-secondary;
+    cursor: pointer;
 }
 
 a.secondaryButton:hover, button.secondaryButton:hover{
-    color: #6EC475;
     border: 2px solid #6EC475;
+    color: #6EC475;
     transition: 0.5s;
 }
 
 // Tertiary button
 a.tertiaryButton, button.tertiaryButton{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: $text-color;
     text-decoration: none;
     font-family: $font-secondary;
     cursor: pointer;
-    background-color: transparent;
-    color: $text-color;
-    padding: 10px 20px;
 }
 
 a.tertiaryButton:hover, button.tertiaryButton:hover{
@@ -50,8 +48,8 @@ a.tertiaryButton:hover, button.tertiaryButton:hover{
 }
 
 a.tertiaryButton.selected, button.tertiaryButton.selected{
-    color: $color-primary;
     border: 2px solid $color-primary;
+    color: $color-primary;
 }
 
 // H1
@@ -61,24 +59,32 @@ h1{
 
 // H2
 h2{
-    font-family: $font-primary;
-    font-size: $font-size-title;
-    color: $text-color;
     margin: 0px;
+    color: $text-color;
+    font-size: $font-size-title;
+    font-family: $font-primary;
 }
 
 // H3
 h3{
-    font-family: $font-primary;
-    font-size: $font-size-subtitle;
-    color: $text-color;
     margin-bottom: 10px;
+    color: $text-color;
+    font-size: $font-size-subtitle;
+    font-family: $font-primary;
+}
+
+// H4
+h4{
+    margin: 0px;
+    color: $text-color;
+    font-size: 13px;
+    font-family: $font-secondary;
 }
 
 // Body
 p{
-    font-family: $font-secondary;
-    font-size: $font-size-body;
-    color: $text-color;
     margin: 0px;
+    color: $text-color;
+    font-size: $font-size-body;
+    font-family: $font-secondary;
 }
