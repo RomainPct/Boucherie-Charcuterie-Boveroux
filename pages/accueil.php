@@ -11,7 +11,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, tempore quibusdam distinctio labore expedita exercitationem debitis odio impedit illum perferendis magnam, at nobis saepe, aliquam doloribus aut. Neque, aspernatur rerum?</p>
             </div>
             <div class="home__section__firstBlock__button">
-
+                <button class="primaryButton">Découvrir les produits</button>
             </div>
         </div>
     </section>
