@@ -8,6 +8,7 @@
         &__logo{
             width: 200px;
             text-align: center;
+            background-color: $background-color;
         }
         &__cat{
             width: 466px; 
@@ -15,6 +16,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            background-color: $background-color;
             &__under{
                 width: 30%;
                 background-color: $background-color;
