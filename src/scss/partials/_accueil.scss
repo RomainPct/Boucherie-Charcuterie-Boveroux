@@ -1,3 +1,9 @@
-body{
+.home{
     background-image: url(../../../assets/images/photos/vaches_boveroux_7.jpg);
+    &__section{
+        &__firstBlock{
+            &__title{
+            }
+        }
+    }
 }
