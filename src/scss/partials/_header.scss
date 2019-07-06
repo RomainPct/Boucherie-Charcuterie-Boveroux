@@ -1,7 +1,8 @@
-.header__container{
-    width: 100%;
+.headerContainer{
+    position: fixed;
+    left: 0%;
+    right: 0%;
     &__inside{
-        height: 67px;
         display: flex;
         justify-content: space-between;
         margin: 15px;
@@ -26,9 +27,6 @@
                     text-decoration: none;
                     color: $text-color;
                 }
-            }
-            &__underButton{
-                padding: 15px;
             }
         }       
     }
