@@ -21,12 +21,12 @@
                 width: 30%;
                 background-color: $background-color;
                 font-family: $font-secondary;
-                }
-            }
-            &__under>a{
-                text-decoration: none;
-                color: $text-color;
             }
         }
+        &__under>a{
+            text-decoration: none;
+            color: $text-color;
+        }
+        
     }
 }

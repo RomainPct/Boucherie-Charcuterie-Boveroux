@@ -1,4 +1,4 @@
-<main class="home">
+<main class="home__main">
     <section class="home__section">
         <div class="home__section__firstBlock">
             <div class="home__section__firstBlock__title">
