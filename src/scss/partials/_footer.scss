@@ -20,9 +20,28 @@
         }
     }
     &__visite{
+        position: relative;
+        overflow: hidden;
+        width: 50vw;
+        height: 10vw;
         img{
+            width: 100vw;
+        }
+        a{
+            position: absolute;
+            top: 0;
+            margin-top: 68.3px;
             width: 50vw;
-            height: 11vw;
+            height: 10vw;
+            color: $text-color;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            font-family: $font-secondary;
+        }
+        a:hover{
+            color: $color-primary;
         }
     }
 }

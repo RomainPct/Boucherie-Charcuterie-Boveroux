@@ -9,6 +9,6 @@
     </div>
     <div class="footer__container__visite">
         <img src="../../assets/images/photos/vaches_boveroux_2.jpg" alt="Vache boveroux">
-        <!-- <a href="#">Nous rendre visite via GoogleMaps</a> -->
+        <a href="#">Nous rendre visite via GoogleMaps</a>
     </div>
 </footer>
