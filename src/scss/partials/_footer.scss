@@ -1,21 +1,23 @@
 .footer__container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: $background-color-lighter;
     color: $text-color;
     &__adress{
-        margin-top: 32px;
-        margin-bottom: 30px;
-        margin-left: 30px;
-        ul{
-            margin: 0;
-            padding: 0;
-            li{
-                margin-top: 12px;
-                list-style: none;
-                font-size: 13px;
-                font-family: $font-secondary;
+        width: 50vw;
+        &__list{
+            margin-top: 32px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    margin-top: 12px;
+                    list-style: none;
+                    font-size: 13px;
+                    font-family: $font-secondary;
+                }
             }
         }
     }
@@ -26,6 +28,7 @@
         height: 10vw;
         img{
             width: 100vw;
+            height: 10vw;
         }
         a{
             position: absolute;
