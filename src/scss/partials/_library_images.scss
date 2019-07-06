@@ -28,7 +28,7 @@
         bottom: 0;
         display: block;
         width: 60px;
-        background-image:linear-gradient(to right, $background-color-lighter, rgba(0,0,0,0));
+        background-image:linear-gradient(to left, $background-color-lighter, rgba(0,0,0,0));
         content: " ";
     }
     &.degradeRightDark::before{
@@ -38,7 +38,7 @@
         bottom: 0;
         display: block;
         width: 60px;
-        background-image:linear-gradient(to right, $background-color, rgba(0,0,0,0));
+        background-image:linear-gradient(to left, $background-color, rgba(0,0,0,0));
         content: " ";
     }
     &.degradeLeftLigthDark::before{
@@ -47,7 +47,7 @@
         bottom: 0;
         display: block;
         width: 60px;
-        background-image:linear-gradient(to left, $background-color-lighter, rgba(0,0,0,0));
+        background-image:linear-gradient(to right, $background-color-lighter, rgba(0,0,0,0));
         content: " ";
     }
     &.degradeLeftDark::before{
@@ -56,7 +56,7 @@
         bottom: 0;
         display: block;
         width: 60px;
-        background-image:linear-gradient(to left, $background-color, rgba(0,0,0,0));
+        background-image:linear-gradient(to right, $background-color, rgba(0,0,0,0));
         content: " ";
     }
     &.filterLigthDark::after{

@@ -7,8 +7,8 @@
             <li>Mail : hsuchieb@vhvhsq.co</li>
         </ul>
     </div>
-    <div class="footer__container__visite">
+    <div class="footer__container__visite imageBox degradeLeftLigthDark filterBottomDark">
         <img src="../../assets/images/photos/vaches_boveroux_2.jpg" alt="Vache boveroux">
-        <a href="#">Nous rendre visite via GoogleMaps</a>
+        <a href="#" title="Nous rendre visite via GoogleMaps">Nous rendre visite via GoogleMaps</a>
     </div>
 </footer>
