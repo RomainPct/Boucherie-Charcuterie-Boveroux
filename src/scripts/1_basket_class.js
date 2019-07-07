@@ -1,47 +1,63 @@
 class Basket {
-
-    /* Structure de this.basket
-
-    [
-        id : [nom,prix,quantité],
-        id : [nom,prix,quantité],
-        id : [nom,prix,quantité]
-    ]
-
-    */
-
     constructor(){
-        // Récuperer le panier depuis local storage
+        /*Récuperer le panier depuis local storage*/
+        this.basket = []
+        this.basket ['list'] = 'name,price,quantity'
+
+        this.saveBasketOnLocalStorage()
+        this.getBasketFromLocalStorage()
+        this.cleanBasket()
+        this.addNewProduct(list,name,price)
+        this.removeAProduct(list)
+        this.getTotalPrice()
     }
 
     saveBasketOnLocalStorage(){
-        // enregistrer this.basket dans le local storage
+        /* Enregistrer this.basket dans le local storage */
+         localStorage.setItem('basketContents', JSON.stringify(this.basket))
     }
 
     getBasketFromLocalStorage(){
-        // intialiser une variable this.basket avec la data du local storage
+        /* Intialiser une variable this.basket avec la data du local storage */
+         this.basket = JSON.parse(localStorage.getItem('basketContents')) || []
     }
 
     cleanBasket(){
-        // Vider le panier et vider en localstorage
+        /* Vider le panier et vider en localstorage */
     }
 
-    addNewProduct(id,name,price){
-        // Ajouter un produit au panier
-        // Si deja dans le panier -> augmenter la quantité de 1
-        // Enregsitrer en localsorage le nouveau panier
+    addNewProduct(list,name,price){
+        /*Ajouter un produit au panier*/
+        this.basket[id] +=1
+        
+        /* Si deja dans le panier -> augmenter la quantité de 1 */
+        for (let i in basket){
+            if (basket[id]== basket[i]){
+                this.basket[this.name] +=1
+            }
+        }
+        // Enregistrer en localsorage le nouveau panier
+        this.saveBasketOnLocalStorage()
     }
 
-    removeAProduct(id){
+    removeAProduct(list){
         // Diminuer la quantité du produit dans le panier
         // Si nouvelle quantité = 0 -> supprimer du panier
-        // Enregsitrer en localsorage le nouveau panier
+       /* for (let i in basket){
+        } */
+        // Enregistrer en localsorage le nouveau panier
+        this.saveBasketOnLocalStorage()
     }
 
     getTotalPrice(){
-        // Retourne le prix total de la commande
+        /* Retourne le prix total de la commande */
+        let totalPrice = 0
+        for (let i in basket){
+            totalPrice += ((basket[i].parseInt(price))*(basket[i].parseInt(quantity)));
+        }
+        return totalPrice
     }
 
 }
 
-const basket = Basket()
+const basket = new Basket()
