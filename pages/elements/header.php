@@ -11,7 +11,7 @@
                 <a href="../produits">Nos produits</a>
             </div>
             <div class="headerContainer__inside__cat__underButton">
-                <a href="" title="" class="tertiaryButton">Mon Panier</a>
+                <a href="" title="" class="secondaryButton">Mon Panier</a>
             </div>
         </nav>
     </div>

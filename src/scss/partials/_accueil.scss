@@ -18,4 +18,16 @@
             padding-left: 15px;
         }
     }
+    &__secondBlock{
+        display: flex;
+        &__leftDiv{
+            flex-direction: column;
+            &__img{
+                display: flex;
+            }
+        }
+    }
+}
+#logobio{
+    height: 100px;
 }
