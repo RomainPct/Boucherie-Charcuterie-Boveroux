@@ -1,6 +1,9 @@
 <main class="home__main">
     <section class="home__section">
             <div class="class="home__section__firstBlock>
+                <div class="imageBox degradeBottomDark filterBottomDark home__section__firstBlock__img">
+                    <img src="../assets/images/photos/vaches_boveroux_7.jpg" alt="">
+                </div>
                 <div class="home__section__firstBlock__textBlock">
                     <div class="home__section__firstBlock__textBlock__title">
                         <h2>Boveroux & Fils</h2>
@@ -12,7 +15,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, tempore quibusdam distinctio labore expedita exercitationem debitis odio impedit illum perferendis magnam, at nobis saepe, aliquam doloribus aut. Neque, aspernatur rerum?</p>
                     </div>
                     <div class="home__section__firstBlock__textBlock__button">
-                        <button class="primaryButton">Découvrir les produits</button>
+                        <a href="produits" title="bouton vers produits" class="primaryButton">Découvrir les produits</a>
                 </div>
             </div>
         </div>
@@ -39,7 +42,7 @@
             <div class="home__section__secondBlock__rightDiv">
                 <h3>Notre histoire</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae quisquam dicta accusamus tempore. Commodi odio tempore distinctio, excepturi ad necessitatibus dicta illum nam eius quasi dolor inventore ut voluptatum.</p>
-                <button class="secondaryButton">En apprendre plus</button>
+                <a href="quisommesnous" title="Bouton pour en apprendre plus" class="secondaryButton">En apprendre plus</a>
             </div>
         </div>
     </section>

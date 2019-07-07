@@ -1,6 +1,9 @@
 
 .home__section{
     &__firstBlock{
+        &__img img{
+            width: 100%;
+        }
         &__textBlock{
             width: 40%;
             padding: 15%;
@@ -24,6 +27,7 @@
         &__leftDiv{
             &__logo{
                 display: flex;
+                text-align: center;
                 &__img{
                     padding-right: 30px;
                 }
@@ -31,8 +35,8 @@
         }
         &__rightDiv{
             width: 40%;
-            & button{
-                margin-top: 30px;
+            & p{
+                margin-bottom: 60px;
             }
         }
     }
