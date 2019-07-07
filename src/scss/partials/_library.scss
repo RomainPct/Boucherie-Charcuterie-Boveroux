@@ -1,13 +1,15 @@
 // Primary button
 a.primaryButton, button.primaryButton{
-    padding: 10px 20px;  border: none;
-    border-radius: 5px; background-color: $color-primary;
+    padding: 10px 15px;  
+    border: none;
+    border-radius: 5px; 
+    background-color: $color-primary;
     color: $background-color;
     text-decoration: none;
     font-weight: bold;
     font-family: $font-secondary;
     cursor: pointer; 
-    }
+}
 
 a.primaryButton:hover, button.primaryButton:hover{
     background-color: #6EC475;
@@ -16,7 +18,7 @@ a.primaryButton:hover, button.primaryButton:hover{
 
 // Secondary button
 a.secondaryButton, button.secondaryButton{
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: 2px solid $color-primary;
     border-radius: 5px;
     background-color: transparent;
@@ -35,7 +37,7 @@ a.secondaryButton:hover, button.secondaryButton:hover{
 
 // Tertiary button
 a.tertiaryButton, button.tertiaryButton{
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: transparent;
     color: $text-color;
     text-decoration: none;

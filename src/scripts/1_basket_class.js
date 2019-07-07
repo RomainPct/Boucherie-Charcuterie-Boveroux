@@ -2,12 +2,11 @@ class Basket {
     constructor(){
         /*Récuperer le panier depuis local storage*/
         this.basket = []
-        this.basket ['list'] = 'name,price,quantity'
 
-        this.saveBasketOnLocalStorage()
         this.getBasketFromLocalStorage()
+        this.saveBasketOnLocalStorage()
         this.cleanBasket()
-        this.addNewProduct(list,name,price)
+        this.addNewProduct(id,name,price)
         this.removeAProduct(list)
         this.getTotalPrice()
     }
@@ -24,17 +23,17 @@ class Basket {
 
     cleanBasket(){
         /* Vider le panier et vider en localstorage */
+        this.basket [id] = null
     }
 
-    addNewProduct(list,name,price){
-        /*Ajouter un produit au panier*/
-        this.basket[id] +=1
-        
-        /* Si deja dans le panier -> augmenter la quantité de 1 */
-        for (let i in basket){
-            if (basket[id]== basket[i]){
-                this.basket[this.name] +=1
-            }
+    addNewProduct(id,name,price){
+        //Ajouter un produit au panier
+        this.basket[id] = [name, price, 1]
+        // Si deja dans le panier -> augmenter la quantité de 1
+        if (this.basket[id] != null){
+            this.basket [id][2] += 1
+        } else{
+            this.basket[id] = [name, price, 1] 
         }
         // Enregistrer en localsorage le nouveau panier
         this.saveBasketOnLocalStorage()
@@ -42,18 +41,22 @@ class Basket {
 
     removeAProduct(list){
         // Diminuer la quantité du produit dans le panier
+        if (this.basket[id]!= null){
+            this.basket [id][2] -= 1
+        } 
         // Si nouvelle quantité = 0 -> supprimer du panier
-       /* for (let i in basket){
-        } */
+        if(this.basket[id][2]== 0){
+            this.basket[id] = null
+        }
         // Enregistrer en localsorage le nouveau panier
         this.saveBasketOnLocalStorage()
     }
 
     getTotalPrice(){
-        /* Retourne le prix total de la commande */
+        // Retourne le prix total de la commande 
         let totalPrice = 0
         for (let i in basket){
-            totalPrice += ((basket[i].parseInt(price))*(basket[i].parseInt(quantity)));
+            totalPrice += ((basket[i][1])*(basket[i][2]));
         }
         return totalPrice
     }
