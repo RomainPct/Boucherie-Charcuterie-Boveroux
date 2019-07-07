@@ -1,29 +1,30 @@
 class Basket {
     constructor(){
-        /*Récuperer le panier depuis local storage*/
+        //Récuperer le panier depuis local storage
         this.basket = []
 
         this.getBasketFromLocalStorage()
         this.saveBasketOnLocalStorage()
         this.cleanBasket()
         this.addNewProduct(id,name,price)
-        this.removeAProduct(list)
+        this.removeAProduct(id)
         this.getTotalPrice()
     }
 
     saveBasketOnLocalStorage(){
-        /* Enregistrer this.basket dans le local storage */
+        // Enregistrer this.basket dans le local storage 
          localStorage.setItem('basketContents', JSON.stringify(this.basket))
     }
 
     getBasketFromLocalStorage(){
-        /* Intialiser une variable this.basket avec la data du local storage */
+        // Intialiser une variable this.basket avec la data du local storage
          this.basket = JSON.parse(localStorage.getItem('basketContents')) || []
     }
 
     cleanBasket(){
-        /* Vider le panier et vider en localstorage */
-        this.basket [id] = null
+        // Vider le panier et vider en localstorage
+        this.basket[id] = null
+        localStorage.removeItem('basketContents')
     }
 
     addNewProduct(id,name,price){
@@ -31,7 +32,7 @@ class Basket {
         this.basket[id] = [name, price, 1]
         // Si deja dans le panier -> augmenter la quantité de 1
         if (this.basket[id] != null){
-            this.basket [id][2] += 1
+            this.basket[id][2] += 1
         } else{
             this.basket[id] = [name, price, 1] 
         }
@@ -39,10 +40,10 @@ class Basket {
         this.saveBasketOnLocalStorage()
     }
 
-    removeAProduct(list){
+    removeAProduct(id){
         // Diminuer la quantité du produit dans le panier
         if (this.basket[id]!= null){
-            this.basket [id][2] -= 1
+            this.basket[id][2] -= 1
         } 
         // Si nouvelle quantité = 0 -> supprimer du panier
         if(this.basket[id][2]== 0){
