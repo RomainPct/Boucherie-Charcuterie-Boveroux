@@ -1,14 +1,19 @@
+<?php
+$c = new CandidePage('pied_de_page');
+?>
 <footer class="footer__container">
     <div class="footer__container__adress">
-        <h4>Boucherie Charcuterie Boveroux et Fils</h4>
-        <ul>
-            <li>Adresse : xx rue de la martinez</li>
-            <li>Tel : 07191891</li>
-            <li>Mail : hsuchieb@vhvhsq.co</li>
-        </ul>
+        <div class="footer__container__adress__list">
+            <h4><?php $c->text('nom_entreprise');?></h4>
+            <ul>
+                <li><?php $c->text('adresse');?></li>
+                <li><?php $c->text('téléphone');?></li>
+                <li><?php $c->text('mail');?></li>
+            </ul>
+        </div>
     </div>
-    <div class="footer__container__visite">
-        <img src="../../assets/images/photos/vaches_boveroux_2.jpg" alt="Vache boveroux">
-        <!-- <a href="#">Nous rendre visite via GoogleMaps</a> -->
+    <div class="footer__container__visite imageBox degradeLeftLigthDark filterBottomDark">
+        <img src="<?php $c->image('image_du_pied_de_page',[500,150]);?>" alt="Vache boveroux">
+        <a href="https://www.google.fr/maps/place/Cauchon+Rach%C3%ABl/@49.3978757,4.6978363,17z/data=!3m1!4b1!4m5!3m4!1s0x47ea371b4b29cf45:0xb10e227341c7d9df!8m2!3d49.3978722!4d4.700025" title="Nous rendre visite via GoogleMaps"><?php $c->text('message_du_lien_vers_google_maps');?></a>
     </div>
 </footer>

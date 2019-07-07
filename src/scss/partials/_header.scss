@@ -1,48 +1,33 @@
-.header__container{
-    width: 100%;
+.headerContainer{
+    position: fixed;
+    left: 0%;
+    right: 0%;
     &__inside{
-        height: 67px;
         display: flex;
         justify-content: space-between;
         margin: 15px;
         &__logo{
             width: 200px;
             text-align: center;
+            background-color: $background-color;
         }
         &__cat{
-            width: 466px; 
+            border-radius: 5px;
+            padding: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            background-color: $background-color-lighter;
             &__under{
-                width: 30%;
-                background-color: $background-color;
+                background-color: $background-color-lighter;
                 font-family: $font-secondary;
-                &__underButton{
-                    button.secondaryButton{
-                        text-decoration: none;
-                        cursor: pointer;
-                        background-color: transparent;
-                        color: $color-primary;
-                        font-family: $font-secondary;
-                        font-weight: bold;
-                        border: 2px solid $color-primary;
-                        border-radius: 5px;
-                        padding: 10px 20px;
-                    }
-                    
-                    button.secondaryButton:hover{
-                        color: #6EC475;
-                        border: 2px solid #6EC475;
-                        transition: 0.5s;
-                    }
+                padding: 15px;
+                & a{
+                    text-decoration: none;
+                    color: $text-color;
                 }
             }
-            &__under>a{
-                text-decoration: none;
-                color: $text-color;
-            }
-        }
+        }       
     }
 }
