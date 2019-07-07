@@ -1,18 +1,19 @@
 
 .home__section{
-    background-image: url(../../../assets/images/photos/vaches_boveroux_7.jpg);
     &__firstBlock{
-        width: 40%;
-        padding: 15%;
-        &__subtitle{
-            padding-left: 15px;
-        }
-        &__text{
-            padding-left: 15px;
-        }
-        &__button{
-            margin-top: 60px;
-            padding-left: 15px;
+        &__textBlock{
+            width: 40%;
+            padding: 15%;
+            &__subtitle{
+                padding-left: 15px;
+            }
+            &__text{
+                padding-left: 15px;
+            }
+            &__button{
+                margin-top: 60px;
+                padding-left: 15px;
+            }
         }
     }
     &__secondBlock{
