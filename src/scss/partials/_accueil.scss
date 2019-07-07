@@ -6,9 +6,11 @@
         }
         &__img img{
             width: 100%;
+
         }
         &__textBlock{
             position: absolute;
+            z-index: 2000;
             width: 40%;
             padding: 15%;
             &__subtitle{
