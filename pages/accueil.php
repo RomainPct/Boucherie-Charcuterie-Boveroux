@@ -19,12 +19,12 @@
                 <div class="home__section__secondBlock__leftDiv__title">
                     <h3>Nos valeurs</h3>
                 </div>
-                <div class="home__section__secondBlock__leftDiv_img">
-                    <div>
+                <div class="home__section__secondBlock__leftDiv__logo">
+                    <div class="home__section__secondBlock__leftDiv__logo__img">
                         <img src="../assets/images/icones/heart.svg" alt="logo d'un coeur">
                         <p>Passion familialle</p>
                     </div>
-                    <div>
+                    <div class="home__section__secondBlock__leftDiv__logo__img">
                         <img id="logobio" src="../assets/images/icones/bio.png" alt="logo bio">
                         <p>Production bio</p>
                     </div>
@@ -34,10 +34,10 @@
                     </div>
                 </div>
             </div>
-            <div class="home__section_secondBlock__rightDiv">
-                <div>
-
-                </div>
+            <div class="home__section__secondBlock__rightDiv">
+                <h3>Notre histoire</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae quisquam dicta accusamus tempore. Commodi odio tempore distinctio, excepturi ad necessitatibus dicta illum nam eius quasi dolor inventore ut voluptatum.</p>
+                <button class="secondaryButton">En apprendre plus</button>
             </div>
         </div>
     </section>

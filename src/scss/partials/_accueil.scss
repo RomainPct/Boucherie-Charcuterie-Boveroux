@@ -4,9 +4,6 @@
     &__firstBlock{
         width: 40%;
         padding: 15%;
-        &__title{
-
-        }
         &__subtitle{
             padding-left: 15px;
         }
@@ -20,14 +17,25 @@
     }
     &__secondBlock{
         display: flex;
+        justify-content: space-around;
+        padding: 120px;
+        background-color: $background-color;
         &__leftDiv{
-            flex-direction: column;
-            &__img{
+            &__logo{
                 display: flex;
+                &__img{
+                    padding-right: 30px;
+                }
+            }
+        }
+        &__rightDiv{
+            width: 40%;
+            & button{
+                margin-top: 30px;
             }
         }
     }
 }
 #logobio{
-    height: 100px;
+    height: 120px;
 }
