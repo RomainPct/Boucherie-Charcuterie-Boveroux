@@ -9,12 +9,12 @@ $c = new CandidePage('qui_sommes_nous')
             <p><?php $c->text('texte_partie_histoire');?></p>
         </div>
         <div class="whoweare__container__history__picture imageBox filterBottomDark degradeLeftDark">
-            <img src="<?php $c->image('image_partie_histoire',[1000,500]);?>" alt="Vaches boveroux">
+            <img src="<?php $c->image('image_partie_histoire',[960,748]);?>" alt="Vaches boveroux">
         </div>
     </div>
     <div class="whoweare__container__bioProd">
         <div class="whoweare__container__bioProd__picture">
-            <img src="../assets/images/icones/bio.png" alt="Logo agriculture biologique">
+            <img src="<?php $c->image('image_partie_production_bio',[172,172]);?>" alt="Logo agriculture biologique">
         </div>
         <div class="whoweare__container__bioProd__text">
             <h3><?php $c->text('titre_partie_production_bio');?></h3>
@@ -23,7 +23,7 @@ $c = new CandidePage('qui_sommes_nous')
     </div>
     <div class="whoweare__container__quality">
         <div class="whoweare__container__quality__picture imageBox filterBottomDark degradeRightDark">
-            <img src="<?php $c->image('image_partie_qualite',[500,250]);?>" alt="Viande de boeuf boveroux">
+            <img src="<?php $c->image('image_partie_qualite',[960,748]);?>" alt="Viande de boeuf boveroux">
         </div>
         <div class="whoweare__container__quality__text">
             <h3><?php $c->text('titre_partie_qualite');?></h3>
