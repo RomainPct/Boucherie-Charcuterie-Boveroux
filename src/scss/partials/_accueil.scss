@@ -1,33 +1,57 @@
 
 .home__section{
-    background-image: url(../../../assets/images/photos/vaches_boveroux_7.jpg);
-    &__firstBlock{
-        width: 40%;
-        padding: 15%;
-        &__title{
-
+        &__img{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            z-index: -1;
         }
-        &__subtitle{
-            padding-left: 15px;
+        &__img img{
+            width: 100%;
         }
-        &__text{
-            padding-left: 15px;
-        }
-        &__button{
-            margin-top: 60px;
-            padding-left: 15px;
-        }
+        &__textBlock{
+            padding: 120px;
+            &__text{
+                padding-left: 15px;
+                &__paragraph{
+                    width: 40%;
+                    margin-bottom: 30px;
+                }
+            }
     }
     &__secondBlock{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px;
+        background-color: $background-color;
         &__leftDiv{
-            flex-direction: column;
-            &__img{
+            &__title{
+                padding-bottom: 15px;
+            }
+            &__logo{
                 display: flex;
+                text-align: center;
+                &__img{
+                    padding-right: 60px;
+                    & p{
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        &__rightDiv{
+            width: 40%;
+            & p{
+                margin-bottom: 30px;
             }
         }
     }
 }
 #logobio{
-    height: 100px;
+    height: 120px;
+}
+#paragraph_meat{
+    padding-top: 10px;
 }
