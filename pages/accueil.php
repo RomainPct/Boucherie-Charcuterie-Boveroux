@@ -1,13 +1,16 @@
+<?php
+$c = new CandidePage('accueil')
+?>
 <main class="home__main">
     <section class="home__section">
                 <div class="imageBox degradeBottomDark filterBottomDark home__section__img">
                     <img src="../assets/images/photos/vaches_boveroux_7.jpg" alt="images de vaches">
                 </div>
                 <div class="home__section__textBlock">
-                        <h2>Boveroux & Fils</h2>
+                        <h2><?php $c->text('titre');?></h2>
                     <div class="home__section__textBlock__text">
-                        <h3>Boucherie Charcuterie</h3>
-                        <p class="home__section__textBlock__text__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, tempore quibusdam distinctio labore expedita exercitationem debitis odio impedit illum perferendis magnam, at nobis saepe, aliquam doloribus aut. Neque, aspernatur rerum?</p>
+                        <h3><?php $c->text('sous_titre');?></h3>
+                        <p class="home__section__textBlock__text__paragraph"><?php $c->text('texte_page_accueil');?></p>
                         <a href="produits" title="bouton vers produits" class="primaryButton">Découvrir les produits</a>
                     </div>
                 </div>
@@ -32,8 +35,8 @@
                 </div>
             </div>
             <div class="home__section__secondBlock__rightDiv">
-                <h3>Notre histoire</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae quisquam dicta accusamus tempore. Commodi odio tempore distinctio, excepturi ad necessitatibus dicta illum nam eius quasi dolor inventore ut voluptatum amet consectetur adipisicing elit. Vel odit similique iusto assumenda? Deserunt nesciunt delectus suscipit voluptatum nulla odit, quod quo dolor obcaecati a. Placeat eaque iusto iste sint. </p>
+                <h3><?php $c->text('titre_histoire');?></h3>
+                <p><?php $c->text('texte_histoire');?></p>
                 <a href="quisommesnous" title="Bouton pour en apprendre plus" class="secondaryButton">En apprendre plus</a>
             </div>
         </div>
