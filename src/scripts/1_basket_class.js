@@ -67,11 +67,11 @@ class Basket {
     }
 
     getTotalPrice(){
-        this.basket = []
         // Retourne le prix total de la commande 
         let totalPrice = 0
         for (let i in this.basket){
             totalPrice += ((this.basket[i][1])*(this.basket[i][2]));
+            // les valeurs prix et quantité pas reconnues car pas tableau id ?? trisfristefte
             console.log(totalPrice)
         }
         return totalPrice
