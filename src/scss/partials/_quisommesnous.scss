@@ -1,37 +1,37 @@
 .whoweare__container{
-    &__line1{
+    &__history{
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 60px;
-        &__left{
+        &__text{
             margin-right: 30px;
             margin-left: 120px;
             p{
                 margin-top: 10px;
             }
         }
-        &__right{
+        &__picture{
             img{
                 width: 50vw;
                 height: 39vw;
             }
         }
     }
-    &__line2{
+    &__bioProd{
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: center;
         margin-top: 95px;
-        &__left{
+        &__picture{
             img{
                 margin-right: 30px;
                 width: 9vw;
             }
         }
-        &__right{
+        &__text{
             max-width: 36vw;
             h3{
                 margin: 0;
@@ -41,20 +41,20 @@
             }
         }
     }
-    &__line3{
+    &__quality{
         display: flex;
         align-items: center;
         flex-direction: row;
         margin-top: 90px;
         margin-right: 120px;
-        &__left{
+        &__picture{
             img{
                 margin-right: 30px;
                 width: 50vw;
                 height: 37vw;
             }
         }
-        &__right{
+        &__text{
             h3{
                 margin: 0;
             }
@@ -63,7 +63,7 @@
             }
         }
     }
-    &__lineBtn{
+    &__button{
         display: flex;
         justify-content: center;
         margin-top: 90px;
