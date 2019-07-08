@@ -3,17 +3,19 @@ $c = new CandidePage('accueil')
 ?>
 <main class="home__main">
     <section class="home__section">
-                <div class="imageBox degradeBottomDark filterBottomDark home__section__img">
-                    <img src="../assets/images/photos/vaches_boveroux_7.jpg" alt="images de vaches">
+        <div class="home__section__textandimg">
+            <div class="imageBox degradeBottomDark filterBottomDark home__section__textandimg__img">
+                <img src="../assets/images/photos/vaches_boveroux_7.jpg" alt="images de vaches">
                 </div>
-                <div class="home__section__textBlock">
+                <div class="home__section__textandimg__textBlock">
                         <h2><?php $c->text('titre');?></h2>
-                    <div class="home__section__textBlock__text">
+                    <div class="home__section__textandimg__textBlock__text">
                         <h3><?php $c->text('sous_titre');?></h3>
-                        <p class="home__section__textBlock__text__paragraph"><?php $c->text('texte_page_accueil');?></p>
+                        <p class="home__section__textandimg__textBlock__text__paragraph"><?php $c->text('texte_page_accueil');?></p>
                         <a href="produits" title="bouton vers produits" class="primaryButton">Découvrir les produits</a>
                     </div>
                 </div>
+        </div>
         <div class="home__section__secondBlock">
             <div class="home__section__secondBlock__leftDiv">
                 <div class="home__section__secondBlock__leftDiv__title">

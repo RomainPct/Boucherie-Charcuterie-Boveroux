@@ -1,5 +1,7 @@
 
 .home__section{
+    &textandimg{
+        overflow: hidden;
         &__img{
             position: absolute;
             top: 0%;
@@ -19,6 +21,7 @@
                     margin-bottom: 30px;
                 }
             }
+        }
     }
     &__secondBlock{
         display: flex;
