@@ -23,7 +23,7 @@ $c = new CandidePage('qui_sommes_nous')
     </div>
     <div class="whoweare__container__quality">
         <div class="whoweare__container__quality__picture imageBox filterBottomDark degradeRightDark">
-            <img src="<?php $c->image('image_partie_production_bio',[500,250]);?>" alt="Viande de boeuf boveroux">
+            <img src="<?php $c->image('image_partie_qualite',[500,250]);?>" alt="Viande de boeuf boveroux">
         </div>
         <div class="whoweare__container__quality__text">
             <h3><?php $c->text('titre_partie_qualite');?></h3>
