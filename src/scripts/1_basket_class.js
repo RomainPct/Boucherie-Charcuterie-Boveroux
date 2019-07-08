@@ -52,6 +52,7 @@ class Basket {
 
     removeAProduct(id){
         // Diminuer la quantité du produit dans le panier
+        this.basket[id][2] -= 1
         if (this.basket[id]!= null){
             this.basket[id][2] -= 1
             console.log(this.basket[id][2])
@@ -66,6 +67,7 @@ class Basket {
     }
 
     getTotalPrice(){
+        this.basket = []
         // Retourne le prix total de la commande 
         let totalPrice = 0
         for (let i in this.basket){
