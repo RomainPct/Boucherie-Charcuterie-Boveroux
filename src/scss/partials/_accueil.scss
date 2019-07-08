@@ -35,6 +35,9 @@
                 text-align: center;
                 &__img{
                     padding-right: 60px;
+                    & p{
+                        padding-top: 10px;
+                    }
                 }
             }
         }
@@ -48,4 +51,7 @@
 }
 #logobio{
     height: 120px;
+}
+#paragraph_meat{
+    padding-top: 10px;
 }

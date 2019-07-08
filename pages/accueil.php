@@ -27,7 +27,7 @@
                     </div>
                     <div>
                         <img src="../assets/images/icones/meat.svg" alt="logo d'un morceau de viande">
-                        <p>Viande de qualité</p>
+                        <p id="paragraph_meat">Viande de qualité</p>
                     </div>
                 </div>
             </div>
