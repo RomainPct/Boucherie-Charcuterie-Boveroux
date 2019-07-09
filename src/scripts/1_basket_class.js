@@ -51,7 +51,9 @@ class Basket {
         // Retourne le prix total de la commande 
         let totalPrice = 0
         for (let i in this.basket){
-            totalPrice += ((this.basket[i][1])*(this.basket[i][2]));
+            if (this.basket[i]!= null){ 
+                totalPrice += ((this.basket[i][1])*(this.basket[i][2]));
+            }
         }
         return totalPrice
     }
