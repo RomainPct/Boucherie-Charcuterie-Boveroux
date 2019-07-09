@@ -7,6 +7,7 @@ class Basket {
         this.saveBasketOnLocalStorage()
         this.cleanBasket()
         this.addNewProduct(25,'andouillette',50)
+      //  this.addNewProduct(25,'andouillette',50)
         this.addNewProduct(15,'viande',200)
        // console.log(this.basket[25])
        // console.log(this.basket[15])
@@ -51,7 +52,7 @@ class Basket {
 
     removeAProduct(id){
         console.log("supp un produit" +" "+ this.basket[id])
-        // Diminuer la quantité du produit dans le panier
+        // Diminuer la quantité du produit dans le panier 
         if (this.basket[id]!= null){
             this.basket[id][2] -= 1
             console.log("this.basket[id]!= null:" + this.basket[id][2])
@@ -61,7 +62,7 @@ class Basket {
         if(this.basket[id][2]== 0){
             delete this.basket[id]
             console.log("this.basket[id][2]== 0 :" + this.basket[id])
-        }
+        } 
         // Enregistrer en localsorage le nouveau panier
         this.saveBasketOnLocalStorage()
     }
