@@ -63,7 +63,6 @@ class Basket {
         for (let i in this.basket){
             if (this.basket[i]!= null){ 
                 totalAmount += this.basket[i][2]
-                console.log(totalAmount)
             }
         }
         return totalAmount
@@ -71,6 +70,3 @@ class Basket {
 }
 
 const basket = new Basket()
-basket.addNewProduct(12,'boeuf',1000)
-basket.addNewProduct(12,'boeuf',1000)
-basket.getBasketTotalAmount()
