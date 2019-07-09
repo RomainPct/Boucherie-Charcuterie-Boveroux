@@ -58,6 +58,19 @@ class Basket {
         return totalPrice
     }
 
+    getBasketTotalAmount(){
+        let totalAmount = 0
+        for (let i in this.basket){
+            if (this.basket[i]!= null){ 
+                totalAmount += this.basket[i][2]
+                console.log(totalAmount)
+            }
+        }
+        return totalAmount
+    }
 }
 
 const basket = new Basket()
+basket.addNewProduct(12,'boeuf',1000)
+basket.addNewProduct(12,'boeuf',1000)
+basket.getBasketTotalAmount()
