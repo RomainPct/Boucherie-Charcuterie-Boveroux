@@ -1,50 +1,39 @@
 .footer__container{
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: $background-color-lighter;
     color: $text-color;
     &__adress{
         width: 50vw;
         &__list{
-            margin-top: 32px;
+            margin-top: 30px;
             margin-bottom: 30px;
             margin-left: 30px;
             ul{
                 margin: 0;
                 padding: 0;
                 li{
-                    margin-top: 12px;
+                    margin-top: 15px;
                     list-style: none;
-                    font-size: 13px;
+                    font-size: $font-size-body;
                     font-family: $font-secondary;
                 }
             }
         }
     }
     &__visite{
-        position: relative;
-        overflow: hidden;
         width: 50vw;
-        height: 10vw;
+        overflow: hidden;
         img{
-            width: 100vw;
+            height: 100%;
         }
         a{
             position: absolute;
-            top: 0;
+            top: 50%;
+            left: 50%;
             z-index: 10;
-            padding-top: 75px;
-            width: 100%;
-            height: 100%;
-            color: $text-color;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 13px;
-            font-family: $font-secondary;
-        }
-        a:hover{
-            color: $color-primary;
+            transform: translate(-50%, -50%);
         }
     }
 }
