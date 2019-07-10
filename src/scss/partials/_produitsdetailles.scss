@@ -1,13 +1,30 @@
 .containerDetailedProducts{
+    z-index: 200;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     background-color: #F4EFF3;
-    &__informations{
+    &__informationsDetailed{
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
         margin: 0 auto;
         width: 81vw;
+        background-color: $background-color;
+        &__imageDetailed img{
+            height: 30vw;
+            width: 50vw;
+        }
+        &__textDetailed{
+            &__descriptionDetailed{
+                width: auto;
+                margin: 90px 30px;
+            }
+            &__buttonDetailed{
+                text-align: center;
+            }
+        }
     }
-
 }
