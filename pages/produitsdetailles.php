@@ -1,3 +1,12 @@
+<!--
+    Pour tester candideCollectimItem en changeant le nom de la collection et l'id
+    localhost:8888/produitsdetailles?id=15&type=boeuf
+-->
+<?php
+$productId = $_GET["id"];
+$productType = $_GET["type"];
+echo $productId. " - ".$productType;
+?>
 <div class="containerDetailedProducts">
     <div class="containerDetailedProducts__informationsDetailed">
         <div class="containerDetailedProducts__informationsDetailed__imageDetailed">

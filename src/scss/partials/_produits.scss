@@ -1,14 +1,16 @@
-.prod__section{
+.prodSection{
     & h2{
         padding-left: 120px;
     }
-    & nav{
+    &__cat{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         & :first-child{
             margin-left: 120px;
         }
         & :last-child{
-            justify-content: flex-end;
+            margin-right: 120px;
         }
         & a{
             text-align: center;
@@ -17,4 +19,35 @@
             margin: 30px;
         }
     }
+    &List{
+        display: flex;
+        margin-left: 120px;
+        margin-right: 120px;
+        &__product{
+            margin: 30px;
+            text-align: center;
+            &__background{
+                background-color: $background-color-lighter;
+                border-radius: 5px;
+                &__contain{
+                    & img{
+                        width: 100%;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                    & :nth-child(2){
+                        font-weight: bold;
+                        padding-top: 15px;
+                    }
+                    & :nth-child(3){
+                        padding: 10px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+#whiteButton{
+    background-color: $text-color;
 }
