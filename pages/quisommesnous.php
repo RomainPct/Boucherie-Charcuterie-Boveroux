@@ -31,6 +31,6 @@ $c = new CandidePage('qui_sommes_nous')
         </div>
     </div>
     <div class="whoweare__container__button">
-        <a class="primaryButton" href="produits" title="Découvrir nos produits"><?php $c->text('texte_du_bouton_qui_renvoie_vers_la_page_produit');?></a>
+        <a class="primaryButton" href="produits" title="Découvrir nos produits">Découvrir nos produits</a>
     </div>
 </main>
