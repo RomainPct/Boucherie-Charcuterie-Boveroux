@@ -2,13 +2,15 @@
     & h2{
         padding-left: 120px;
     }
-    & nav{
+    &__cat{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         & :first-child{
             margin-left: 120px;
         }
         & :last-child{
-            justify-content: flex-end;
+            margin-right: 120px;
         }
         & a{
             text-align: center;
