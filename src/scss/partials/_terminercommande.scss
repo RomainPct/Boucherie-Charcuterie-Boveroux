@@ -8,11 +8,104 @@
     margin-left: 120px;
     &__left{
         margin-right: 60px;
+        width: 50vw;
         p{
             margin-top: 10px;
         }
     }
     &__right{
-        width: 37vw;
+        width: 50vw;
+        &__form{
+            &__name{
+                display: flex;
+                flex-direction: column;
+                label{
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    font-family: $font-secondary;
+                }
+                input{
+                    margin-bottom: 30px;
+                    width: 28vw;
+                    height: 2vw;
+                    border: solid;
+                    border-width: 2px;
+                    border-color: $text-color;
+                    border-radius: 5px;
+                    background-color: $background-color-lighter;
+                    color: $text-color;
+                    font-size: $font-size-body;
+                    font-family: $font-secondary;
+                }
+            }
+            &__email{
+                display: flex;
+                flex-direction: column;
+                label{
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    font-family: $font-secondary;
+                }
+                input{
+                    margin-bottom: 30px;
+                    width: 37vw;
+                    height: 2vw;
+                    border: solid;
+                    border-width: 2px;
+                    border-color: $text-color;
+                    border-radius: 5px;
+                    background-color: $background-color-lighter;
+                    color: $text-color;
+                    font-size: $font-size-body;
+                    font-family: $font-secondary;
+                }
+            }
+            &__summary{
+                display: flex;
+                flex-direction: column;
+                p{
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                }
+                div{
+                    margin-bottom: 30px;
+                    width: 23vw;
+                    height: 14vw;
+                    border: solid;
+                    border-width: 2px;
+                    border-color: $text-color;
+                    border-radius: 5px;
+                    background-color: $background-color-lighter;
+                    color: $text-color;
+                    font-family: $font-secondary;
+                }
+            }
+            &__message{
+                display: flex;
+                flex-direction: column;
+                label{
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    font-family: $font-secondary;
+                }
+                input{
+                    margin-bottom: 40px;
+                    width: 37vw;
+                    height: 9vw;
+                    border: solid;
+                    border-width: 2px;
+                    border-color: $text-color;
+                    border-radius: 5px;
+                    background-color: $background-color-lighter;
+                    color: $text-color;
+                    font-size: $font-size-body;
+                    font-family: $font-secondary;
+                }
+            }
+            &__send{
+                margin-bottom: 90px;
+                text-align: center;
+            }
+        }
     }
 }
