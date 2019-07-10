@@ -1,9 +1,9 @@
-<div class="container__detailed__products">
-    <div class="container__detailed__products__informations">
-        <div class="container__detailed__products__informations__image">
+<div class="containerDetailedProducts">
+    <div class="containerDetailedProducts__informations">
+        <div class="containerDetailedProducts__informations__image">
             <!-- Mettre image correspondante-->
         </div>
-        <div class="container__detailed__products__informations__text">
+        <div class="containerDetailedProducts__informations__text">
             <!-- Description du produit et bouton "Ajouter au panier"-->
         </div>
     </div>
