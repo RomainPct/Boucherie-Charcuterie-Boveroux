@@ -1,3 +1,4 @@
+// Open the confirmedOrder div
 const envoyerCommande = document.querySelector('.sendOrder')
 const commandeEnvoye = document.querySelector('.confirmedOrder__container')
 const visible = document.querySelector('.visible')
