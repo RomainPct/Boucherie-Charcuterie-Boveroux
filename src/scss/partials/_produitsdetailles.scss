@@ -18,6 +18,11 @@
             width: 45vw;
         }
         &__textDetailed{
+            img{
+                display: flex;
+                align-items: flex-end;
+                cursor: pointer;
+            }
             &__descriptionDetailed{
                 width: auto;
                 margin: 90px 30px;
