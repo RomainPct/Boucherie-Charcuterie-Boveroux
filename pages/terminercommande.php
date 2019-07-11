@@ -11,11 +11,11 @@ $c = new CandidePage('terminer_ma_commande')
         <form action="" method="post" class="finishOrder__container__right__form">
             <div class="finishOrder__container__right__form__name">
                 <label for="POST-name">Votre nom et prénom</label>
-                <input type="text" name="name" id="POST-name" required>
+                <input type="text" name="name" id="POST-name">
             </div>
             <div class="finishOrder__container__right__form__email">
                 <label for="POST-email">Votre adresse email</label>
-                <input type="email" name="email" id="POST-email" required>
+                <input type="email" name="email" id="POST-email">
             </div>
             <div class="finishOrder__container__right__form__summary">
                 <p>Résumé de votre commande</p>
