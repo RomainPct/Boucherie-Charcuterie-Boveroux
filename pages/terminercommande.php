@@ -23,7 +23,7 @@ $c = new CandidePage('terminer_ma_commande')
             </div>
             <div class="finishOrder__container__right__form__message">
                 <label for="POST-message">Un petit message pour nous ?</label>
-                <input type="text" name="message" id="POST-message" required>
+                <textarea type="text" name="message" id="POST-message"></textarea>
             </div>
             <div class="finishOrder__container__right__form__send">
                 <a class="primaryButton sendOrder" href="#" title="Envoyer ma commande">Envoyer ma commande</a>
