@@ -23,13 +23,14 @@
         display: flex;
         margin-left: 120px;
         margin-right: 120px;
+        flex-wrap: wrap;
         &__product{
             margin: 30px;
             text-align: center;
-            &__background{
-                background-color: $background-color-lighter;
-                border-radius: 5px;
+            max-width: 17vw;
                 &__contain{
+                    background-color: $background-color-lighter;
+                    border-radius: 5px;
                     & img{
                         width: 100%;
                         border-top-left-radius: 5px;
@@ -44,7 +45,6 @@
                         margin-bottom: 15px;
                     }
                 }
-            }
         }
     }
 }

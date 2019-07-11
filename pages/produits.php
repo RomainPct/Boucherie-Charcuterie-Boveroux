@@ -22,172 +22,54 @@
         </div>
         <div class="prodSectionList">
             <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
+                <div class="prodSectionList__product__contain">
+                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
+                    <p id="prodtitle">Andouillette</p>
+                    <p>25€</p>
+                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                 </div>
             </div>
             <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
+                <div class="prodSectionList__product__contain">
+                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
+                    <p id="prodtitle">Andouillette</p>
+                    <p>25€</p>
+                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                 </div>
             </div>
             <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
+                <div class="prodSectionList__product__contain">
+                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
+                    <p id="prodtitle">Andouillette</p>
+                    <p>25€</p>
+                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                 </div>
             </div>
             <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
+                <div class="prodSectionList__product__contain">
+                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
+                    <p id="prodtitle">Andouillette</p>
+                    <p>25€</p>
+                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                </div>
+            </div>
+            <div class="prodSectionList__product">
+                <div class="prodSectionList__product__contain">
+                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
+                    <p id="prodtitle">Andouillette</p>
+                    <p>25€</p>
+                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                </div>
+            </div>
+            <div class="prodSectionList__product">
+                <div class="prodSectionList__product__contain">
+                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
+                    <p id="prodtitle">Andouillette</p>
+                    <p>25€</p>
+                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                 </div>
             </div>
         </div>
-        <div class="prodSectionList">
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="prodSectionList">
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="prodSectionList">
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__background">
-                    <div class="prodSectionList__product__background__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle">Andouillette</p>
-                        <p>25€</p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
     </section>
     <div id="detailedProductContainer"></div> <!-- Ne supprime surtout pas -->
 </main>
