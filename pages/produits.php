@@ -18,7 +18,7 @@
                 <a href="" class="tertiaryButton">Boeuf</a>
                 <a href="" class="tertiaryButton">Plats cuisinés</a>
             </div>
-                <a href="" class="primaryButton">Valider ma commande</a>
+                <a href="terminercommande" class="primaryButton">Valider ma commande</a>
         </div>
         <div class="prodSectionList">
             <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">

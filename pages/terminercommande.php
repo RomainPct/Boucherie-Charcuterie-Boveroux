@@ -1,8 +1,11 @@
+<?php
+$c = new CandidePage('terminer_ma_commande')
+?>
 <main class="finishOrder__container">
     <h1>Terminer ma commande</h1>
     <div class="finishOrder__container__left">
-        <h2>Terminer ma commande</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.</p>
+        <h2><?php $c->text('titre_partie_terminer_ma_commande');?></h2>
+        <p><?php $c->text('texte_partie_terminer_ma_commande');?></p>
     </div>
     <div class="finishOrder__container__right">
         <form action="" method="post" class="finishOrder__container__right__form">
@@ -23,8 +26,13 @@
                 <input type="text" name="message" id="POST-message" required>
             </div>
             <div class="finishOrder__container__right__form__send">
-                <a class="primaryButton" href="#" title="Envoyer ma commande">Envoyer ma commande</a>
+                <a class="primaryButton sendOrder" href="#" title="Envoyer ma commande">Envoyer ma commande</a>
             </div>
         </form>
     </div>
 </main>
+<div class="confirmedOrder__container">
+        <h2>Commande envoyée</h2>
+        <p>Merci de nous avoir fait confiance, une réponse vous sera transmise d’ici 48h</p>
+        <a class="secondaryButton" href="accueil" title="Revenir à l'accueil">Revenir à l'accueil</a>
+</div>
