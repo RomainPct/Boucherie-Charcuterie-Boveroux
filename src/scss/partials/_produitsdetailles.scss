@@ -14,8 +14,8 @@
         width: 81vw;
         background-color: $background-color;
         &__imageDetailed img{
-            height: 30vw;
-            width: 50vw;
+            height: 100%;
+            width: 45vw;
         }
         &__textDetailed{
             &__descriptionDetailed{
