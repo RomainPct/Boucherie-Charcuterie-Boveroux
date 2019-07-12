@@ -18,12 +18,12 @@ $c5 = new CandideCollection('plats_cuisines');
         <h2>Nos produits</h2>
         <div class="prodSection__cat">
             <div class="catlist">
-                <a href="" data-target="all" class="secondaryButton">Tous</a>
-                <a href="" data-target="charcuterie" class="tertiaryButton">Charcuterie</a>
-                <a href="" data-target="porc" class="tertiaryButton">Porc</a>
-                <a href="" data-target="veau" class="tertiaryButton">Veau</a>
-                <a href="" data-target="boeuf" class="tertiaryButton">Boeuf</a>
-                <a href="" data-target="plats_cuisines" class="tertiaryButton">Plats cuisinés</a>
+                <a href="#" data-target="all" class="secondaryButton">Tous</a>
+                <a href="#" data-target="charcuterie" class="tertiaryButton">Charcuterie</a>
+                <a href="#" data-target="porc" class="tertiaryButton">Porc</a>
+                <a href="#" data-target="veau" class="tertiaryButton">Veau</a>
+                <a href="#" data-target="boeuf" class="tertiaryButton">Boeuf</a>
+                <a href="#" data-target="plats_cuisines" class="tertiaryButton">Plats cuisinés</a>
             </div>
                 <a href="terminercommande" class="primaryButton">Valider ma commande</a>
         </div>
