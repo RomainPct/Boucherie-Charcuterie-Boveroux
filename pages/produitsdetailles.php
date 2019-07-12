@@ -13,7 +13,7 @@ echo $productId. " - ".$productType;
             <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="photo de boeuf"> 
         </div>
         <div class="containerDetailedProducts__informationsDetailed__textDetailed">
-            <img src="../assets/images/icones/cross.svg" alt="croix"> 
+            <img class="closeDetailedProduct" src="../assets/images/icones/cross.svg" alt="croix"> 
             <div class="containerDetailedProducts__informationsDetailed__textDetailed__descriptionDetailed">
                 <h2>Veau</h2>
                 <h3>Andouillettes</h3>
