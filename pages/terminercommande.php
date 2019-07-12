@@ -8,7 +8,7 @@ $c = new CandidePage('terminer_ma_commande')
         <p><?php $c->text('texte_partie_terminer_ma_commande');?></p>
     </div>
     <div class="finishOrder__container__right">
-        <form action="commandeconfirmee" method="post" class="finishOrder__container__right__form">
+        <form action="#" method="post" class="finishOrder__container__right__form">
             <div class="finishOrder__container__right__form__name">
                 <label for="POST-name">Votre nom et prénom</label>
                 <input type="text" name="name" id="POST-name">

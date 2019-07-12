@@ -19,14 +19,16 @@ if(form != null){
             inputs[0].parentElement.lastElementChild.innerHTML = "Champ obligatoire"
             e.preventDefault()
         }else{
-            // Enregistrer le nom en local storage
+            localStorage.setItem('name', inputs[0].value) // Register the name in local storage
+            console.log(inputs[0].value)
         }
         if((inputs[1].value.length <= 0) || verifMail(inputs[1].value)){ // Mail verification
             inputs[1].classList.add('error')
             inputs[1].parentElement.lastElementChild.innerHTML = "Entrez une adresse mail valide"
             e.preventDefault()
         }else{
-            // Enregistrer le mail en local storage
+            localStorage.setItem('mail', inputs[1].value) // Register the mail in local storage
+            console.log(inputs[1].value)
         }
     })
 
@@ -36,11 +38,21 @@ if(form != null){
     }
 
     function prefecthInputs(){
-        // Récupérer le nom en local storage
-            // Si il est pas vide -> le mettre à inputs[0]
-        // Récupérer le mail en local storage
-            // Si il est pas vide -> le mettre à inputs[1]
+        let nom = localStorage.getItem('name') // Retrieve the name in local storage
+
+        if(inputs[0].value == ""){ // If it is not empty -> set it to inputs[0]
+            inputs[0].value = nom
+        }
+
+        let mail = localStorage.getItem('mail') // Retrieve the mail in local storage
+
+        if(inputs[1].value == ""){ // If it is not empty -> set it to inputs[1]
+            inputs[1].value = mail
+        }
+
+        console.log(nom)
+        console.log(mail)
     }
-    prefecthInputs() // On lance la fonction à chaque chargement du js
+    prefecthInputs()
 
 }
