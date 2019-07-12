@@ -8,7 +8,11 @@
     -->
 <?php
 $c = new CandidePage('produits');
-$c1 = new CandideCollection('produits');
+$c1 = new CandideCollection('charcuterie');
+$c2 = new CandideCollection('porc');
+$c3 = new CandideCollection('veau');
+$c4 = new CandideCollection('boeuf');
+$c5 = new CandideCollection('plats_cuisines');
 ?>
     <section class="prodSection">
         <h2>Nos produits</h2>
@@ -41,7 +45,7 @@ $c1 = new CandideCollection('produits');
             }
             ?>
             <?php
-            foreach($c1->avalaibleItemIds()as $id){
+            foreach($c2->avalaibleItemIds()as $id){
                 ?>
                 <div class="prodSectionList__product all porc" data-productid="<?php echo $id ?>" data-producttype="porc">
                     <div class="prodSectionList__product__contain">
@@ -56,7 +60,7 @@ $c1 = new CandideCollection('produits');
             }
             ?>
             <?php
-            foreach($c1->avalaibleItemIds()as $id){
+            foreach($c3->avalaibleItemIds()as $id){
                 ?>
                 <div class="prodSectionList__product all veau" data-productid="<?php echo $id ?>" data-producttype="veau">
                     <div class="prodSectionList__product__contain">
@@ -71,7 +75,7 @@ $c1 = new CandideCollection('produits');
             }
             ?>
             <?php
-            foreach($c1->avalaibleItemIds()as $id){
+            foreach($c4->avalaibleItemIds()as $id){
                 ?>
                 <div class="prodSectionList__product all boeuf" data-productid="<?php echo $id ?>" data-producttype="boeuf">
                     <div class="prodSectionList__product__contain">
@@ -86,7 +90,7 @@ $c1 = new CandideCollection('produits');
             }
             ?>
             <?php
-            foreach($c1->avalaibleItemIds()as $id){
+            foreach($c5->avalaibleItemIds()as $id){
                 ?>
                 <div class="prodSectionList__product all plats_cuisines" data-productid="<?php echo $id ?>" data-producttype="plats_cuisines">
                     <div class="prodSectionList__product__contain">
