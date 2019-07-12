@@ -1,7 +1,7 @@
 class Filter {
     constructor() {
         this.buttons = document.querySelectorAll('.catlist a')
-        this.cards = document.querySelectorAll('.prodSectionList')
+        this.cards = document.querySelectorAll('.product')
 
         this.init()
     }
