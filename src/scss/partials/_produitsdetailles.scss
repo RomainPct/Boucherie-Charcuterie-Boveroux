@@ -5,12 +5,12 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #F4EFF3;
+    background-color: rgba(244, 239, 243, 0.9);
     &__informationsDetailed{
         border-radius: 5px;
         display: flex;
         justify-content: space-between;
-    //    align-items: center;
+        align-items: center;
         margin: 120px;
         background-color: $background-color;
         &__imageDetailed {
@@ -21,11 +21,8 @@
             }
         }
         &__textDetailed{
-            display: flex;
             position: relative;
             width: 50%;
-            align-items: center;
-          //  justify-content: center;
             img{
                 position: absolute;
                 width: 4vw;
@@ -47,7 +44,6 @@
             &__buttonDetailed{
                 bottom: 0;
                 transform: translate(50%);
-              //  text-align: center;
                 position: absolute;
             }
         }
