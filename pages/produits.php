@@ -30,7 +30,7 @@ $c1 = new CandideCollection('produits');
                 ?>
                 <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
                     <div class="prodSectionList__product__contain">
-                        <img src="<?php $c1->image('image', $id)?>" alt="image du produit">
+                        <img src="<?php $c1->image('image',$id)?>" alt="image du produit">
                         <p><?php $c1->text('nom_du_produit',$id)?></p>
                         <p><?php $c1->text('prix',$id)?></p>
                         <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
