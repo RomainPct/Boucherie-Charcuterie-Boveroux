@@ -8,7 +8,7 @@ $c = new CandidePage('terminer_ma_commande')
         <p><?php $c->text('texte_partie_terminer_ma_commande');?></p>
     </div>
     <div class="finishOrder__container__right">
-        <form action="" method="post" class="finishOrder__container__right__form">
+        <form action="commandeconfirmee" method="post" class="finishOrder__container__right__form">
             <div class="finishOrder__container__right__form__name">
                 <label for="POST-name">Votre nom et prénom</label>
                 <input type="text" name="name" id="POST-name">
@@ -28,14 +28,8 @@ $c = new CandidePage('terminer_ma_commande')
                 <textarea type="text" name="message" id="POST-message"></textarea>
             </div>
             <div class="finishOrder__container__right__form__send">
-                <a class="primaryButton sendOrder" href="#" title="Envoyer ma commande">Envoyer ma commande</a>
+                <button class="primaryButton sendOrder" type="submit">Envoyer ma commande</button>
             </div>
         </form>
     </div>
 </main>
-<!-- Le mettre sur une page séparé finalement -->
-<div class="confirmedOrder__container">
-        <h2>Commande envoyée</h2>
-        <p>Merci de nous avoir fait confiance, une réponse vous sera transmise d’ici 48h</p>
-        <a class="secondaryButton" href="accueil" title="Revenir à l'accueil">Revenir à l'accueil</a>
-</div>

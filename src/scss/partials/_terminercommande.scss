@@ -1,5 +1,4 @@
 .finishOrder__container{
-    position: relative;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -26,7 +25,6 @@
                     font-family: $font-secondary;
                 }
                 input{
-                    margin-bottom: 30px;
                     width: 28vw;
                     height: 2vw;
                     border: solid;
@@ -55,12 +53,12 @@
                 display: flex;
                 flex-direction: column;
                 label{
+                    margin-top: 30px;
                     margin-bottom: 10px;
                     margin-left: 5px;
                     font-family: $font-secondary;
                 }
                 input{
-                    margin-bottom: 30px;
                     width: 37vw;
                     height: 2vw;
                     border: solid;
@@ -82,12 +80,15 @@
                     margin-top: 0;
                     margin-left: 10px;
                     color: red;
+                    font-size: $font-size-body;
+                    font-family: $font-secondary;
                 }
             }
             &__summary{
                 display: flex;
                 flex-direction: column;
                 p{
+                    margin-top: 30px;
                     margin-bottom: 10px;
                     margin-left: 5px;
                 }
@@ -129,26 +130,10 @@
             &__send{
                 margin-bottom: 90px;
                 text-align: center;
+                button{
+                    font-size: $font-size-body;
+                }
             }
         }
     }
-}
-.confirmedOrder__container{
-    position: absolute;
-    top: 0;
-    display: none;
-    width: 100vw;
-    height: 100%;
-    background-color: $background-color;
-    text-align: center;
-    h2{
-        margin-top: 320px;
-        margin-bottom: 20px;
-    }
-    p{
-        margin-bottom: 90px;
-    }
-}
-.visible{
-    display: block;
 }
