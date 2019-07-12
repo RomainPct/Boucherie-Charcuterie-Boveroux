@@ -7,6 +7,7 @@
     left: 0;
     background-color: rgba(244, 239, 243, 0.9);
     &__informationsDetailed{
+        position: relative;
         border-radius: 5px;
         display: flex;
         justify-content: space-between;
@@ -21,7 +22,6 @@
             }
         }
         &__textDetailed{
-            position: relative;
             width: 50%;
             img{
                 position: absolute;
@@ -32,18 +32,17 @@
                 cursor: pointer;
             }
             &__descriptionDetailed{
-              //  position: relative;
                 width: auto;
                 margin: 60px 30px 90px 30px;
                 h2{
                     color: #3D3339;
                     position: absolute;
-                    top: 60px;
+                    transform: translate(-50px, -40px);
                 }
             }
             &__buttonDetailed{
                 bottom: 0;
-                transform: translate(50%);
+                transform: translate(200px);
                 position: absolute;
             }
         }
