@@ -28,7 +28,7 @@
         &__product{
             margin: 30px;
             text-align: center;
-            max-width: 17vw;
+            width: calc(25% - 60px);
                 &__contain{
                     background-color: $background-color-lighter;
                     border-radius: 5px;
