@@ -15,6 +15,7 @@ echo $productId. " - ".$productType;
         <div class="containerDetailedProducts__informationsDetailed__textDetailed">
             <img src="../assets/images/icones/cross.svg" alt="croix"> 
             <div class="containerDetailedProducts__informationsDetailed__textDetailed__descriptionDetailed">
+                <h2>Veau</h2>
                 <h3>Andouillettes</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nulla aperiam perspiciatis aliquid omnis esse, eius quibusdam sapiente recusandae totam sunt iusto ea numquam ipsam maxime, laborum exercitationem sit reiciendis!</p>
             </div>
