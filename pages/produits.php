@@ -6,7 +6,10 @@
         data-producttype -> correspond au nom de la collection candide
         exemple : <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
     -->
-
+<?php
+$c = new CandidePage('produits');
+$c1 = new CandideCollection('produits');
+?>
     <section class="prodSection">
         <h2>Nos produits</h2>
         <div class="prodSection__cat">
@@ -21,6 +24,24 @@
                 <a href="terminercommande" class="primaryButton">Valider ma commande</a>
         </div>
         <div class="prodSectionList">
+
+            <?php
+            foreach($c1->avalaibleItemIds()as $id){
+                ?>
+                <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
+                    <div class="prodSectionList__product__contain">
+                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
+                        <p id="prodtitle"><?php $c1->text('nom_du_produit',$id)?></p>
+                        <p><?php $c1->text('prix',$id)?></p>
+                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                    </div>
+                </div>
+                <?php
+
+            }
+            
+            ?>
+
             <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
                 <div class="prodSectionList__product__contain">
                     <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
