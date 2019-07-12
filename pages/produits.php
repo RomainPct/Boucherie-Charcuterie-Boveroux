@@ -50,8 +50,8 @@ $c5 = new CandideCollection('plats_cuisines');
                 <div class="prodSectionList__product all porc" data-productid="<?php echo $id ?>" data-producttype="porc">
                     <div class="prodSectionList__product__contain">
                         <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p><?php $c1->text('nom_du_produit',$id)?></p>
-                        <p><?php $c1->text('prix',$id)?></p>
+                        <p><?php $c2->text('nom_du_produit',$id)?></p>
+                        <p><?php $c2->text('prix',$id)?></p>
                         <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
@@ -65,8 +65,8 @@ $c5 = new CandideCollection('plats_cuisines');
                 <div class="prodSectionList__product all veau" data-productid="<?php echo $id ?>" data-producttype="veau">
                     <div class="prodSectionList__product__contain">
                         <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p><?php $c1->text('nom_du_produit',$id)?></p>
-                        <p><?php $c1->text('prix',$id)?></p>
+                        <p><?php $c3->text('nom_du_produit',$id)?></p>
+                        <p><?php $c3->text('prix',$id)?></p>
                         <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
@@ -80,8 +80,8 @@ $c5 = new CandideCollection('plats_cuisines');
                 <div class="prodSectionList__product all boeuf" data-productid="<?php echo $id ?>" data-producttype="boeuf">
                     <div class="prodSectionList__product__contain">
                         <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p><?php $c1->text('nom_du_produit',$id)?></p>
-                        <p><?php $c1->text('prix',$id)?></p>
+                        <p><?php $c4->text('nom_du_produit',$id)?></p>
+                        <p><?php $c4->text('prix',$id)?></p>
                         <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
@@ -95,8 +95,8 @@ $c5 = new CandideCollection('plats_cuisines');
                 <div class="prodSectionList__product all plats_cuisines" data-productid="<?php echo $id ?>" data-producttype="plats_cuisines">
                     <div class="prodSectionList__product__contain">
                         <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p><?php $c1->text('nom_du_produit',$id)?></p>
-                        <p><?php $c1->text('prix',$id)?></p>
+                        <p><?php $c5->text('nom_du_produit',$id)?></p>
+                        <p><?php $c5->text('prix',$id)?></p>
                         <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
