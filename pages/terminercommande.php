@@ -33,6 +33,7 @@ $c = new CandidePage('terminer_ma_commande')
         </form>
     </div>
 </main>
+<!-- Le mettre sur une page séparé finalement -->
 <div class="confirmedOrder__container">
         <h2>Commande envoyée</h2>
         <p>Merci de nous avoir fait confiance, une réponse vous sera transmise d’ici 48h</p>

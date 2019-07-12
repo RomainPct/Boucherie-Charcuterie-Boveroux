@@ -30,8 +30,8 @@ $c1 = new CandideCollection('produits');
                 ?>
                 <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
                     <div class="prodSectionList__product__contain">
-                        <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                        <p id="prodtitle"><?php $c1->text('nom_du_produit',$id)?></p>
+                        <img src="<?php $c1->image('image',$id)?>" alt="image du produit">
+                        <p><?php $c1->text('nom_du_produit',$id)?></p>
                         <p><?php $c1->text('prix',$id)?></p>
                         <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
                     </div>
@@ -39,57 +39,7 @@ $c1 = new CandideCollection('produits');
                 <?php
 
             }
-            
             ?>
-
-            <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
-                <div class="prodSectionList__product__contain">
-                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                    <p id="prodtitle">Andouillette</p>
-                    <p>25€</p>
-                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__contain">
-                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                    <p id="prodtitle">Andouillette</p>
-                    <p>25€</p>
-                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__contain">
-                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                    <p id="prodtitle">Andouillette</p>
-                    <p>25€</p>
-                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__contain">
-                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                    <p id="prodtitle">Andouillette</p>
-                    <p>25€</p>
-                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__contain">
-                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                    <p id="prodtitle">Andouillette</p>
-                    <p>25€</p>
-                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                </div>
-            </div>
-            <div class="prodSectionList__product">
-                <div class="prodSectionList__product__contain">
-                    <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="image du produit">
-                    <p id="prodtitle">Andouillette</p>
-                    <p>25€</p>
-                    <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
-                </div>
-            </div>
         </div>
     </section>
     <div id="detailedProductContainer"></div> <!-- Ne supprime surtout pas -->
