@@ -38,6 +38,18 @@
                     font-size: $font-size-body;
                     font-family: $font-secondary;
                 }
+                input.error{
+                    border-color: red;
+                }
+                input:focus{
+                    border-color: $text-color;
+                }
+                span{
+                    display: block;
+                    margin-top: 0;
+                    margin-left: 10px;
+                    color: red;
+                }
             }
             &__email{
                 display: flex;
@@ -53,12 +65,23 @@
                     height: 2vw;
                     border: solid;
                     border-width: 2px;
-                    border-color: $text-color;
                     border-radius: 5px;
                     background-color: $background-color-lighter;
                     color: $text-color;
                     font-size: $font-size-body;
                     font-family: $font-secondary;
+                }
+                input.error{
+                    border-color: red;
+                }
+                input:focus{
+                    border-color: $text-color;
+                }
+                span{
+                    display: block;
+                    margin-top: 0;
+                    margin-left: 10px;
+                    color: red;
                 }
             }
             &__summary{
@@ -89,7 +112,7 @@
                     margin-left: 5px;
                     font-family: $font-secondary;
                 }
-                input{
+                textarea{
                     margin-bottom: 40px;
                     width: 37vw;
                     height: 9vw;

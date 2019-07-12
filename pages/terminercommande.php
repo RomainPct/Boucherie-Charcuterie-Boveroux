@@ -11,11 +11,13 @@ $c = new CandidePage('terminer_ma_commande')
         <form action="" method="post" class="finishOrder__container__right__form">
             <div class="finishOrder__container__right__form__name">
                 <label for="POST-name">Votre nom et prénom</label>
-                <input type="text" name="name" id="POST-name" required>
+                <input type="text" name="name" id="POST-name">
+                <span></span>
             </div>
             <div class="finishOrder__container__right__form__email">
                 <label for="POST-email">Votre adresse email</label>
-                <input type="email" name="email" id="POST-email" required>
+                <input type="email" name="email" id="POST-email">
+                <span></span>
             </div>
             <div class="finishOrder__container__right__form__summary">
                 <p>Résumé de votre commande</p>
@@ -23,7 +25,7 @@ $c = new CandidePage('terminer_ma_commande')
             </div>
             <div class="finishOrder__container__right__form__message">
                 <label for="POST-message">Un petit message pour nous ?</label>
-                <input type="text" name="message" id="POST-message" required>
+                <textarea type="text" name="message" id="POST-message"></textarea>
             </div>
             <div class="finishOrder__container__right__form__send">
                 <a class="primaryButton sendOrder" href="#" title="Envoyer ma commande">Envoyer ma commande</a>
