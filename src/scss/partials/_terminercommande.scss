@@ -7,19 +7,13 @@
     &__left{
         position: fixed;
         left: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 60px;
         width: 39vw;
-        div{
-            p{
-                margin-top: 10px;
-            }
+        p{
+            margin-top: 10px;
         }
     }
     &__right{
-        width: 46vw;
+        margin-right: 120px;
         &__form{
             &__name{
                 display: flex;
