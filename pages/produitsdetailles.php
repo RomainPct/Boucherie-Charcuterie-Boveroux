@@ -10,14 +10,14 @@ echo $productId. " - ".$productType;
 <div class="containerDetailedProducts">
     <div class="containerDetailedProducts__informationsDetailed">
         <div class="containerDetailedProducts__informationsDetailed__imageDetailed">
-            <img src="../assets/images/photos/viande_boeuf_boveroux.jpg" alt="photo de boeuf"> 
+            <img src="<?php $productId->image("image_du_produit",[]) ?>" alt="photo de boeuf"> 
         </div>
         <div class="containerDetailedProducts__informationsDetailed__textDetailed">
             <img class="closeDetailedProduct" src="../assets/images/icones/cross.svg" alt="croix"> 
             <div class="containerDetailedProducts__informationsDetailed__textDetailed__descriptionDetailed">
                 <h2>Veau</h2>
-                <h3>Andouillettes</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nulla aperiam perspiciatis aliquid omnis esse, eius quibusdam sapiente recusandae totam sunt iusto ea numquam ipsam maxime, laborum exercitationem sit reiciendis!</p>
+                <h3><?php $productType->text("nom_du_produit")?></h3>
+                <p><?php $productId->text("description_du_produit",true) ?></p>
             </div>
             <div class="containerDetailedProducts__informationsDetailed__textDetailed__buttonDetailed">
                 <a title="bouton ajouter panier" class="primaryButton" href="#">Ajouter au panier</a>
