@@ -1,20 +1,23 @@
 
 .home__section{
     overflow: hidden;
-    &__textandimg{
-        
+    &__textandimg{  
         &__img{
-            position: absolute;
+            position: relative;
             top: 0%;
             right: 0%;
             left: 0%;
-            z-index: -1;   
-                   
+            z-index: -1;             
         }
         &__img img{
             width: 100%;
         }
         &__textBlock{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            z-index: 3;
             padding: 120px;
             &__text{
                 padding-left: 15px;
