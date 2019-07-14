@@ -1,4 +1,6 @@
 .imageBox{
+    position: relative;
+    display: inline-block;
     &.degradeBottomLigthDark::before{
         position: absolute;
         right: 0;
