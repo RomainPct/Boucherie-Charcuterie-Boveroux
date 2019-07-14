@@ -4,7 +4,7 @@ let errors = document.querySelectorAll('.error')
 
 if(form != null){
 
-    inputs.forEach(function (input) {
+    inputs.forEach(function (input){
         input.addEventListener("input", function (e){
             input.classList.remove('error')
             input.parentElement.lastElementChild.innerHTML = ""

@@ -8,3 +8,18 @@
         width: 100vw;
     }
 }
+.mobile__imageBox{
+    position: relative;
+    display: inline-block;
+    &.mobile__degradeLeftLigthDark::before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        width: 100vw;
+        height: 60px;
+        background-image:linear-gradient(to bottom, $background-color-lighter, rgba(0,0,0,0));
+        content: " ";
+    }
+}
