@@ -1,0 +1,59 @@
+.whoweare__container{
+    &__history{
+        margin-top: 50px;
+        &__text{
+            position: absolute;
+            z-index: 30;
+            margin-right: 30px;
+            margin-left: 30px;
+            h2{
+                font-size: 50px;
+            }
+        }
+        &__picture{
+            position: relative;
+            img{
+                width: 100vw;
+                height: 121vw;
+            }
+        }
+    }
+    &__bioProd{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-right: 30px;
+        margin-left: 30px;
+        &__picture{
+            img{
+                width: 28vw;
+                height: 28vw;
+            }
+        }
+        &__text{
+            margin-top: 15px;
+            max-width: 85vw;
+        }
+    }
+    &__quality{
+        margin-top: 60px;
+        &__text{
+            position: absolute;
+            z-index: 30;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        &__picture{
+            position: relative;
+            img{
+                width: 100vw;
+                height: 115vw;
+            }
+        }
+    }
+    &__button{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
