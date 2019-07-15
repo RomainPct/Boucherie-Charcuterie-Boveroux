@@ -1,6 +1,6 @@
 <?php
 include_once '../Candide.php';
-$exceptions = ["../Candide.php"];
+$exceptions = ["../Candide.php","../pages/detailproduit.php"];
 // Parcourir tout les fichiers *.php dans ../ direct
 $allFiles = array_map(function($f){
     return glob("..".$f."*.php");
@@ -32,6 +32,39 @@ $_GET["updateAdminPlatform"] = true;
 foreach ($files as $file) {
     echo $file." ANALYSED";
     require $file;
+    if (isset($c)) {
+        updatePageForVariable($c,$indexAdmin);
+    }
+    if (isset($c1)) {
+        updatePageForVariable($c1,$indexAdmin);
+    }
+    if (isset($c2)) {
+        updatePageForVariable($c2,$indexAdmin);
+    }
+    if (isset($c3)) {
+        updatePageForVariable($c3,$indexAdmin);
+    }
+    if (isset($c4)) {
+        updatePageForVariable($c4,$indexAdmin);
+    }
+    if (isset($c5)) {
+        updatePageForVariable($c5,$indexAdmin);
+    }
+    usleep(10);
+}
+
+$type = [
+    "charcuterie",
+    "porc",
+    "veau",
+    "boeuf",
+    "plats_cuisines"
+];
+
+for ($i=0; $i < 5; $i++) { 
+    echo " detailproduit : ".$type[$i]." ANALYSED";
+    $_GET["type"] = $type[$i];
+    require "../pages/detailproduit.php";
     if (isset($c)) {
         updatePageForVariable($c,$indexAdmin);
     }
