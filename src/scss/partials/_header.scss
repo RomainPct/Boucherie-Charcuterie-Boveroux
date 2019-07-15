@@ -9,8 +9,9 @@
         justify-content: space-between;
         margin: 15px;
         &__logo{
-            width: 200px;
-            background-color: $background-color;
+            width: 120px;
+            background: url("../images/logo.svg") no-repeat center;
+            background-size: 100% auto;
             text-align: center;
         }
         &__cat{
