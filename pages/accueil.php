@@ -31,7 +31,7 @@ $c = new CandidePage('accueil')
                         <img id="logobio" src="../assets/images/icones/bio.png" alt="logo bio">
                         <p>Production bio</p>
                     </div>
-                    <div>
+                    <div class="home__section__secondBlock__leftDiv__logo__img" id="rightImg">
                         <img src="../assets/images/icones/meat.svg" alt="logo d'un morceau de viande">
                         <p id="paragraph_meat">Viande de qualité</p>
                     </div>
