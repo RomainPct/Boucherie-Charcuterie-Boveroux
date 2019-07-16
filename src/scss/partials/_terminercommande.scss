@@ -91,10 +91,12 @@
                     margin-bottom: 10px;
                     margin-left: 5px;
                 }
-                div{
+                &__summaryBox{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     margin-bottom: 30px;
                     width: 23vw;
-                    height: 14vw;
                     border: solid;
                     border-width: 2px;
                     border-color: $text-color;
@@ -102,6 +104,40 @@
                     background-color: $background-color-lighter;
                     color: $text-color;
                     font-family: $font-secondary;
+                    &__line{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        margin-right: 15px;
+                        margin-left: 15px;
+                        &__spec{
+                            display: flex;
+                            align-items: center;
+                            flex-direction: row;
+                            &__price{
+                                margin-right: 20px;
+                                font-weight: 700;
+                            }
+                            &__quantity{
+                                margin-right: 10px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    &__lineTotalCost{
+                        margin-top: 15px;
+                        border-color: $text-color;
+                        border-top: solid;
+                        border-top-width: 2px;
+                        div{
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            margin-left: 15px;
+                            font-weight: 700;
+                        }
+                    }
                 }
             }
             &__message{
