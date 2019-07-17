@@ -1,0 +1,15 @@
+.prodSection{
+    padding: 30px;
+    padding-top: 120px;
+    & h2{
+        font-size: 50px;
+    }
+    &__cat{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+#validResp{
+    display: none;
+}

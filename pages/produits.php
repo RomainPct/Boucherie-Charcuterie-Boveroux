@@ -25,7 +25,7 @@ $c5 = new CandideCollection('plats_cuisines');
                 <a href="#" data-target="boeuf" class="tertiaryButton">Boeuf</a>
                 <a href="#" data-target="plats_cuisines" class="tertiaryButton">Plats cuisinés</a>
             </div>
-                <a href="terminercommande" class="primaryButton">Valider ma commande</a>
+                <a href="terminercommande" class="primaryButton" id="validResp">Valider ma commande</a>
         </div>
         <div class="prodSectionList">
 
