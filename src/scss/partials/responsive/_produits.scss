@@ -6,7 +6,6 @@
     }
     &__cat{
         display: flex;
-
         & a{
             margin: 0px;
             padding: 15px;
@@ -14,7 +13,13 @@
     }
     &List{
         &__product{
-            width: calc(50% - 60px);
+            width: calc(50% - 30px);
+            margin: 15px;
+            &__contain{
+                & :nth-child(3){
+                    padding-top: 0px;
+                }
+            }
         }
     }
 }
