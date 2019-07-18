@@ -67,6 +67,11 @@ class Basket {
         }
         return totalAmount
     }
+
+    getProductList(){
+        return this.basket // Retourne un tableau des éléments du panier
+    }
+
 }
 
 const basket = new Basket()

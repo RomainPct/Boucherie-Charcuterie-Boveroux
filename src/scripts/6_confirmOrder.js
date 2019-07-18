@@ -1,0 +1,5 @@
+basket.cleanBasket()
+basket.addProduct("0_boeuf","Steack",29)
+basket.addProduct("2_porc","Côte de porc",19)
+basket.addProduct("2_porc","Côte de porc",19)
+basket.addProduct("0_plats_cuisines","Ratatouille",7)
