@@ -6,10 +6,23 @@
     }
     &__cat{
         display: flex;
-        flex-wrap: wrap;
+
+        & a{
+            margin: 0px;
+            padding: 15px;
+        }
+    }
+    &List{
+        &__product{
+            width: calc(50% - 60px);
+        }
     }
 }
 
 #validResp{
     display: none;
+}
+#catlistresp{
+    display: flex;
+    flex-wrap: wrap;
 }
