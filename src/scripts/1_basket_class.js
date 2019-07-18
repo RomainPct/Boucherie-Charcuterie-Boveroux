@@ -1,7 +1,7 @@
 class Basket {
     constructor(){
         //Récuperer le panier depuis local storage
-        this.basket = []
+        this.basket = {}
 
         this.getBasketFromLocalStorage()
     }
@@ -13,7 +13,7 @@ class Basket {
 
     getBasketFromLocalStorage(){
         // Intialiser une variable this.basket avec la data du local storage
-         this.basket = JSON.parse(localStorage.getItem('basketContents')) || []
+         this.basket = JSON.parse(localStorage.getItem('basketContents')) || {}
     }
 
     cleanBasket(){

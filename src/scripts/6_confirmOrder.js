@@ -1,8 +1,9 @@
 basket.cleanBasket()
-basket.addProduct("0_boeuf","Steack",29)
-basket.addProduct("2_porc","Côte de porc",19)
-basket.addProduct("2_porc","Côte de porc",19)
-basket.addProduct("0_plats_cuisines","Ratatouille",7)
+basket.addNewProduct("0_boeuf","Steack",29)
+basket.addNewProduct("2_porc","Côte de porc",19)
+basket.addNewProduct("2_porc","Côte de porc",19)
+basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
+// Ne pas toucher avant
 
 const productLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line')
 

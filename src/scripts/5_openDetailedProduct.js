@@ -17,7 +17,8 @@ function displayProduct(url){
     xhr.open("GET",url)
     xhr.addEventListener('load',function () {
         detailedProductContainer.innerHTML = xhr.responseText
-        console.log(xhr.responseText)
+        // console.log(xhr.responseText)
+        detailedProductOpened()
         setDetailedProductCloseButton()
     })
     xhr.send()
