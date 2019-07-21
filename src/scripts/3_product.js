@@ -26,10 +26,10 @@ class Filter {
 
 let myFilter = new Filter()
 
-let button = document.querySelectorAll('.primarybutton')
-let remov = document.querySelectorAll('.remove')
+let button = document.querySelectorAll("a.primaryButton")
+let remov = document.querySelectorAll(".remove")
 
 button.addEventListener('click', function (e){
-    primarybutton.classList.add('remove')
+    primarybutton.classList.add(".remove")
     console.log(remove)
 })
