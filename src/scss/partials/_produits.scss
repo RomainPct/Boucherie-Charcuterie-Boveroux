@@ -26,10 +26,13 @@
                         border-top-left-radius: 5px;
                         border-top-right-radius: 5px;
                     }
-                    & :nth-child(2){
+                    &__p1{
                         font-weight: bold;
                         padding-top: 15px;
-                        padding-bottom: 15px;
+                    }
+                    &__p2{
+                        font-weight: bold;
+                        margin-bottom: 15px;
                     }
                 }
         }
