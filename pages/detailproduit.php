@@ -22,7 +22,7 @@ $c = new CandideCollectionItem ($productType,$productId);
             </div>
             <div class="containerDetailedProducts__informationsDetailed__textDetailed__buttonDetailed">
                 <a title="bouton ajouter panier" class="primaryButton" href="#">Ajouter au panier</a>
-                <a title="bouton ajouter panier" class="primaryButton" href="#">Test</a>
+              <!-- <a title="bouton ajouter panier" class="primaryButton" href="#">Test</a> --> 
             </div>
         </div>
     </div>
