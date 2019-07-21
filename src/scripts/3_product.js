@@ -25,11 +25,14 @@ class Filter {
 }
 
 let myFilter = new Filter()
-
+/*
+let container = document.querySelectorAll("containerButton")
 let button = document.querySelectorAll("a.primaryButton")
-let remov = document.querySelectorAll(".remove")
 
-button.addEventListener('click', function (e){
-    primarybutton.classList.add(".remove")
-    console.log(remove)
+button.forEach(function (button) {
+    button.addEventListener('click', function () {
+      container.classList.add('.remove');
+    })
 })
+console.log(container)
+*/

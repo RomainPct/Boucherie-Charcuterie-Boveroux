@@ -29,15 +29,14 @@
                     & :nth-child(2){
                         font-weight: bold;
                         padding-top: 15px;
-                    }
-                    & :nth-child(3){
-                        padding: 10px;
-                        margin-bottom: 15px;
+                        padding-bottom: 15px;
                     }
                 }
         }
     }
 }
+
+
 #whiteButton{
     background-color: $text-color;
 }

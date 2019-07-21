@@ -37,7 +37,11 @@ $c5 = new CandideCollection('plats_cuisines');
                         <img src="<?php $c1->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p><?php $c1->text('nom_du_produit',$id)?></p>
                         <p><?php $c1->text('prix',$id)?></p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                        <div class="addBasket">
+                            <a href="#" class="addBasket__">-</a>
+                            <p>3</p>
+                            <a href="#">+</a>
+                        </div>
                     </div>
                 </div>
                 <?php
