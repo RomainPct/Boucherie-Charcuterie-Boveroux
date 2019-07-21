@@ -55,12 +55,6 @@ a.tertiaryButton.selected, button.tertiaryButton.selected{
     color: $color-primary;
 }
 
-// Remove primaryButton and show button + / -
-a.primaryButton.remove, button.primaryButton.remove{
-    display: none;
-}
-
-
 // H1
 h1{
     display:none;
