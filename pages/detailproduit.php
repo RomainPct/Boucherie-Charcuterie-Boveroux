@@ -18,7 +18,7 @@ $c = new CandideCollectionItem ($productType,$productId);
                 <h2><?php echo str_replace("_"," ",$productType) ?></h2>
                 <h3><?php $c->text("nom_du_produit")?></h3>
                 <p><?php $c->text("description_du_produit",false) ?></p>
-        </div>
+            </div>
         </div>
         <img class="closeDetailedProduct" src="../assets/images/icones/cross.svg" alt="croix"> 
         <div class="containerDetailedProducts__informationsDetailed__buttonDetailed">
