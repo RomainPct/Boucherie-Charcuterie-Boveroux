@@ -10,6 +10,10 @@
             </div>
             <div class="headerContainer__inside__cat__underButton">
                 <a href="" title="" class="secondaryButton">Mon Panier</a>
+                <div class="headerContainer__inside__cat__underButton__menuBasketEmpty">
+                    <h3>Mon panier</h3>
+                    <p>Vous n’avez pas encore ajouter de produits à votre panier</p>
+                </div>
             </div>
         </nav>
     </div>

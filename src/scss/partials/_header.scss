@@ -33,7 +33,27 @@
             }
             &__underButton{
                 margin: 15px;
+                position: relative;
+                display: inline-block;
+                &__menuBasketEmpty{
+                    position: absolute;
+                    background-color: $background-color-lighter;
+                    border-top: 5px solid $color-primary;
+                    right: -29px;
+                    top: 46px;
+                    padding: 30px;
+                    z-index: -1;
+                    min-width: 18vw;
+                } 
             }
-        }       
+        }     
     }
+}
+
+.basketInvisible{
+    display: none;
+}
+
+.basketVisible{
+    display: block;
 }
