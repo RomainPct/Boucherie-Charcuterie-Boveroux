@@ -9,5 +9,3 @@ myBasket.addEventListener('click', () =>{
         basketEmpty.classList.add("basketInvisible")
     }
 })
-console.log(myBasket)
-console.log(basketEmpty)
