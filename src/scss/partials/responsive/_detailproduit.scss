@@ -16,9 +16,8 @@
         margin: 120px 30px;
         background-color: $background-color;
         &__imageDetailed {
-            width: 50%;
+            width: 100%;
             img{
-                width: 100%;
                 display: block;
             }
         }
@@ -32,18 +31,18 @@
             cursor: pointer;
         }
         &__textDetailed{
-            width: 50%;
+            width: 90%;
             position: relative;
+            margin: 10px;
             z-index: 1;
             &__descriptionDetailed{
-                width: auto;
-                margin: 0px 30px;
+                margin: 0;
                 h2{
                     color: #3D3339;
                     position: absolute;
                     left: 0;
-                    top: -45px;
-                    font-size: 20px;
+                    top: -10px;
+                    font-size: 35px;
                     z-index: -1;
                 }
             }
