@@ -6,8 +6,9 @@ basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
 // Ne pas toucher avant
 
 const productLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line')
+const totalCostLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__lineTotalCost')
 
-function createLine(){
+// function createLine(){
     const product = document.createElement('div')
     product.classList.add('finishOrder__container__right__form__summary__summaryBox__line__product')
 
@@ -32,10 +33,21 @@ function createLine(){
     more.setAttribute('href', '#')
     more.setAttribute('title', 'plus')
 
+    let nom = document.createTextNode('nom')
+    let quantite = document.createTextNode('quantite')
+    let prix = document.createTextNode('prix')
+
+    price.appendChild(prix)
+    quantity.appendChild(quantite)
+    product.appendChild(nom)
+
+    document.body.insertBefore(productLine, totalCostLine);
     productLine.appendChild(product)
     productLine.appendChild(spec)
     spec.appendChild(price)
     spec.appendChild(minus)
     spec.appendChild(quantity)
     spec.appendChild(more)
-}
+// }
+
+// createLine()
