@@ -14,7 +14,7 @@
                     <h3>Mon panier</h3>
                     <p>Vous n’avez pas encore ajouter de produits à votre panier</p>
                 </div>
-                <div class="headerContainer__inside__cat__underButton__menuBasketContents basketInvisible">
+                <div class="headerContainer__inside__cat__underButton__menuBasketContents">
                     <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo">
                         <h3>Mon panier</h3>
                         <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo__priceDetailed">
