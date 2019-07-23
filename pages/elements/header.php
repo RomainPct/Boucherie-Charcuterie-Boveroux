@@ -14,29 +14,35 @@
                     <h3>Mon panier</h3>
                     <p>Vous n’avez pas encore ajouter de produits à votre panier</p>
                 </div>
-                <div class="headerContainer__inside__cat__underButton__menuBasketContents basketInvisible">
+                <div class="headerContainer__inside__cat__underButton__menuBasketContents">
                     <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo">
                         <h3>Mon panier</h3>
                         <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo__priceDetailed">
                             <p>Poitrine de veau</p>
                             <p>29€</p>
-                            <a href="#" title="Diminuer le nombre de produits" class="primaryButton">-</a>
-                            <p>1</p>
-                            <a href="#" title="Augmenter le nombre de produits" class="primaryButton">+</a>
+                            <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo__priceDetailed__quantityProducts">
+                                <a href="#" title="Diminuer le nombre de produits" class="primaryButton">-</a>
+                                <p>1</p>
+                                <a href="#" title="Augmenter le nombre de produits" class="primaryButton">+</a>
+                            </div>
                         </div>
                         <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo__priceDetailed">
                             <p>Andouillettes</p>
                             <p>25€</p>
-                            <a href="#" title="Diminuer le nombre de produits" class="primaryButton">-</a>
-                            <p>2</p>
-                            <a href="#" title="Augmenter le nombre de produits" class="primaryButton">+</a>
+                            <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo__priceDetailed__quantityProducts">
+                                <a href="#" title="Diminuer le nombre de produits" class="primaryButton">-</a>
+                                <p>2</p>
+                                <a href="#" title="Augmenter le nombre de produits" class="primaryButton">+</a>
+                            </div>
                         </div>
                         <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo__priceDetailed">
                             <p>Poulet rôti</p>
                             <p>19€</p>
-                            <a href="#" title="Diminuer le nombre de produits" class="primaryButton">-</a>
-                            <p>1</p>
-                            <a href="#" title="Augmenter le nombre de produits" class="primaryButton">+</a>
+                            <div class="headerContainer__inside__cat__underButton__menuBasketContents__productsInfo__priceDetailed__quantityProducts">
+                                <a href="#" title="Diminuer le nombre de produits" class="primaryButton">-</a>
+                                <p>1</p>
+                                <a href="#" title="Augmenter le nombre de produits" class="primaryButton">+</a>
+                            </div>
                         </div>
                     </div>
                     <div class="headerContainer__inside__cat__underButton__menuBasketContents__buttonFinishOrder">
