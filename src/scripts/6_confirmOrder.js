@@ -7,6 +7,7 @@ basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
 
 const productLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line')
 const totalCostLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__lineTotalCost')
+const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
 // function createLine(){
     const product = document.createElement('div')
@@ -41,7 +42,7 @@ const totalCostLine = document.querySelector('.finishOrder__container__right__fo
     quantity.appendChild(quantite)
     product.appendChild(nom)
 
-    document.body.insertBefore(productLine, totalCostLine);
+    summaryBox.insertBefore(productLine, totalCostLine)
     productLine.appendChild(product)
     productLine.appendChild(spec)
     spec.appendChild(price)
