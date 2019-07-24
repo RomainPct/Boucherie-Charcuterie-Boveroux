@@ -22,8 +22,8 @@ $c = new CandideCollectionItem ($productType,$productId);
         </div>
         <img class="closeDetailedProduct" src="../assets/images/icones/cross.svg" alt="croix"> 
         <div class="containerDetailedProducts__informationsDetailed__buttonDetailed">
-                <a title="Ajouter mon produit au panier" class="primaryButton buttonAddToBasket" href="#">Ajouter au panier</a>
-              <!-- <a title="bouton ajouter panier" class="primaryButton" href="#">Test</a> --> 
+            <a title="Ajouter mon produit au panier" class="primaryButton buttonAddToBasket" href="#">Ajouter au panier</a>
+            <a href="#" title="Nombre de produits à rajouter ou supprimer" class="primaryButton">- 2 +</a>
         </div>
     </div>
 </div>
