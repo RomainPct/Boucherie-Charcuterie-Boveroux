@@ -25,6 +25,8 @@ class Filter {
 }
 
 let myFilter = new Filter()
+
+
 /*
 let container = document.querySelectorAll("containerButton")
 let button = document.querySelectorAll("a.primaryButton")
@@ -36,3 +38,5 @@ button.forEach(function (button) {
 })
 console.log(container)
 */
+
+//Gestion ajout au panier
