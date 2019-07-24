@@ -39,7 +39,7 @@
                     position: absolute;
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-start;
+                    text-align: left;
                     background-color: $background-color-lighter;
                     border-top: 5px solid $color-primary;
                     right: -29px;
@@ -53,6 +53,7 @@
                     position: absolute;
                     display: flex;
                     flex-direction: column;
+                    text-align: left;
                     background-color: $background-color-lighter;
                     border-top: 5px solid $color-primary;
                     right: -29px;
@@ -62,9 +63,6 @@
                     z-index: -1;
                     min-width: 18vw;
                     &__productsInfo{
-                        h3{
-                            display: flex;
-                        }
                         &__priceDetailed{
                             display: flex;
                             justify-content: space-between;
@@ -79,12 +77,8 @@
                     }
                     &__buttonFinishOrder{
                         bottom: 0;
-                        transform: translateX(5%);
-                        left: 75%;
+                        transform: translate(13%, 5px);
                         padding-top: 30px;
-                      //  margin: 0px 60px;
-                      //  position: absolute;
-                      
                     }
                 } 
             }
