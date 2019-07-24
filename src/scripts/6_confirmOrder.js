@@ -5,11 +5,15 @@ basket.addNewProduct("2_porc","Côte de porc",19)
 basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
 // Ne pas toucher avant
 
-const productLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line')
+// const productLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line')
 const totalCostLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__lineTotalCost')
 const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
-// function createLine(){
+
+function createLine(){
+    const productLine = document.createElement('div')
+    productLine.classList.add('finishOrder__container__right__form__summary__summaryBox__line')
+
     const productName = document.createElement('div')
     productName.classList.add('finishOrder__container__right__form__summary__summaryBox__line__product')
 
@@ -49,6 +53,12 @@ const summaryBox = document.querySelector('.finishOrder__container__right__form_
     spec.appendChild(minus)
     spec.appendChild(quantity)
     spec.appendChild(more)
-// }
+}
 
-// createLine()
+createLine()
+createLine()
+createLine()
+
+// Vérifier que summaryBox n'est pas null (le js se charge sur toutes les pages donc faut pas lancer la fonction si on est pas sur la bonne page)
+    // Parcourir tout les produits du panier ( basket.getProductList() retourne un tableau des produits)
+        // Pour chaque produit lancer createLine()
