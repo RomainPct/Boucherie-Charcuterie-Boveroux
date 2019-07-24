@@ -18,8 +18,11 @@ function createLine(){
     const spec = document.createElement('div')
     spec.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec')
 
-    const price = document.createElement('div')
-    price.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__price')
+    const priceEuros = document.createElement('div')
+
+    const priceEurosSymbole = document.createElement('div')
+    priceEurosSymbole.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__price')
+    priceEurosSymbole.innerHTML = '€'
 
     const minus = document.createElement('a')
     minus.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__munis')
@@ -39,42 +42,30 @@ function createLine(){
     more.setAttribute('title', 'plus')
 
     const plusSymbole = document.createTextNode('+')
-    
-    let nom = document.createTextNode('nom')
-    let quantite = document.createTextNode('2')
-    let prix = document.createTextNode('prix')
-
-    price.appendChild(prix)
-    quantity.appendChild(quantite)
-    productName.appendChild(nom)
-    minus.appendChild(minusSymbole)
-    more.appendChild(plusSymbole)
 
     summaryBox.insertBefore(productLine, totalCostLine)
     productLine.appendChild(productName)
     productLine.appendChild(spec)
-    spec.appendChild(price)
+    spec.appendChild(priceEuros)
+    spec.appendChild(priceEurosSymbole)
     spec.appendChild(minus)
+    minus.appendChild(minusSymbole)
     spec.appendChild(quantity)
     spec.appendChild(more)
+    more.appendChild(plusSymbole)
 }
-
-createLine()
-createLine()
-createLine()
 
 // Vérifier que summaryBox n'est pas null (le js se charge sur toutes les pages donc faut pas lancer la fonction si on est pas sur la bonne page)
     // Parcourir tout les produits du panier ( basket.getProductList() retourne un tableau des produits)
         // Pour chaque produit lancer createLine()
-
 if(summaryBox != null){
-    basket.getProductList()
+    let tab = basket.getProductList()
     console.log(basket.getProductList())
 
-    for(let i = 0; i < basket.getProductList.length; i++){
-        console.log("ok")
+    for(let i in tab){
+        if(tab[i] != null){
+            createLine()
+            console.log('line create')
+        }
     }
-
-    basket.getProductList().forEach(createLine)
-
 }
