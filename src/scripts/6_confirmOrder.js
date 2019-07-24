@@ -10,8 +10,8 @@ const totalCostLine = document.querySelector('.finishOrder__container__right__fo
 const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
 // function createLine(){
-    const product = document.createElement('div')
-    product.classList.add('finishOrder__container__right__form__summary__summaryBox__line__product')
+    const productName = document.createElement('div')
+    productName.classList.add('finishOrder__container__right__form__summary__summaryBox__line__product')
 
     const spec = document.createElement('div')
     spec.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec')
@@ -40,10 +40,10 @@ const summaryBox = document.querySelector('.finishOrder__container__right__form_
 
     price.appendChild(prix)
     quantity.appendChild(quantite)
-    product.appendChild(nom)
+    productName.appendChild(nom)
 
     summaryBox.insertBefore(productLine, totalCostLine)
-    productLine.appendChild(product)
+    productLine.appendChild(productName)
     productLine.appendChild(spec)
     spec.appendChild(price)
     spec.appendChild(minus)
