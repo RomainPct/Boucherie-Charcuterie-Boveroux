@@ -9,16 +9,19 @@ const totalCostLine = document.querySelector('.finishOrder__container__right__fo
 const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
 function createLine(){
+
     const productLine = document.createElement('div')
     productLine.classList.add('finishOrder__container__right__form__summary__summaryBox__line')
 
     const productName = document.createElement('div')
     productName.classList.add('finishOrder__container__right__form__summary__summaryBox__line__product')
+    productName.innerHTML = arguments[1]
 
     const spec = document.createElement('div')
     spec.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec')
 
     const priceEuros = document.createElement('div')
+    priceEuros.innerHTML = arguments[2]
 
     const priceEurosSymbole = document.createElement('div')
     priceEurosSymbole.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__price')
@@ -34,6 +37,7 @@ function createLine(){
 
     const quantity = document.createElement('div')
     quantity.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
+    quantity.innerHTML = arguments[0]
 
     const more = document.createElement('a')
     more.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__more')
