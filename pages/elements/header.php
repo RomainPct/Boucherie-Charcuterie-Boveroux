@@ -50,7 +50,8 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="secondaryButton menuButton">Menu</a>
         </nav>
+        <a href="#" class="secondaryButton menuButton">Menu</a>
+        <div class="greyOpacity"></div>
     </div>
 </header> 
