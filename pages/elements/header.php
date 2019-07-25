@@ -1,7 +1,7 @@
 <header class="headerContainer">
     <div class="headerContainer__inside">
         <a href="/" title="Accueil élevage Boveroux et fils" class="headerContainer__inside__logo"></a>
-        <nav class="headerContainer__inside__cat">
+        <nav class="headerContainer__inside__cat subMenu">
             <div class="headerContainer__inside__cat__under">
                 <a href="../quisommesnous">Qui sommes-nous ?</a>
             </div>
@@ -50,6 +50,7 @@
                     </div>
                 </div>
             </div>
+            <a href="#" class="secondaryButton menuButton">Menu</a>
         </nav>
     </div>
 </header> 
