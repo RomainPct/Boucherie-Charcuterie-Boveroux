@@ -26,9 +26,13 @@ $c = new CandideCollectionItem ($productType,$productId);
             </div>
         </div>
         <img class="closeDetailedProduct" src="../assets/images/icones/cross.svg" alt="croix"> 
-        <div class="containerDetailedProducts__informationsDetailed__buttonDetailed">
-            <a title="Ajouter mon produit au panier" class="primaryButton buttonAddToBasket js_addToBasket" href="#">Ajouter au panier</a>
-            <a href="#" title="Nombre de produits à rajouter ou supprimer" class="primaryButton">- 2 +</a>
+        <div class="containerDetailedProducts__informationsDetailed__buttonDetailed productInBasket">
+            <a href="#" title="Ajouter mon produit au panier" class="primaryButton buttonAddToBasket js_addToBasket">Ajouter au panier</a>
+            <div class="addBasket">
+                <a href="#" class="js_minusButton" title="Diminuer le nombre de produits">-</a>
+                <p class="js_ProductAmount" title="Nombre de produits">2</p>
+                <a href="#" class="js_plusButton" title="Augmenter le nombre de produits">+</a>
+            </div>
         </div>
     </div>
 </div>
