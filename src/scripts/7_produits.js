@@ -80,3 +80,17 @@ function setPlusButtonsOnProductsPage(card){
 }
 
 setProductsPage()
+
+var cat = document.querySelectorAll('.catlist')
+var tertBtn = document.querySelector('a.tertiaryButton')
+var secBtn = document.querySelector('a.secondaryButton')
+
+
+
+cat.forEach(function (catlist) {
+    catlist.addEventListener("click",
+        function(e){
+                tertBtn.classList.replace('tertiaryButton', 'secondaryButton')
+        }
+    )
+})
