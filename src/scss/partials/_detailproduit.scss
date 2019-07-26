@@ -52,6 +52,9 @@
             transform: translateX(-50%);
             left: 75%;
             position: absolute;
+            .addBasket{     
+            transform: translateY(15px);
+            }
         }
     }
 }
