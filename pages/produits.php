@@ -18,12 +18,12 @@ $c5 = new CandideCollection('plats_cuisines');
         <h2>Nos produits</h2>
         <div class="prodSection__cat">
             <div class="catlist" id="catlistresp">
-                <a href="#" data-target="all" class="secondaryButton">Tous</a>
-                <a href="#" data-target="charcuterie" class="tertiaryButton">Charcuterie</a>
-                <a href="#" data-target="porc" class="tertiaryButton">Porc</a>
-                <a href="#" data-target="veau" class="tertiaryButton">Veau</a>
-                <a href="#" data-target="boeuf" class="tertiaryButton">Boeuf</a>
-                <a href="#" data-target="plats_cuisines" class="tertiaryButton">Plats cuisinés</a>
+                <a href="#" data-target="all" class="catBtn tertiaryButton">Tous</a>
+                <a href="#" data-target="charcuterie" class="catBtn tertiaryButton">Charcuterie</a>
+                <a href="#" data-target="porc" class="catBtn tertiaryButton">Porc</a>
+                <a href="#" data-target="veau" class="catBtn tertiaryButton">Veau</a>
+                <a href="#" data-target="boeuf" class="catBtn tertiaryButton">Boeuf</a>
+                <a href="#" data-target="plats_cuisines" class="catBtn tertiaryButton">Plats cuisinés</a>
             </div>
                 <a href="terminercommande" class="primaryButton" id="validResp">Valider ma commande</a>
         </div>
@@ -39,13 +39,12 @@ $c5 = new CandideCollection('plats_cuisines');
                         <p class="prodSectionList__product__contain__p2"><?php $c1->text('prix',$id)?></p>
                         <div class="addBasket">
                             <a href="#" class="js_minusButton">-</a>
-                            <p class="js_ProductAmount">3</p>
+                            <p class="js_ProductAmount">1</p>
                             <a href="#" class="js_plusButton">+</a>
                         </div>
                     </div>
                 </div>
                 <?php
-
             }
             ?>
             <?php
