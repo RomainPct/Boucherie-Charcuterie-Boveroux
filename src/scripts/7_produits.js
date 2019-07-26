@@ -36,6 +36,14 @@ function setButtonsOnProductsPage(){
     })
 }
 
+function addProductToBasketFromCard(card){
+    let id = card.getAttribute('data-productid'),
+        name = card.getAttribute('data-productname'),
+        price = card.getAttribute('data-productprice')
+    basket.addNewProduct(id,name,price)
+    updateProduct(id,basket.getProduct(id))
+}
+
 function setAddToBasketButtonsOnProductsPage(card){
     const addToBasketButton = card.querySelector('.js_addToBasket')
     if (addToBasketButton != null) {
@@ -69,14 +77,6 @@ function setPlusButtonsOnProductsPage(card){
             addProductToBasketFromCard(card)
         })
     }
-}
-
-function addProductToBasketFromCard(card){
-    let id = card.getAttribute('data-productid'),
-        name = card.getAttribute('data-productname'),
-        price = card.getAttribute('data-productid')
-    basket.addNewProduct(id,name,price)
-    updateProduct(id,basket.getProduct(id))
 }
 
 setProductsPage()

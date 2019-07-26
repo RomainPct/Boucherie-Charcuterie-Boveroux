@@ -8,7 +8,12 @@ $productId = $_GET["id"];
 $productType = $_GET["type"];
 $c = new CandideCollectionItem ($productType,$productId);
 ?>
-<div class="containerDetailedProducts" data-id="<?php echo $productId ?>" data-type="<?php echo $productType ?>">
+<div
+    class="containerDetailedProducts" id="detailedProduct"
+    data-id="<?php echo $productId ?>_<?php echo $productType ?>"
+    data-productname="<?php $c->text('nom_du_produit') ?>"
+    data-productprice="<?php $c->text('prix') ?>"
+    >
     <div class="containerDetailedProducts__informationsDetailed">
         <div class="containerDetailedProducts__informationsDetailed__imageDetailed">
             <img src="<?php $c->image("image_du_produit",[900,600]) ?>" alt="<?php $c->text("nom_du_produit")?> - Élevage Boveroux"> 
@@ -22,7 +27,7 @@ $c = new CandideCollectionItem ($productType,$productId);
         </div>
         <img class="closeDetailedProduct" src="../assets/images/icones/cross.svg" alt="croix"> 
         <div class="containerDetailedProducts__informationsDetailed__buttonDetailed">
-            <a title="Ajouter mon produit au panier" class="primaryButton buttonAddToBasket" href="#">Ajouter au panier</a>
+            <a title="Ajouter mon produit au panier" class="primaryButton buttonAddToBasket js_addToBasket" href="#">Ajouter au panier</a>
             <a href="#" title="Nombre de produits à rajouter ou supprimer" class="primaryButton">- 2 +</a>
         </div>
     </div>
