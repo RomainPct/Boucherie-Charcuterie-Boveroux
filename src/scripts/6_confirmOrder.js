@@ -76,7 +76,18 @@ if(summaryBox != null){
     }
 }
 
-// dans updatePrice() utiliser getTotalPrice()
+// Dans updatePrice() utiliser getTotalPrice()
+// function updatePrice(){
+//     let postTotalPrice = document.querySelector('#postTotalPrice')
+//     let tab = basket.getProductList()
 
-let postTotalPrice = document.querySelector('#postTotalPrice')
-postTotalPrice.innerHTML = 98
+//     for(let i in tab){
+//         if(tab[i] != null){
+//             getBasketTotalAmount(tab[i])
+//             console.log(getBasketTotalAmount())
+//         }
+//     }
+
+//     postTotalPrice.innerHTML = getBasketTotalAmount()
+// }
+// updatePrice()
