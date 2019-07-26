@@ -1,7 +1,8 @@
 basket.cleanBasket()
 basket.addNewProduct("0_boeuf","Steack",29)
-basket.addNewProduct("2_porc","Côte de porc",19)
-basket.addNewProduct("2_porc","Côte de porc",19)
+basket.addNewProduct("0_charcuterie","saucisson",19)
+basket.addNewProduct("1_charcuterie","cochon",19)
+basket.addNewProduct("1_charcuterie","cochon",19)
 basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
 // Ne pas toucher avant
 
