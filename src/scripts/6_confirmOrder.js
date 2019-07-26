@@ -8,20 +8,21 @@ basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
 const totalCostLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__lineTotalCost')
 const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
-function createLine(){
+function createLine(produit){
+    console.log(produit)
 
     const productLine = document.createElement('div')
     productLine.classList.add('finishOrder__container__right__form__summary__summaryBox__line')
 
     const productName = document.createElement('div')
     productName.classList.add('finishOrder__container__right__form__summary__summaryBox__line__product')
-    productName.innerHTML = arguments[1]
+    productName.innerHTML = produit[0]
 
     const spec = document.createElement('div')
     spec.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec')
 
     const priceEuros = document.createElement('div')
-    priceEuros.innerHTML = arguments[2]
+    priceEuros.innerHTML = produit[1]
 
     const priceEurosSymbole = document.createElement('div')
     priceEurosSymbole.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__price')
@@ -37,7 +38,7 @@ function createLine(){
 
     const quantity = document.createElement('div')
     quantity.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
-    quantity.innerHTML = arguments[0]
+    quantity.innerHTML = produit[2]
 
     const more = document.createElement('a')
     more.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__more')
@@ -68,8 +69,13 @@ if(summaryBox != null){
 
     for(let i in tab){
         if(tab[i] != null){
-            createLine()
+            createLine(tab[i])
             console.log('line create')
         }
     }
 }
+
+// dans updatePrice() utiliser getTotalPrice()
+
+let postTotalPrice = document.querySelector('#postTotalPrice')
+postTotalPrice.innerHTML = 98
