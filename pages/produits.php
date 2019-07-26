@@ -32,7 +32,7 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c1->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product  product all charcuterie" id="card_<?php echo $id ?>_charcuterie" data-productid="<?php echo $id ?>_charcuterie" data-productname="<?php $c2->text('nom_du_produit',$id) ?>" data-productprice="<?php $c2->text('prix',$id) ?>" >
+                <div class="prodSectionList__product  product all charcuterie" id="card_<?php echo $id ?>_charcuterie" data-productid="<?php echo $id ?>_charcuterie" data-productname="<?php $c1->text('nom_du_produit',$id) ?>" data-productprice="<?php $c1->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c1->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p1"><?php $c1->text('nom_du_produit',$id)?></p>
@@ -66,7 +66,7 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c3->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product product all veau" id="card_<?php echo $id ?>_veau" data-productid="<?php echo $id ?>_veau" data-productname="<?php $c2->text('nom_du_produit',$id) ?>" data-productprice="<?php $c2->text('prix',$id) ?>" >
+                <div class="prodSectionList__product product all veau" id="card_<?php echo $id ?>_veau" data-productid="<?php echo $id ?>_veau" data-productname="<?php $c3->text('nom_du_produit',$id) ?>" data-productprice="<?php $c3->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c3->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c3->text('nom_du_produit',$id)?></p>
@@ -81,7 +81,7 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c4->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product product all boeuf" id="card_<?php echo $id ?>_boeuf" data-productid="<?php echo $id ?>_boeuf" data-productname="<?php $c2->text('nom_du_produit',$id) ?>" data-productprice="<?php $c2->text('prix',$id) ?>" >
+                <div class="prodSectionList__product product all boeuf" id="card_<?php echo $id ?>_boeuf" data-productid="<?php echo $id ?>_boeuf" data-productname="<?php $c4->text('nom_du_produit',$id) ?>" data-productprice="<?php $c4->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c4->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c4->text('nom_du_produit',$id)?></p>
