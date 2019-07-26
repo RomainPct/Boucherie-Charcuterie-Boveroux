@@ -21,7 +21,10 @@ $c = new CandideCollectionItem ($productType,$productId);
         <div class="containerDetailedProducts__informationsDetailed__textDetailed">
             <div class="containerDetailedProducts__informationsDetailed__textDetailed__descriptionDetailed">
                 <h2><?php echo str_replace("_"," ",$productType) ?></h2>
-                <h3><?php $c->text("nom_du_produit")?></h3>
+                <div class= "containerDetailedProducts__informationsDetailed__textDetailed__descriptionDetailed__priceProduct">
+                    <h3><?php $c->text("nom_du_produit")?></h3>
+                    <h4>25€</h4>
+                </div>
                 <p><?php $c->text("description_du_produit",false) ?></p>
             </div>
         </div>

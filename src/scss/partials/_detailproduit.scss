@@ -38,6 +38,13 @@
             &__descriptionDetailed{
                 width: auto;
                 margin: 0px 30px;
+                &__priceProduct{
+                    display: flex;
+                    align-items: baseline;
+                    h4{
+                        margin-left: 10px;
+                    }
+                }
                 h2{
                     color: #3D3339;
                     position: absolute;
