@@ -80,7 +80,7 @@ function setPlusButtonsOnProductsPage(card){
 }
 
 setProductsPage()
-
+/*
 var cat = document.querySelectorAll('.catlist')
 var catBtn = document.querySelector('.catBtn')
 var tertBtn = document.querySelector('a.tertiaryButton')
@@ -96,3 +96,4 @@ cat.forEach(function (a) {
         }
     )
 }) 
+*/
