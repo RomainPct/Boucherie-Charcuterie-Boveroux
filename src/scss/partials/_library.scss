@@ -61,9 +61,7 @@ a.tertiaryButton.selected, button.tertiaryButton.selected{
 }
 
 .addBasket{
-    margin-left: 60px;
-    margin-right: 60px;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     background-color: $color-primary;
@@ -79,11 +77,10 @@ a.tertiaryButton.selected, button.tertiaryButton.selected{
         text-decoration: none;
         color: $background-color;
         cursor: pointer;
-        padding-right: 15px;
-        padding-left: 15px;
     }
     & p{
         color: $background-color;
+        padding: 0px 30px;
     }
 }
 

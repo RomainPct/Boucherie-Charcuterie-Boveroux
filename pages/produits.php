@@ -32,15 +32,15 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c1->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product  product all charcuterie" id="<?php echo $id ?>_charcuterie" data-productid="<?php echo $id ?>" data-producttype="charcuterie">
+                <div class="prodSectionList__product  product all charcuterie" id="card_<?php echo $id ?>_charcuterie" data-productid="<?php echo $id ?>_charcuterie" data-productname="<?php $c1->text('nom_du_produit',$id) ?>" data-productprice="<?php $c1->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c1->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p1"><?php $c1->text('nom_du_produit',$id)?></p>
                         <p class="prodSectionList__product__contain__p2"><?php $c1->text('prix',$id)?></p>
                         <div class="addBasket">
-                            <a href="#">-</a>
-                            <p>3</p>
-                            <a href="#">+</a>
+                            <a href="#" class="js_minusButton">-</a>
+                            <p class="js_ProductAmount">3</p>
+                            <a href="#" class="js_plusButton">+</a>
                         </div>
                     </div>
                 </div>
@@ -51,12 +51,12 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c2->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product product all porc" id="<?php echo $id ?>_porc" data-productid="<?php echo $id ?>" data-producttype="porc">
+                <div class="prodSectionList__product product all porc" id="card_<?php echo $id ?>_porc" data-productid="<?php echo $id ?>_porc" data-productname="<?php $c2->text('nom_du_produit',$id) ?>" data-productprice="<?php $c2->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c2->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
-                        <p class="prodSectionList__product__contain__p"><?php $c2->text('nom_du_produit',$id)?></p>
+                        <p class="prodSectionList__product__contain__p js_productName"><?php $c2->text('nom_du_produit',$id)?></p>
                         <p class="prodSectionList__product__contain__p"><?php $c2->text('prix',$id)?></p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                        <a href="" class="primaryButton js_addToBasket" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
                 <?php
@@ -66,12 +66,12 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c3->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product product all veau" id="<?php echo $id ?>_veau" data-productid="<?php echo $id ?>" data-producttype="veau">
+                <div class="prodSectionList__product product all veau" id="card_<?php echo $id ?>_veau" data-productid="<?php echo $id ?>_veau" data-productname="<?php $c3->text('nom_du_produit',$id) ?>" data-productprice="<?php $c3->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c3->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c3->text('nom_du_produit',$id)?></p>
                         <p class="prodSectionList__product__contain__p"><?php $c3->text('prix',$id)?></p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                        <a href="" class="primaryButton js_addToBasket" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
                 <?php
@@ -81,12 +81,12 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c4->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product product all boeuf" id="<?php echo $id ?>_boeuf" data-productid="<?php echo $id ?>" data-producttype="boeuf">
+                <div class="prodSectionList__product product all boeuf" id="card_<?php echo $id ?>_boeuf" data-productid="<?php echo $id ?>_boeuf" data-productname="<?php $c4->text('nom_du_produit',$id) ?>" data-productprice="<?php $c4->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c4->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c4->text('nom_du_produit',$id)?></p>
                         <p class="prodSectionList__product__contain__p"><?php $c4->text('prix',$id)?></p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                        <a href="" class="primaryButton js_addToBasket" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
                 <?php
@@ -96,12 +96,12 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c5->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product product all plats_cuisines" id="<?php echo $id ?>_plats_cuisines" data-productid="<?php echo $id ?>" data-producttype="plats_cuisines">
+                <div class="prodSectionList__product product all plats_cuisines" id="card_<?php echo $id ?>_plats_cuisines" data-productid="<?php echo $id ?>_plats_cuisines" data-productname="<?php $c2->text('nom_du_produit',$id) ?>" data-productprice="<?php $c2->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c5->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c5->text('nom_du_produit',$id)?></p>
                         <p class="prodSectionList__product__contain__p"><?php $c5->text('prix',$id)?></p>
-                        <a href="" class="primaryButton" id="whiteButton">Ajouter au panier</a>
+                        <a href="" class="primaryButton js_addToBasket" id="whiteButton">Ajouter au panier</a>
                     </div>
                 </div>
                 <?php

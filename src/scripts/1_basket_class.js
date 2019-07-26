@@ -38,10 +38,10 @@ class Basket {
         // Diminuer la quantité du produit dans le panier 
         if (this.basket[id]!= null){
             this.basket[id][2] -= 1
-        } 
-        // Si nouvelle quantité = 0 -> supprimer du panier
-        if(this.basket[id][2]== 0){
-            delete this.basket[id]
+            // Si nouvelle quantité = 0 -> supprimer du panier
+            if(this.basket[id][2] == 0){
+                delete this.basket[id]
+            }
         } 
         // Enregistrer en localsorage le nouveau panier
         this.saveBasketOnLocalStorage()
@@ -70,6 +70,10 @@ class Basket {
 
     getProductList(){
         return this.basket // Retourne un tableau des éléments du panier
+    }
+
+    getProduct(id){
+        return this.basket[id]
     }
 
 }
