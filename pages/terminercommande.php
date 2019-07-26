@@ -34,7 +34,7 @@ $c = new CandidePage('terminer_ma_commande')
                     </div> -->
 
                     <div class="finishOrder__container__right__form__summary__summaryBox__lineTotalCost">
-                        <div>Total : 98€</div>
+                        <div>Total : <span id="postTotalPrice"></span>€</div>
                     </div>
                 </div>
             </div>
