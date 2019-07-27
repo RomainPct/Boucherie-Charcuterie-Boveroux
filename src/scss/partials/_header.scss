@@ -92,6 +92,18 @@
     display: none;
 }
 
-.basketIsEmpty{
+.hideContentBasket{
     display: none;
+}
+
+.basketIsEmpty .menuBasketContents{
+    display: none;
+}
+
+.basketIsEmpty .textEmpty{
+    display: block;
+}
+
+.textEmpty{
+    display:none;
 }

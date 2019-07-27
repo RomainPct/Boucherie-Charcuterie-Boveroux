@@ -2,9 +2,9 @@
     <div class="headerContainer__inside">
         <a href="/" title="Accueil élevage Boveroux et fils" class="headerContainer__inside__logo"></a>
         <nav class="headerContainer__inside__cat subMenu">
-            <div class="headerContainer__inside__cat__menuBasketEmpty basketIsEmpty">
+            <div class="headerContainer__inside__cat__menuBasketEmpty hideContentBasket basketIsEmpty">
                 <h3>Mon panier</h3>
-                <p class="basketIsEmpty">Vous n’avez pas encore ajouter de produits à votre panier</p>
+                <p class="textEmpty">Vous n’avez pas encore ajouter de produits à votre panier</p>
                 <div class="headerContainer__inside__cat__menuBasketEmpty__menuBasketContents">
                     <div class="headerContainer__inside__cat__menuBasketEmpty__menuBasketContents__productsInfo">
                         <div class="headerContainer__inside__cat__menuBasketEmpty__menuBasketContents__productsInfo__priceDetailed">

@@ -3,9 +3,9 @@ let basketEmpty = document.querySelector(".headerContainer__inside__cat__menuBas
 let basketContents = document.querySelector(".headerContainer__inside__cat__menuBasketContents")
 
 myBasket.addEventListener('click', () =>{
-    if(basketEmpty.classList.contains("basketIsEmpty")){ 
-        basketEmpty.classList.remove("basketIsEmpty")
+    if(basketEmpty.classList.contains("hideContentBasket")){ 
+        basketEmpty.classList.remove("hideContentBasket")
     } else{
-        basketEmpty.classList.add("basketIsEmpty")
+        basketEmpty.classList.add("hideContentBasket")
     }
 })
