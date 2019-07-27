@@ -17,7 +17,6 @@ function createLine(produit){
     const productLine = document.createElement('div')
     productLine.classList.add('finishOrder__container__right__form__summary__summaryBox__line')
     summaryBox.insertBefore(productLine, totalCostLine)
-    productLine.appendChild(spec)
 
     const productName = document.createElement('div')
     productName.classList.add('finishOrder__container__right__form__summary__summaryBox__line__product')
@@ -66,67 +65,95 @@ function createLine(produit){
 
 function updateTotalPriceSummary(){
     // Sélectionner le span en question
+    let postTotalPrice = document.querySelector('#postTotalPrice')
     // Mettre getBasketTotalAmount() dans le span
+    postTotalPrice.appendChild(getBasketTotalAmount())
 }
 
 function setSummaryPlusButton(button,line){
+    const more = button.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__more')
     // Ajouter le event listener sur le bouton
+    more.addEventListener(
         // On click
-        // Récupérer l'id, le nom et le prix du produit
-        // l'ajouter dans le panier -> basket.addNewProduct(id,name,price)
-        // Mettre à jour la quantité du produit en question
-        // Update le prix total -> updateTotalPriceSummary()
+        "click",
+        function(){
+            // Récupérer l'id, le nom et le prix du produit
+            let id = line.getAttribute('data-productid')
+            let name = line.getAttribute('data-productname')
+            let price = line.getAttribute('data-productprice')
+
+            // l'ajouter dans le panier -> basket.addNewProduct(id,name,price)
+            basket.addNewProduct(id,name,price)
+
+            // Mettre à jour la quantité du produit en question
+            updateProduct(id,basket.getProduct(id))
+
+            // Update le prix total -> updateTotalPriceSummary()
+            updateTotalPriceSummary()
+        }
+    )
 }
+
 function setSummaryMinusButton(button,line){
+    const minus = button.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__minus')
     // Ajouter le event listener sur le bouton
+    minus.addEventListener(
         // On click
-        // Si sa nouvelle quantité actuelle -1 est égale à 0
-            // Demander confirmation de suppression
-                // Si oui -> appeler fonction reallyReduceProductAmount(button,line)
-        // Sinon
-            // Appeler fonction reallyReduceProductAmount(button,line)
+        "click",
+        function(){
+            let id = line.getAttribute('data-productid')
+            // Si sa nouvelle quantité actuelle -1 est égale à 0
+            if(basket[id]-1 == 0){
+                // Demander confirmation de suppression
+                if(confirm('Voulez-vous supprimer ce porduit de votre panier ?')){
+                    // Si oui -> appeler fonction reallyReduceProductAmount(button,line)
+                    reallyReduceProductAmount(button,line)
+                }
+            }
+            // Sinon
+            else{
+                // Appeler fonction reallyReduceProductAmount(button,line)
+                reallyReduceProductAmount(button,line)
+            }
+        }
+    )
 }
 
 function reallyReduceProductAmount(button,line){
     // Récupérer l'id du produit
+    let id = line.getAttribute('data-productid')
+
     // Diminuer sa quantité dans le panier -> basket.removeAProduct(id)
+    basket.removeAProduct(id)
+
     // Si nouvelle quantité == 0
+    if(basket[id] == 0){
         // Supprimer la ligne
+        reallyReduceProductAmount(button,line)
+    }
     // Sinon
+    else{
         // Mettre à jour la quantité
+        updateProduct(id,basket.getProduct(id))
+    }
+
     // Update le prix total -> updateTotalPriceSummary()
+    updateTotalPriceSummary()
 }
 
 // Vérifier que summaryBox n'est pas null (le js se charge sur toutes les pages donc faut pas lancer la fonction si on est pas sur la bonne page)
     // Parcourir tout les produits du panier ( basket.getProductList() retourne un tableau des produits)
         // Pour chaque produit lancer createLine()
-function setConfirmOrderPage() {
-    if (summaryBox != null) {
-        let tab = basket.getProductList();
-        console.log(basket.getProductList());
-        for (let i in tab) {
-            if (tab[i] != null) {
-                createLine(tab[i]);
-                console.log('line create');
+function setConfirmOrderPage(){
+    if(summaryBox != null){
+        let tab = basket.getProductList()
+        console.log(basket.getProductList())
+        for(let i in tab){
+            if(tab[i] != null){
+                createLine(tab[i])
+                console.log('line create')
             }
         }
     }
 }
 setConfirmOrderPage()
-
-
-// Dans updatePrice() utiliser getTotalPrice()
-// function updatePrice(){
-//     let postTotalPrice = document.querySelector('#postTotalPrice')
-//     let tab = basket.getProductList()
-
-//     for(let i in tab){
-//         if(tab[i] != null){
-//             getBasketTotalAmount(tab[i])
-//             console.log(getBasketTotalAmount())
-//         }
-//     }
-
-//     postTotalPrice.innerHTML = getBasketTotalAmount()
-// }
-// updatePrice()
