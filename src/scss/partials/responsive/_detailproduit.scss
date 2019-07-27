@@ -47,6 +47,12 @@
         &__buttonDetailed{
             position: static;
             transform: none;
+            .addBasket{
+                height: 5vw;
+                a{
+                    padding: 0px;
+                }
+            }
         }
     }
 }
