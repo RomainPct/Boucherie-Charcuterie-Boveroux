@@ -17,10 +17,10 @@ function updateProduct(id,product){
     console.log("UPDATE PRODUCT : " + id + " ===> "+ product)
     if (card != null) {
         if (product == null){
-            // Afficher le bouton ajouter au panier
+            card.classList.remove('productInBasket')
         } else {
             const amount = card.querySelector(".js_ProductAmount")
-            // Afficher le bouton +/-
+            card.classList.add('productInBasket')
             if (amount != null) {
                 amount.innerHTML = product[2]
             }

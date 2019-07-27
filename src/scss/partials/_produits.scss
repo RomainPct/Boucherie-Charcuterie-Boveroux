@@ -15,6 +15,7 @@
         display: flex;
         flex-wrap: wrap;
         &__product{
+            cursor: pointer;
             margin: 30px;
             text-align: center;
             width: calc(25% - 60px);
@@ -40,6 +41,6 @@
 }
 
 
-#whiteButton{
+.primaryButton.whiteButton{
     background-color: $text-color;
 }

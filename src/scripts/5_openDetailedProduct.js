@@ -4,9 +4,10 @@ function setOpenableProducts(){
     const products = document.querySelectorAll('.prodSectionList__product')
     products.forEach(function(product){
         product.addEventListener('click',function(){
-            const id = product.getAttribute("data-productid"),
+            const id = product.getAttribute("data-productrealid"),
                 type = product.getAttribute("data-producttype"),
                 url = "/pages/detailproduit.php?id="+id+"&type="+type
+            console.log(url)
             displayProduct(url)
         })
     })
