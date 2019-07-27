@@ -18,7 +18,7 @@ $c5 = new CandideCollection('plats_cuisines');
         <h2>Nos produits</h2>
         <div class="prodSection__cat">
             <div class="catlist" id="catlistresp">
-                <a href="#" data-target="all" class="catBtn tertiaryButton">Tous</a>
+                <a href="#" data-target="all" class="catBtn secondaryButton">Tous</a>
                 <a href="#" data-target="charcuterie" class="catBtn tertiaryButton">Charcuterie</a>
                 <a href="#" data-target="porc" class="catBtn tertiaryButton">Porc</a>
                 <a href="#" data-target="veau" class="catBtn tertiaryButton">Veau</a>
