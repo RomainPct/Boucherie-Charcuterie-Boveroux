@@ -96,12 +96,11 @@
     display: none;
 }
 
-.basketIsEmpty .menuBasketContents{
-    display: none;
-}
-
-.basketIsEmpty .textEmpty{
+.basketIsEmpty .textEmpty {
     display: block;
+}
+.basketIsEmpty .headerContainer__inside__cat__menuBasketEmpty__menuBasketContents{
+    display: none;
 }
 
 .textEmpty{
