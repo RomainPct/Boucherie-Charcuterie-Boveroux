@@ -80,9 +80,11 @@ function setPlusButtonsOnProductsPage(card){
 }
 
 setProductsPage()
-/*
+
+//Selection & changement de bouton des catégories
+
 var cat = document.querySelectorAll('.catlist')
-var catBtn = document.querySelector('.catBtn')
+var catBtn = document.querySelectorAll('.catBtn')
 var tertBtn = document.querySelector('a.tertiaryButton')
 var secBtn = document.querySelector('a.secondaryButton')
 
@@ -91,8 +93,28 @@ var secBtn = document.querySelector('a.secondaryButton')
 cat.forEach(function (a) {
     a.addEventListener("click",
         function(e){
-                tertBtn.classList.replace('secondaryButton', 'tertiaryButton')
-                tertBtn.classList.replace('tertiaryButton', 'secondaryButton')
+            catBtn.forEach(function (tertiaryButton){
+                tertiaryButton.addEventListener("click",
+                function(e){
+                    secBtn.classList.replace('secondaryButton', 'tertiaryButton')
+                    tertBtn.classList.replace('tertiaryButton', 'secondaryButton')
+                }
+            )
+            }
+        )}
+    )
+}) 
+
+/*
+//changement de bouton ajouter au panier
+var btnProd = document.querySelectorAll('.js_addToBasket')
+var addBasket = document.querySelectorAll('.addBasket')
+
+
+btnProd.forEach(function (js_addToBasket) {
+    js_addToBasket.addEventListener("click",
+        function(e){
+                addBasket.classList.add('visible')
         }
     )
 }) 
