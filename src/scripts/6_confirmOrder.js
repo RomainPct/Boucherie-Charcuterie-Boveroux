@@ -11,11 +11,14 @@ basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
 const totalCostLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__lineTotalCost')
 const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
-function createLine(produit){
+function createLine(id,produit){
     console.log(produit)
 
     const productLine = document.createElement('div')
     productLine.classList.add('finishOrder__container__right__form__summary__summaryBox__line')
+    productLine.setAttribute('data-productid',id)
+    productLine.setAttribute('data-productname',produit[0])
+    productLine.setAttribute('data-productprice',produit[1])
     summaryBox.insertBefore(productLine, totalCostLine)
 
     const productName = document.createElement('div')
@@ -66,14 +69,12 @@ function createLine(produit){
 function updateTotalPriceSummary(){
     // Sélectionner le span en question
     let postTotalPrice = document.querySelector('#postTotalPrice')
-    // Mettre getBasketTotalAmount() dans le span
-    postTotalPrice.appendChild(getBasketTotalAmount())
+    postTotalPrice.innerHTML = basket.getTotalPrice()
 }
 
 function setSummaryPlusButton(button,line){
-    const more = button.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__more')
     // Ajouter le event listener sur le bouton
-    more.addEventListener(
+    button.addEventListener(
         // On click
         "click",
         function(){
@@ -95,9 +96,8 @@ function setSummaryPlusButton(button,line){
 }
 
 function setSummaryMinusButton(button,line){
-    const minus = button.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__minus')
     // Ajouter le event listener sur le bouton
-    minus.addEventListener(
+    button.addEventListener(
         // On click
         "click",
         function(){
@@ -150,7 +150,7 @@ function setConfirmOrderPage(){
         console.log(basket.getProductList())
         for(let i in tab){
             if(tab[i] != null){
-                createLine(tab[i])
+                createLine(i,tab[i])
                 console.log('line create')
             }
         }
