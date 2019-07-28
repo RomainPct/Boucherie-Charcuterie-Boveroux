@@ -1,7 +1,5 @@
 function detailedProductOpened(){ // Appelé automatiquement à l'ouverture d'un produit
     // Appeler les fonctions à lancer lors de l'affichage d'un prdouit détaillé ici
-    updateDetailedProductPage()
-    setButtonsOnDetailedProductPage()
     const card = document.querySelector('#detailedProduct')
     if (card != null) {
         updateDetailedProductPage(card)
@@ -11,11 +9,11 @@ function detailedProductOpened(){ // Appelé automatiquement à l'ouverture d'un
 
 function updateDetailedProductPage(card){
     let id = card.getAttribute('data-id'),
-        product = basket.getProduct(id)
+        product = basket.getProduct(id),
+        showButtonBasket = document.querySelector(".containerDetailedProducts__informationsDetailed__buttonDetailed")
     if (product == null){
         // Le produit n'est pas dans le panier donc ->
         // Afficher le bouton ajouter au panier
-        let showButtonBasket = document.querySelector(".containerDetailedProducts__informationsDetailed__buttonDetailed")
         showButtonBasket.classList.remove("productInBasket")
     } else {
         // Afficher le bouton +/i
@@ -41,15 +39,14 @@ function addDetailedProductToBasketFromCard(card){
     // ajouter au panier
     basket.addNewProduct(productId, productName, productPrice)
     // update la quantité (en appelant la fonction qui existe pour ça)
+    updateDetailedProductPage(card)
 }
 
 function setAddToBasketButtonOnDetailedProductPage(card){
     const addToBasketButton = card.querySelector('.js_addToBasket')
     if (addToBasketButton != null) {
-        // Ajouter un event listener
         addToBasketButton.addEventListener('click', () =>{
-            // Appeler addProductToBasketFromCard(card)
-            addProductToBasketFromCard(card)
+            addDetailedProductToBasketFromCard(card)
         })
     }
 }
@@ -64,7 +61,7 @@ function setMinusButtonOnDetailedProductPage(card){
             // diminuer la quantité
                 //basket.reduceProductAmount(id)
             // update la quantité (en appelant la fonction qui existe pour ça)
-
+            addDetailedProductToBasketFromCard(card)
         })
     }
 }
@@ -72,10 +69,8 @@ function setMinusButtonOnDetailedProductPage(card){
 function setPlusButtonOnDetailedProductPage(card){
     const plusButton = card.querySelector('.js_plusButton')
     if (plusButton != null) {
-        // Ajouter un event listener
         plusButton.addEventListener('click', () => {
-            // Appeler addProductToBasketFromCard(card)
-            addProductToBasketFromCard(card)
+            addDetailedProductToBasketFromCard(card)
         })
     }
 }
