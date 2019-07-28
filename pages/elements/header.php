@@ -51,6 +51,6 @@
             </div>
         </nav>
         <a href="#" class="secondaryButton menuButton">Menu</a>
-        <div class="greyOpacity"></div>
+        <div class="greyOpacity hiddenOpac"></div>
     </div>
 </header> 
