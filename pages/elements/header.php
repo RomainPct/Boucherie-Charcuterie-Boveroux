@@ -40,6 +40,9 @@
                     </div>
                 </div>
             </div>
+            <div class="headerContainer__inside__cat__under underHidden">
+                <a href="../accueil" class="tertiaryButton">Accueil</a>
+            </div>
             <div class="headerContainer__inside__cat__under">
                 <a href="../quisommesnous" class="tertiaryButton">Qui sommes-nous ?</a>
             </div>
@@ -51,6 +54,6 @@
             </div>
         </nav>
         <a href="#" class="secondaryButton menuButton">Menu</a>
-        <div class="greyOpacity"></div>
+        <div class="greyOpacity hiddenOpac"></div>
     </div>
 </header> 

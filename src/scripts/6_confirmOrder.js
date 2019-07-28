@@ -72,28 +72,12 @@ function updateTotalPriceSummary(){
     postTotalPrice.innerHTML = basket.getTotalPrice()
 }
 
-function updateQuantity(id,produit){
-    const ligne = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line'+id)
-    
-    if (ligne != null) {
-        if (produit == null){
-            // Afficher le bouton ajouter au panier
-        } else {
-            const quantity = ligne.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
-            // Afficher le bouton +/-
-            if (quantity != null) {
-                quantity.innerHTML = produit[2]
-            }
-        }
-    }
-}
-
 function setSummaryPlusButton(button,line){
     // Ajouter le event listener sur le bouton
     button.addEventListener(
         // On click
         "click",
-        function(){
+        function(produit){
             // Récupérer l'id, le nom et le prix du produit
             let id = line.getAttribute('data-productid')
             let name = line.getAttribute('data-productname')
@@ -104,7 +88,14 @@ function setSummaryPlusButton(button,line){
 
             // Mettre à jour la quantité du produit en question
             updateProduct(id,basket.getProduct(id))
-            updateQuantity(id,basket.getProduct(id))
+
+            if (line != null) {
+                const quantity = line.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
+                if (quantity != null) {
+                    quantity.innerHTML = produit[2]
+                }
+            }
+
             // Update le prix total -> updateTotalPriceSummary()
             updateTotalPriceSummary()
         }
@@ -116,10 +107,11 @@ function setSummaryMinusButton(button,line){
     button.addEventListener(
         // On click
         "click",
-        function(){
+        function(produit){
             let id = line.getAttribute('data-productid')
+            updateProduct(id,basket.removeAProduct(id))
             // Si sa nouvelle quantité actuelle -1 est égale à 0
-            if(id[2]-1 == 0){
+            if((produit[2] - 1) == 0){
                 // Demander confirmation de suppression
                 if(confirm('Voulez-vous supprimer ce porduit de votre panier ?')){
                     // Si oui -> appeler fonction reallyReduceProductAmount(button,line)
