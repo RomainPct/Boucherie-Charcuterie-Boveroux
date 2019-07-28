@@ -7,7 +7,6 @@ include_once "../Candide.php";
 $productId = $_GET["id"];
 $productType = $_GET["type"];
 $c = new CandideCollectionItem ($productType,$productId);
-var_dump($c);
 ?>
 <div
     class="containerDetailedProducts" id="detailedProduct"

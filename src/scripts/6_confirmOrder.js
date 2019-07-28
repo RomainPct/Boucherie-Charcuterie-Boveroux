@@ -73,29 +73,16 @@ function updateTotalPriceSummary(){
 }
 
 function setSummaryPlusButton(button,line){
-    // Ajouter le event listener sur le bouton
-    button.addEventListener(
-        // On click
-        "click",
-        function(produit){
+    button.addEventListener( "click", function(e){
+            e.preventDefault()
             // Récupérer l'id, le nom et le prix du produit
             let id = line.getAttribute('data-productid')
             let name = line.getAttribute('data-productname')
             let price = line.getAttribute('data-productprice')
-
             // l'ajouter dans le panier -> basket.addNewProduct(id,name,price)
             basket.addNewProduct(id,name,price)
-
             // Mettre à jour la quantité du produit en question
-            updateProduct(id,basket.getProduct(id))
-
-            if (line != null) {
-                const quantity = line.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
-                if (quantity != null) {
-                    quantity.innerHTML = produit[2]
-                }
-            }
-
+            updateProductOnSummary(line,basket.getProduct(id))
             // Update le prix total -> updateTotalPriceSummary()
             updateTotalPriceSummary()
         }
@@ -103,50 +90,40 @@ function setSummaryPlusButton(button,line){
 }
 
 function setSummaryMinusButton(button,line){
-    // Ajouter le event listener sur le bouton
-    button.addEventListener(
-        // On click
-        "click",
-        function(produit){
+    button.addEventListener("click", function(e){
+            e.preventDefault()
             let id = line.getAttribute('data-productid')
-            updateProduct(id,basket.removeAProduct(id))
+            let produit = basket.getProduct(id)
             // Si sa nouvelle quantité actuelle -1 est égale à 0
             if((produit[2] - 1) == 0){
-                // Demander confirmation de suppression
                 if(confirm('Voulez-vous supprimer ce porduit de votre panier ?')){
-                    // Si oui -> appeler fonction reallyReduceProductAmount(button,line)
-                    reallyReduceProductAmount(button,line)
+                    reallyReduceProductAmount(line,produit)
                 }
-            }
-            // Sinon
-            else{
-                // Appeler fonction reallyReduceProductAmount(button,line)
-                reallyReduceProductAmount(button,line)
+            } else {
+                reallyReduceProductAmount(line,produit)
             }
         }
     )
 }
 
-function reallyReduceProductAmount(button,line){
+function reallyReduceProductAmount(line, product){
     // Récupérer l'id du produit
     let id = line.getAttribute('data-productid')
-
     // Diminuer sa quantité dans le panier -> basket.removeAProduct(id)
     basket.removeAProduct(id)
-
     // Si nouvelle quantité == 0
     if(basket[id] == 0){
-        // Supprimer la ligne
-        reallyReduceProductAmount(button,line)
+        // Supprimer la ligne visuellement
+    } else {
+        updateProductOnSummary(line,product)
     }
-    // Sinon
-    else{
-        // Mettre à jour la quantité
-        updateProduct(id,basket.getProduct(id))
-    }
-
     // Update le prix total -> updateTotalPriceSummary()
     updateTotalPriceSummary()
+}
+
+function updateProductOnSummary(line,product){
+    let amountDiv = line.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
+    amountDiv.innerText = product[2]
 }
 
 // Vérifier que summaryBox n'est pas null (le js se charge sur toutes les pages donc faut pas lancer la fonction si on est pas sur la bonne page)
@@ -154,13 +131,9 @@ function reallyReduceProductAmount(button,line){
         // Pour chaque produit lancer createLine()
 function setConfirmOrderPage(){
     if(summaryBox != null){
-        let tab = basket.getProductList()
-        console.log(basket.getProductList())
-        for(let i in tab){
-            if(tab[i] != null){
-                createLine(i,tab[i])
-                console.log('line create')
-            }
+        let products = basket.getProductList()
+        for(let i in products){
+            createLine(i,products[i])
         }
     }
 }
