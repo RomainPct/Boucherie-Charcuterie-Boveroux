@@ -106,14 +106,16 @@ function setSummaryMinusButton(button,line){
     )
 }
 
-function reallyReduceProductAmount(line, product){
+function reallyReduceProductAmount(line,product){
     // Récupérer l'id du produit
     let id = line.getAttribute('data-productid')
     // Diminuer sa quantité dans le panier -> basket.removeAProduct(id)
     basket.removeAProduct(id)
+    updateProductOnSummary(line,product)
     // Si nouvelle quantité == 0
-    if(basket[id] == 0){
+    if(product[2] == 0){
         // Supprimer la ligne visuellement
+        line.style.display = 'none'
     } else {
         updateProductOnSummary(line,product)
     }

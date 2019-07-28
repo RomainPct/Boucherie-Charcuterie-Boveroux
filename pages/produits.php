@@ -25,7 +25,7 @@ $c5 = new CandideCollection('plats_cuisines');
                 <a href="#" data-target="boeuf" class="catBtn tertiaryButton">Boeuf</a>
                 <a href="#" data-target="plats_cuisines" class="catBtn tertiaryButton">Plats cuisinés</a>
             </div>
-                <a href="terminercommande" class="primaryButton" id="validResp">Valider ma commande</a>
+                <a href="terminercommande" class="primaryButton" id="js_validateOrderOurProducts">Valider ma commande</a>
         </div>
         <div class="prodSectionList">
 
@@ -40,9 +40,9 @@ $c5 = new CandideCollection('plats_cuisines');
                         <div>
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton">Ajouter au panier</a>
                             <div class="addBasket">
-                                <a href="#" class="js_minusButton" title="Diminuer le nombre de produits">-</a>
+                                <a href="#" class="tertiaryButton white js_minusButton" title="Diminuer le nombre de produits">-</a>
                                 <p class="js_ProductAmount" title="Nombre de produits">2</p>
-                                <a href="#" class="js_plusButton" title="Augmenter le nombre de produits">+</a>
+                                <a href="#" class="tertiaryButton white js_plusButton" title="Augmenter le nombre de produits">+</a>
                             </div>
                         </div>
                     </div>
@@ -61,9 +61,9 @@ $c5 = new CandideCollection('plats_cuisines');
                         <div>
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton">Ajouter au panier</a>
                             <div class="addBasket">
-                                <a href="#" class="js_minusButton" title="Diminuer le nombre de produits">-</a>
+                                <a href="#" class="tertiaryButton white js_minusButton" title="Diminuer le nombre de produits">-</a>
                                 <p class="js_ProductAmount" title="Nombre de produits">2</p>
-                                <a href="#" class="js_plusButton" title="Augmenter le nombre de produits">+</a>
+                                <a href="#" class="tertiaryButton white js_plusButton" title="Augmenter le nombre de produits">+</a>
                             </div>
                         </div>
                     </div>
@@ -83,9 +83,9 @@ $c5 = new CandideCollection('plats_cuisines');
                         <div>
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton">Ajouter au panier</a>
                             <div class="addBasket">
-                                <a href="#" class="js_minusButton" title="Diminuer le nombre de produits">-</a>
+                                <a href="#" class="tertiaryButton white js_minusButton" title="Diminuer le nombre de produits">-</a>
                                 <p class="js_ProductAmount" title="Nombre de produits">2</p>
-                                <a href="#" class="js_plusButton" title="Augmenter le nombre de produits">+</a>
+                                <a href="#" class="tertiaryButton white js_plusButton" title="Augmenter le nombre de produits">+</a>
                             </div>
                         </div>
                     </div>
@@ -105,9 +105,9 @@ $c5 = new CandideCollection('plats_cuisines');
                         <div>
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton">Ajouter au panier</a>
                             <div class="addBasket">
-                                <a href="#" class="js_minusButton" title="Diminuer le nombre de produits">-</a>
+                                <a href="#" class="tertiaryButton white js_minusButton" title="Diminuer le nombre de produits">-</a>
                                 <p class="js_ProductAmount" title="Nombre de produits">2</p>
-                                <a href="#" class="js_plusButton" title="Augmenter le nombre de produits">+</a>
+                                <a href="#" class="tertiaryButton white js_plusButton" title="Augmenter le nombre de produits">+</a>
                             </div>
                         </div>
                     </div>
@@ -127,9 +127,9 @@ $c5 = new CandideCollection('plats_cuisines');
                         <div>
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton">Ajouter au panier</a>
                             <div class="addBasket">
-                                <a href="#" class="js_minusButton" title="Diminuer le nombre de produits">-</a>
+                                <a href="#" class="tertiaryButton white js_minusButton" title="Diminuer le nombre de produits">-</a>
                                 <p class="js_ProductAmount" title="Nombre de produits">2</p>
-                                <a href="#" class="js_plusButton" title="Augmenter le nombre de produits">+</a>
+                                <a href="#" class="tertiaryButton white js_plusButton" title="Augmenter le nombre de produits">+</a>
                             </div>
                         </div>
                     </div>

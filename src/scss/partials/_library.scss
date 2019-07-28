@@ -8,7 +8,7 @@ a.primaryButton, button.primaryButton{
     text-decoration: none;
     font-weight: bold;
     font-family: $font-secondary;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -26,7 +26,7 @@ a.secondaryButton, button.secondaryButton{
     text-decoration: none;
     font-weight: bold;
     font-family: $font-secondary;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -42,12 +42,15 @@ a.tertiaryButton, button.tertiaryButton{
     color: $text-color;
     text-decoration: none;
     font-family: $font-secondary;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
 a.tertiaryButton:hover, button.tertiaryButton:hover{
     color: $color-primary;
+}
+a.tertiaryButton:hover {
+    color: $text-color;
 }
 
 a.tertiaryButton.selected, button.tertiaryButton.selected{
@@ -69,7 +72,7 @@ a.tertiaryButton.selected, button.tertiaryButton.selected{
     text-decoration: none;
     font-weight: bold;
     font-family: $font-secondary;
-    transition: 0.5s;
+    transition: 0.3s;
     display: flex;
     justify-content: space-between;
     align-items: center;

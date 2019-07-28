@@ -8,13 +8,12 @@ function setProductsPage(){
 function peuplageProductsPage(){
     let products = basket.getProductList()
     for (let i in products) {
-        updateProduct(i,products[i])
+        updateProductOnOurProducts(i,products[i])
     }
 }
 
-function updateProduct(id,product){
+function updateProductOnOurProducts(id,product){
     card = document.querySelector('#card_'+id)
-    console.log("UPDATE PRODUCT : " + id + " ===> "+ product)
     if (card != null) {
         if (product == null){
             card.classList.remove('productInBasket')
@@ -26,6 +25,7 @@ function updateProduct(id,product){
             }
         }
     }
+    basket.view.updateProduct(null,id,product)
 }
 
 function setButtonsOnProductsPage(){
@@ -41,7 +41,7 @@ function addProductToBasketFromCard(card){
         name = card.getAttribute('data-productname'),
         price = card.getAttribute('data-productprice')
     basket.addNewProduct(id,name,price)
-    updateProduct(id,basket.getProduct(id))
+    updateProductOnOurProducts(id,basket.getProduct(id))
 }
 
 function setAddToBasketButtonsOnProductsPage(card){
@@ -63,7 +63,7 @@ function setMinusButtonsOnProductsPage(card){
             e.stopPropagation()
             let id = card.getAttribute('data-productid')
             basket.removeAProduct(id)
-            updateProduct(id,basket.getProduct(id))
+            updateProductOnOurProducts(id,basket.getProduct(id))
         })
     }
 }
