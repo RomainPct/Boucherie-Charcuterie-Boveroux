@@ -1,5 +1,7 @@
 function detailedProductOpened(){ // Appelé automatiquement à l'ouverture d'un produit
     // Appeler les fonctions à lancer lors de l'affichage d'un prdouit détaillé ici
+    updateDetailedProductPage()
+    setButtonsOnDetailedProductPage()
     const card = document.querySelector('#detailedProduct')
     if (card != null) {
         updateDetailedProductPage(card)
@@ -13,9 +15,13 @@ function updateDetailedProductPage(card){
     if (product == null){
         // Le produit n'est pas dans le panier donc ->
         // Afficher le bouton ajouter au panier
+        let showButtonBasket = document.querySelector(".containerDetailedProducts__informationsDetailed__buttonDetailed")
+        showButtonBasket.classList.remove("productInBasket")
     } else {
         // Afficher le bouton +/i
+        showButtonBasket.classList.add("productInBasket")
         // Mettre à jour la quantité sur le bouton +/-
+            // Voir js_ProductAmount
     }
 }
 
@@ -27,9 +33,13 @@ function setButtonsOnDetailedProductPage(card){
 
 function addDetailedProductToBasketFromCard(card){
     // recuperer l'id via get-attribute sur la card
+    let productId = card.getAttribute('data-id')
     // recuperer le nom du produit via get-attribute sur la card
+    let productName = card.getAttribute('data-productname')
     // recuperer le prix du produit via get-attribute sur la card
+    let productPrice = card.getAttribute('data-productprice')
     // ajouter au panier
+    basket.addNewProduct(productId, productName, productPrice)
     // update la quantité (en appelant la fonction qui existe pour ça)
 }
 
@@ -37,7 +47,10 @@ function setAddToBasketButtonOnDetailedProductPage(card){
     const addToBasketButton = card.querySelector('.js_addToBasket')
     if (addToBasketButton != null) {
         // Ajouter un event listener
+        addToBasketButton.addEventListener('click', () =>{
             // Appeler addProductToBasketFromCard(card)
+            addProductToBasketFromCard(card)
+        })
     }
 }
 
@@ -45,9 +58,14 @@ function setMinusButtonOnDetailedProductPage(card){
     const minusButton = card.querySelector('.js_minusButton')
     if (minusButton != null) {
         // Ajouter un event listener
+        minusButton.addEventListener('click', () =>{
             // recuperer l'id via get-attribute sur la card
+                //let id = card.getAttribute('data-id')
             // diminuer la quantité
+                //basket.reduceProductAmount(id)
             // update la quantité (en appelant la fonction qui existe pour ça)
+
+        })
     }
 }
 
@@ -55,6 +73,9 @@ function setPlusButtonOnDetailedProductPage(card){
     const plusButton = card.querySelector('.js_plusButton')
     if (plusButton != null) {
         // Ajouter un event listener
+        plusButton.addEventListener('click', () => {
             // Appeler addProductToBasketFromCard(card)
+            addProductToBasketFromCard(card)
+        })
     }
 }
