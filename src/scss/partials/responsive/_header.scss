@@ -14,19 +14,23 @@
             display: block;
             background-color: $background-color-lighter;
             transition:0.3s right;
+            &__underButton{
+                display: none;
+            }
+            &__menuBasketEmpty{
+                width: 100%;
+                left: 30px;           }
         }
     }
 }
 .greyOpacity{
     display: block;
     position: fixed;
-    top: 80px;
-    right: -150vw;
     bottom: 0;
     width: 100vw;
     background-color: $background-color-lighter;
-    transition:1s top;
     z-index: -2;
+    margin: 30px;
 }
 .visible{
     right: 0;
@@ -35,7 +39,10 @@
     display: block;
 }
 .subMenu{
-    border-color: #7CDE84;
+    border-color: #7CDE84 !important; 
     border-top: 5px solid;
     border-bottom: 5px solid;
+}
+.underHidden{
+    display: block;
 }

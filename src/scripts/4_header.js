@@ -1,6 +1,7 @@
 var menuBtn = document.querySelector('.menuButton')
 var subMenu = document.querySelector('.subMenu')
 var greyOpacity = document.querySelector('.greyOpacity')
+var basketHidden = document.querySelector('.headerContainer__inside__cat__menuBasketEmpty')
 
 menuBtn.addEventListener(
     'click',
@@ -12,6 +13,7 @@ menuBtn.addEventListener(
         } else {
             subMenu.classList.add('visible')
             greyOpacity.classList.add('visible')
+            basketHidden.classList.remove('hideContentBasket')
             menuBtn.innerHTML = "Fermer"
         }
     }
