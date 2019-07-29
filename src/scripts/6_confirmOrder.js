@@ -96,7 +96,7 @@ function setSummaryMinusButton(button,line){
             let produit = basket.getProduct(id)
             // Si sa nouvelle quantité actuelle -1 est égale à 0
             if((produit[2] - 1) == 0){
-                if(confirm('Voulez-vous supprimer ce porduit de votre panier ?')){
+                if(confirm('Voulez-vous supprimer ce produit de votre panier ?')){
                     reallyReduceProductAmount(line,produit)
                 }
             } else {
@@ -115,7 +115,7 @@ function reallyReduceProductAmount(line,product){
     // Si nouvelle quantité == 0
     if(product[2] == 0){
         // Supprimer la ligne visuellement
-        line.style.display = 'none'
+        line.remove()
     } else {
         updateProductOnSummary(line,product)
     }

@@ -1,9 +1,9 @@
 .whoweare__container{
     &__history{
-        margin-top: 50px;
+        position: relative;
+        margin-top: 120px;
+        height: 121vw;
         &__text{
-            position: absolute;
-            z-index: 30;
             margin-right: 30px;
             margin-left: 30px;
             h2{
@@ -11,7 +11,8 @@
             }
         }
         &__picture{
-            position: relative;
+            position: absolute;
+            z-index: -1;
             img{
                 width: 100vw;
                 height: 121vw;
@@ -37,15 +38,17 @@
         }
     }
     &__quality{
+        position: relative;
         margin-top: 60px;
+        width: 100vw;
+        height: 115vw;
         &__text{
-            position: absolute;
-            z-index: 30;
             margin-right: 30px;
             margin-left: 30px;
         }
         &__picture{
-            position: relative;
+            position: absolute;
+            z-index: -1;
             img{
                 width: 100vw;
                 height: 115vw;
