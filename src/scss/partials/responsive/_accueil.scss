@@ -2,7 +2,7 @@
     &__textandimg{
         &__textBlock{
             padding: 30px;
-            padding-top: 60px;
+            padding-top: 120px;
             & h2{
                 font-size: 50px;
             }
@@ -22,11 +22,15 @@
     }
     &__valeurs{
         flex-direction: column;
-        margin-top: 120px;
+        margin-top: 60px;
         padding: 30px;
         &__leftDiv{
-            padding: 30px;
+            width: 100%;
+            &__title{
+                right: 0;
+            }
             &__logo{
+                justify-content: center;
                 & :nth-child(3){
                     & :nth-child(2){
                         line-height: 20px;
@@ -35,6 +39,10 @@
                 &__img{
                     padding-right: 15px;
                     text-align: center;
+                    & img, svg{
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
             }
         }
@@ -42,6 +50,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            margin-top: 60px;
             & a{
                 justify-content: center;
                 text-align: center;
@@ -50,4 +59,7 @@
             }
         }
     }
+}
+#logobio{
+    height: 50px;
 }
