@@ -15,26 +15,26 @@
             text-align: center;
         }
         &__cat{
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
             padding: 15px;
             border-radius: 5px;
             background-color: $background-color-lighter;
             text-align: center;
             &__menuBasketEmpty{
                 position: absolute;
+                top: 100%;
+                right: 0px;
+                z-index: -1;
                 display: flex;
                 flex-direction: column;
-                text-align: left;
-                background-color: $background-color-lighter;
-                border-top: 5px solid $color-primary;
-                right: 0px;
-                top: 100%;
                 padding: 15px 30px;
-                z-index: -1;
                 width: 25vw;
+                border-top: 5px solid $color-primary;
+                background-color: $background-color-lighter;
+                text-align: left;
                 p{
                     padding-bottom: 15px;
                 }
@@ -42,9 +42,9 @@
                     &__productsInfo{
                         &__priceDetailed{
                             display: flex;
+                            align-items: baseline;
                             justify-content: flex-end;
                             padding-bottom: 15px;
-                            align-items: baseline;
                             .nameProduct{
                                 flex: 3;
                             }
@@ -80,9 +80,23 @@
                 }
             }
             &__underButton{
-                margin: 15px;
+                position: relative;
                 position: relative;
                 display: inline-block;
+                margin: 15px;
+                &__notif{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px 9px;
+                    border-radius: 5px;
+                    background-color: $color-primary;
+                    color: $background-color;
+                    font-weight: 700;
+                    font-size: $font-size-body;
+                    font-family: $font-secondary;
+                    transform: translateY(-25px) translateX(10px);
+                }
             }
         }     
     }
