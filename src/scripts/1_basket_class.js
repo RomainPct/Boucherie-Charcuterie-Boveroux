@@ -1,3 +1,99 @@
+class Basket {
+    constructor(){
+        //Récuperer le panier depuis local storage
+        this.basket = []
+        this.getBasketFromLocalStorage()
+        this.setFinishOrderButton()
+        this.view = new BasketView(this.getProductList(),this.getBasketTotalAmount())
+    }
+
+    saveBasketOnLocalStorage(){
+        // Enregistrer this.basket dans le local storage 
+         localStorage.setItem('basketContents', JSON.stringify(this.basket))
+    }
+
+    getBasketFromLocalStorage(){
+        // Intialiser une variable this.basket avec la data du local storage
+         this.basket = JSON.parse(localStorage.getItem('basketContents')) || []
+    }
+
+    cleanBasket(){
+        // Vider le panier et vider en localstorage
+        this.basket = []
+        localStorage.removeItem('basketContents')
+    }
+
+    addNewProduct(id,name,price){
+        //Ajouter un produit au panier
+        // Si deja dans le panier -> augmenter la quantité de 1
+        if (this.basket[id] != null){
+            this.basket[id][2] += 1
+        } else{
+            this.basket[id] = [name, price, 1]
+        }
+        this.endProductEdition()
+    }
+
+    removeAProduct(id){
+        // Diminuer la quantité du produit dans le panier 
+        if (this.basket[id]!= null){
+            this.basket[id][2] -= 1
+            // Si nouvelle quantité = 0 -> supprimer du panier
+            if(this.basket[id][2] == 0){
+                delete this.basket[id]
+            }
+        } 
+        this.endProductEdition()
+    }
+
+    endProductEdition(){
+        this.saveBasketOnLocalStorage()
+        this.setFinishOrderButton()
+        this.updateProductAmountIcon()
+    }
+
+    updateProductAmountIcon(){
+        // Update l'icone du nombre de produits en changeant le ciffre ou en la cachant
+    }
+
+    getTotalPrice(){
+        // Retourne le prix total de la commande 
+        let totalPrice = 0
+        for (let i in this.basket){
+            if (this.basket[i]!= null){ 
+                totalPrice += ((this.basket[i][1])*(this.basket[i][2]));
+            }
+        }
+        return totalPrice
+    }
+
+    getBasketTotalAmount(){
+        let totalAmount = 0
+        for (let i in this.basket){
+            if (this.basket[i]!= null){ 
+                totalAmount += this.basket[i][2]
+            }
+        }
+        return totalAmount
+    }
+
+    getProductList(){
+        return this.basket // Retourne un tableau des éléments du panier
+    }
+
+    getProduct(id){
+        return this.basket[id]
+    }
+
+    setFinishOrderButton(){
+        let button = document.querySelector('#js_validateOrderOurProducts')
+        if (button != null) {
+            button.style.visibility = (this.getBasketTotalAmount() > 0) ? "visible" : "hidden"
+        }
+    }
+
+}
+
 class BasketView {
     constructor(products,productAmount){
         this.view = document.querySelector('#js_basket')
@@ -106,98 +202,6 @@ class BasketView {
         let id = line.getAttribute('data-productid')
         basket.removeAProduct(id)
         basket.view.updateProduct(line,id,produit)
-    }
-
-}
-
-class Basket {
-    constructor(){
-        //Récuperer le panier depuis local storage
-        this.basket = []
-        this.getBasketFromLocalStorage()
-        this.setFinishOrderButton()
-        this.view = new BasketView(this.getProductList(),this.getBasketTotalAmount())
-    }
-
-    saveBasketOnLocalStorage(){
-        // Enregistrer this.basket dans le local storage 
-         localStorage.setItem('basketContents', JSON.stringify(this.basket))
-    }
-
-    getBasketFromLocalStorage(){
-        // Intialiser une variable this.basket avec la data du local storage
-         this.basket = JSON.parse(localStorage.getItem('basketContents')) || []
-    }
-
-    cleanBasket(){
-        // Vider le panier et vider en localstorage
-        this.basket = []
-        localStorage.removeItem('basketContents')
-    }
-
-    addNewProduct(id,name,price){
-        //Ajouter un produit au panier
-        // Si deja dans le panier -> augmenter la quantité de 1
-        if (this.basket[id] != null){
-            this.basket[id][2] += 1
-        } else{
-            this.basket[id] = [name, price, 1]
-        }
-        this.endProductEdition()
-    }
-
-    removeAProduct(id){
-        // Diminuer la quantité du produit dans le panier 
-        if (this.basket[id]!= null){
-            this.basket[id][2] -= 1
-            // Si nouvelle quantité = 0 -> supprimer du panier
-            if(this.basket[id][2] == 0){
-                delete this.basket[id]
-            }
-        } 
-        this.endProductEdition()
-    }
-
-    endProductEdition(){
-        this.saveBasketOnLocalStorage()
-        this.setFinishOrderButton()
-        // this.view.update(this.getProductList())
-    }
-
-    getTotalPrice(){
-        // Retourne le prix total de la commande 
-        let totalPrice = 0
-        for (let i in this.basket){
-            if (this.basket[i]!= null){ 
-                totalPrice += ((this.basket[i][1])*(this.basket[i][2]));
-            }
-        }
-        return totalPrice
-    }
-
-    getBasketTotalAmount(){
-        let totalAmount = 0
-        for (let i in this.basket){
-            if (this.basket[i]!= null){ 
-                totalAmount += this.basket[i][2]
-            }
-        }
-        return totalAmount
-    }
-
-    getProductList(){
-        return this.basket // Retourne un tableau des éléments du panier
-    }
-
-    getProduct(id){
-        return this.basket[id]
-    }
-
-    setFinishOrderButton(){
-        let button = document.querySelector('#js_validateOrderOurProducts')
-        if (button != null) {
-            button.style.visibility = (this.getBasketTotalAmount() > 0) ? "visible" : "hidden"
-        }
     }
 
 }
