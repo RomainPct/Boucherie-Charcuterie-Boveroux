@@ -5,21 +5,22 @@
         background-color: $background-color-lighter;
         padding: 15px;
         &__cat{
+            margin: 15px;
             position: fixed;
-            top: 0;
+            top: -150vw;
             right: -150vw;
-            width: 100vw;
             text-align: center;
             margin-top: 80px;
             display: block;
             background-color: $background-color-lighter;
-            transition:0.3s right;
+            transition: 0.5s top;
             &__underButton{
                 display: none;
             }
             &__menuBasketEmpty{
-                width: 100%;
-                left: 30px;           }
+                right: 0px;
+                width: calc(100% - 60px);
+            }
         }
     }
 }
@@ -27,13 +28,13 @@
     display: block;
     position: fixed;
     bottom: 0;
-    width: 100vw;
-    background-color: $background-color-lighter;
     z-index: -2;
     margin: 30px;
 }
 .visible{
     right: 0;
+    left: 0;
+    top: 0;
 }
 .menuButton{
     display: block;
