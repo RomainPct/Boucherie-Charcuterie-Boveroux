@@ -17,6 +17,8 @@
         background-color: $background-color;
         &__imageDetailed {
             width: 50%;
+            border-radius: 5px 0 0 5px;
+            overflow: hidden;
             img{
                // height: 100%;
                 width: 100%;
@@ -35,6 +37,8 @@
             width: 50%;
             position: relative;
             z-index: 1;
+            overflow: hidden;
+            padding-top: 45px;
             &__descriptionDetailed{
                 width: auto;
                 margin: 0px 30px;
@@ -49,7 +53,7 @@
                     color: #3D3339;
                     position: absolute;
                     left: 0;
-                    top: -45px;
+                    top: 0;
                     z-index: -1;
                 }
             }
