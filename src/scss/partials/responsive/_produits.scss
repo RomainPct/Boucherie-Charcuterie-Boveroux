@@ -13,7 +13,7 @@
     }
     &List{
         &__product{
-            width: calc(50% - 30px);
+            width: calc(100% - 30px);
             margin: 15px;
             &__contain{
                 & :nth-child(3){
