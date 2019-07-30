@@ -84,6 +84,7 @@
                 position: relative;
                 display: inline-block;
                 margin: 15px;
+                white-space: nowrap;
                 &__notif{
                     position: absolute;
                     top: 0;
