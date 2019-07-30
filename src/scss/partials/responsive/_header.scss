@@ -16,6 +16,7 @@
             transition: 0.5s top;
             &__underButton{
                 display: none;
+                white-space: nowrap;
             }
             &__menuBasketEmpty{
                 right: 0px;
