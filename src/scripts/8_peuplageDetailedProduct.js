@@ -10,8 +10,8 @@ function detailedProductOpened(){ // Appelé automatiquement à l'ouverture d'un
 function updateDetailedProductPage(card){
     let id = card.getAttribute('data-id'),
         product = basket.getProduct(id),
-        showButtonBasket = document.querySelector(".containerDetailedProducts__informationsDetailed__buttonDetailed"),
-        amountOfProduct = document.querySelector(".js_ProductAmount")
+        showButtonBasket = card.querySelector(".containerDetailedProducts__informationsDetailed__buttonDetailed"),
+        amountOfProduct = card.querySelector(".js_ProductAmount")
     if (product == null){
         // Le produit n'est pas dans le panier donc ->
         // Afficher le bouton ajouter au panier
@@ -64,7 +64,7 @@ function setMinusButtonOnDetailedProductPage(card){
             // diminuer la quantité
             basket.removeAProduct(id)
             // update la quantité (en appelant la fonction qui existe pour ça)
-            addDetailedProductToBasketFromCard(card)
+            updateDetailedProductPage(card)
         })
     }
 }
