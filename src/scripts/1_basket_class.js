@@ -53,7 +53,14 @@ class Basket {
     }
 
     updateProductAmountIcon(){
-        // Update l'icone du nombre de produits en changeant le ciffre ou en la cachant
+        // Update l'icone du nombre de produits en changeant le chiffre ou en la cachant
+        let notif = document.querySelector('.headerContainer__inside__cat__underButton__notif')
+        
+        if(totalAmount == 0){
+            notif.remove()
+        }else{
+            notif.innerHTML = totalAmount
+        }
     }
 
     getTotalPrice(){
