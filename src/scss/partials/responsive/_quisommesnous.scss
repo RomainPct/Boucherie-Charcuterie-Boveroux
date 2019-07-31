@@ -1,21 +1,23 @@
 .whoweare__container{
     &__history{
         position: relative;
+        overflow: hidden;
         margin-top: 120px;
-        height: 121vw;
         &__text{
-            margin-right: 30px;
-            margin-left: 30px;
+            margin: 15px 30px;
             h2{
                 font-size: 50px;
             }
         }
         &__picture{
             position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
             z-index: -1;
             img{
-                width: 100vw;
-                height: 121vw;
+                width: auto;
+                height: 100%;
             }
         }
     }
@@ -40,18 +42,20 @@
     &__quality{
         position: relative;
         margin-top: 60px;
-        width: 100vw;
-        height: 115vw;
+        width: 100%;
         &__text{
-            margin-right: 30px;
-            margin-left: 30px;
+            margin: 15px 30px;
         }
         &__picture{
             position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
             z-index: -1;
+            margin: 0;
             img{
-                width: 100vw;
-                height: 115vw;
+                width: auto;
+                height: 100%;
             }
         }
     }

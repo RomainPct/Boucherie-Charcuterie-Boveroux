@@ -22,7 +22,7 @@
                 <a href="../produits" class="tertiaryButton">Nos produits</a>
             </div>
             <div class="headerContainer__inside__cat__underButton">
-                <div class="headerContainer__inside__cat__underButton__notif">2</div>
+                <div class="headerContainer__inside__cat__underButton__notif"></div>
                 <a href="#" title="Mon panier" class="secondaryButton">Mon Panier</a>
             </div>
         </nav>

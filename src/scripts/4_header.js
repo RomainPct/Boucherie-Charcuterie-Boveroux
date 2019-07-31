@@ -27,3 +27,9 @@ greyOpacity.addEventListener(
         menuBtn.innerHTML = "Menu"
     }
 )
+
+// Notif update
+let notif = document.querySelector('.headerContainer__inside__cat__underButton__notif')
+
+let totalAmount = getBasketTotalAmount()
+notif.innerHTML = totalAmount
