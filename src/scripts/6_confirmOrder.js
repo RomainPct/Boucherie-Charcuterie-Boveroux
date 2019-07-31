@@ -1,13 +1,3 @@
-basket.cleanBasket()
-basket.addNewProduct("0_boeuf","Steack",29)
-basket.addNewProduct("0_charcuterie","saucisson",19)
-basket.addNewProduct("1_charcuterie","cochon",19)
-basket.addNewProduct("1_charcuterie","cochon",19)
-basket.addNewProduct("0_plats_cuisines","Ratatouille",7)
-// Ne pas toucher avant
-
-
-// C'est good, hésite pas à regarder 7_produits.js et le html de la page produits pour t'inspirer ou te débloquer ;)
 const totalCostLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__lineTotalCost')
 const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
