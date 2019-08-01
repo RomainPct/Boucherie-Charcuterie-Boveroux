@@ -55,12 +55,14 @@ class Basket {
     updateProductAmountIcon(){
         // Update l'icone du nombre de produits en changeant le chiffre ou en la cachant
         let notif = document.querySelector('.headerContainer__inside__cat__underButton__notif')
-        
-        if(totalAmount == 0){
-            notif.remove()
+ 
+        if(basket.getBasketTotalAmount() != 0){
+            notif.innerHTML = basket.getBasketTotalAmount()
         }else{
-            notif.innerHTML = totalAmount
+            notif.style.display = "none"
         }
+        console.log(notif)
+        console.log(notif.innerHTML)
     }
 
     getTotalPrice(){
