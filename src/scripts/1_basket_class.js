@@ -6,7 +6,7 @@ class Basket {
         this.setFinishOrderButton()
         this.view = new BasketView(this.getProductList(),this.getBasketTotalAmount())
     }
-
+    
     saveBasketOnLocalStorage(){
         // Enregistrer this.basket dans le local storage 
          localStorage.setItem('basketContents', JSON.stringify(this.basket))
@@ -42,7 +42,7 @@ class Basket {
             if(this.basket[id][2] == 0){
                 delete this.basket[id]
             }
-        } 
+        }
         this.endProductEdition()
     }
 
@@ -55,7 +55,9 @@ class Basket {
     updateProductAmountIcon(){
         // Update l'icone du nombre de produits en changeant le chiffre ou en la cachant
         let notif = document.querySelector('.headerContainer__inside__cat__underButton__notif')
- 
+
+        notif.style.display = "block"
+
         if(basket.getBasketTotalAmount() != 0){
             notif.innerHTML = basket.getBasketTotalAmount()
         }else{
