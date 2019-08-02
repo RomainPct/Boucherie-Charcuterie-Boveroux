@@ -5,11 +5,13 @@ class Basket {
         this.getBasketFromLocalStorage()
         this.setFinishOrderButton()
         this.view = new BasketView(this.getProductList(),this.getBasketTotalAmount())
+        this.updateBasketContentInput()
     }
     
     saveBasketOnLocalStorage(){
         // Enregistrer this.basket dans le local storage 
          localStorage.setItem('basketContents', JSON.stringify(this.basket))
+         console.log(this.basket)
     }
 
     getBasketFromLocalStorage(){
@@ -21,6 +23,7 @@ class Basket {
         // Vider le panier et vider en localstorage
         this.basket = []
         localStorage.removeItem('basketContents')
+        this.view.updateBasket(0)
     }
 
     addNewProduct(id,name,price){
@@ -28,7 +31,7 @@ class Basket {
         // Si deja dans le panier -> augmenter la quantité de 1
         if (this.basket[id] != null){
             this.basket[id][2] += 1
-        } else{
+        } else {
             this.basket[id] = [name, price, 1]
         }
         this.endProductEdition(id)
@@ -50,22 +53,19 @@ class Basket {
         this.saveBasketOnLocalStorage()
         this.setFinishOrderButton()
         this.updateProductAmountIcon()
+        this.updateBasketContentInput()
         this.view.updateProduct(null,id,this.getProduct(id))
     }
 
     updateProductAmountIcon(){
         // Update l'icone du nombre de produits en changeant le chiffre ou en la cachant
         let notif = document.querySelector('.headerContainer__inside__cat__underButton__notif')
-
-        notif.style.display = "block"
-
         if(basket.getBasketTotalAmount() != 0){
+            notif.style.display = "block"
             notif.innerHTML = basket.getBasketTotalAmount()
         }else{
             notif.style.display = "none"
         }
-        console.log(notif)
-        console.log(notif.innerHTML)
     }
 
     getTotalPrice(){
@@ -73,7 +73,7 @@ class Basket {
         let totalPrice = 0
         for (let i in this.basket){
             if (this.basket[i]!= null){ 
-                totalPrice += ((this.basket[i][1])*(this.basket[i][2]));
+                totalPrice += ( parseFloat(this.basket[i][1].replace(',','.')) * (this.basket[i][2]) );
             }
         }
         return totalPrice
@@ -101,6 +101,13 @@ class Basket {
         let button = document.querySelector('#js_validateOrderOurProducts')
         if (button != null) {
             button.style.visibility = (this.getBasketTotalAmount() > 0) ? "visible" : "hidden"
+        }
+    }
+
+    updateBasketContentInput(){
+        let input = document.querySelector('#basketContentInput')
+        if (input != null){
+            input.value = JSON.stringify(this.basket)
         }
     }
 
@@ -223,3 +230,7 @@ class BasketView {
 
 const basket = new Basket()
 basket.updateProductAmountIcon()
+
+if (typeof isSend != "undefined" && isSend == "yes"){
+    basket.cleanBasket()
+}

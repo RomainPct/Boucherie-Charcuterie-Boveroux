@@ -29,6 +29,16 @@ class CandideCollectionItem extends CandideBasic {
         return $this->_id;
     }
 
+    public function returnText($title,$wysiwyg = false){
+        $name = "text_".$title;
+        // Gérer l'affichage
+        if (array_key_exists($name,$this->_data) && array_key_exists("data",$this->_data[$name])) {
+            return $this->formatText($this->_data[$name]["data"]);
+        } else {
+            return "update candide on the admin platform";
+        }
+    }
+
     public function text($title,$wysiwyg = false){
         $this->getElement($title,"text",[],$wysiwyg);
     }

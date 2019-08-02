@@ -13,7 +13,6 @@ function peuplageProductsPage(){
 }
 
 function updateProductOnOurProducts(id,product){
-    console.log("updateProductOnOurProducts : "+id)
     card = document.querySelector('#card_'+id)
     if (card != null) {
         if (product == null){

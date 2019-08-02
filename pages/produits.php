@@ -119,7 +119,7 @@ $c5 = new CandideCollection('plats_cuisines');
             <?php
             foreach($c5->avalaibleItemIds()as $id){
                 ?>
-                <div class="prodSectionList__product product all plats_cuisines" id="card_<?php echo $id ?>_plats_cuisines" data-productid="<?php echo $id ?>_plats_cuisines" data-productrealid="<?php echo $id ?>" data-producttype="plats_cuisines" data-productname="<?php $c2->text('nom_du_produit',$id) ?>" data-productprice="<?php $c2->text('prix',$id) ?>" >
+                <div class="prodSectionList__product product all plats_cuisines" id="card_<?php echo $id ?>_plats_cuisines" data-productid="<?php echo $id ?>_plats_cuisines" data-productrealid="<?php echo $id ?>" data-producttype="plats_cuisines" data-productname="<?php $c5->text('nom_du_produit',$id) ?>" data-productprice="<?php $c5->text('prix',$id) ?>" >
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c5->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c5->text('nom_du_produit',$id)?></p>
