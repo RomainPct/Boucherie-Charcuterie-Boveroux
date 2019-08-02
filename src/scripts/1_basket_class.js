@@ -31,7 +31,7 @@ class Basket {
         } else{
             this.basket[id] = [name, price, 1]
         }
-        this.endProductEdition()
+        this.endProductEdition(id)
     }
 
     removeAProduct(id){
@@ -43,13 +43,14 @@ class Basket {
                 delete this.basket[id]
             }
         }
-        this.endProductEdition()
+        this.endProductEdition(id)
     }
 
-    endProductEdition(){
+    endProductEdition(id){
         this.saveBasketOnLocalStorage()
         this.setFinishOrderButton()
         this.updateProductAmountIcon()
+        this.view.updateProduct(null,id,this.getProduct(id))
     }
 
     updateProductAmountIcon(){
@@ -124,10 +125,13 @@ class BasketView {
     }
 
     updateProduct(line,id,product){
+        this.updateBasket(basket.getBasketTotalAmount())
         if (line == null){
             line = this.content.querySelector('#basketLine_'+id)
         } else {
             updateProductOnOurProducts(id,product)
+            let summaryLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line[data-productid="'+id+'"]')
+            updateProductOnSummary(summaryLine,product)
         }
         if (line == null) {
             this.addNewLine(id,product)
@@ -200,7 +204,7 @@ class BasketView {
             if((produit[2] - 1) == 0){
                 if(confirm('Voulez-vous supprimer ce porduit de votre panier ?')){
                     basket.view.reallyReduceProductAmount(line,produit)
-                    basket.view.updateBasket(basket.getBasketTotalAmount())
+                    basket.view.updateBasket()
                     updateProductOnOurProducts(id,null)
                 }
             } else {
@@ -218,3 +222,4 @@ class BasketView {
 }
 
 const basket = new Basket()
+basket.updateProductAmountIcon()

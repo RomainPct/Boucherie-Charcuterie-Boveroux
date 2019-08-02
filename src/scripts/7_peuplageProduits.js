@@ -13,6 +13,7 @@ function peuplageProductsPage(){
 }
 
 function updateProductOnOurProducts(id,product){
+    console.log("updateProductOnOurProducts : "+id)
     card = document.querySelector('#card_'+id)
     if (card != null) {
         if (product == null){
@@ -25,7 +26,6 @@ function updateProductOnOurProducts(id,product){
             }
         }
     }
-    basket.view.updateProduct(null,id,product)
 }
 
 function setButtonsOnProductsPage(){

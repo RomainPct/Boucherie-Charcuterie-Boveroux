@@ -114,8 +114,10 @@ function reallyReduceProductAmount(line,product){
 }
 
 function updateProductOnSummary(line,product){
-    let amountDiv = line.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
-    amountDiv.innerText = product[2]
+    if (line != null) {
+        let amountDiv = line.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
+        amountDiv.innerText = product[2]
+    }
 }
 
 // Vérifier que summaryBox n'est pas null (le js se charge sur toutes les pages donc faut pas lancer la fonction si on est pas sur la bonne page)

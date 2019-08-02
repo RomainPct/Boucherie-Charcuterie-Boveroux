@@ -24,6 +24,7 @@ function updateDetailedProductPage(card){
             amountOfProduct.innerHTML = product[2]
         }
     }
+    updateProductOnOurProducts(id,product)
 }
 
 function setButtonsOnDetailedProductPage(card){
