@@ -31,13 +31,11 @@
                 display: flex;
                 flex-direction: column;
                 padding: 15px 30px;
-                width: 25vw;
+                min-width: 25vw;
+                max-width: 35vw;
                 border-top: 5px solid $color-primary;
                 background-color: $background-color-lighter;
                 text-align: left;
-                p{
-                    padding-bottom: 15px;
-                }
                 &__menuBasketContents{
                     &__productsInfo{
                         &__priceDetailed{
