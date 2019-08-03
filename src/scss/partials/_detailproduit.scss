@@ -60,11 +60,11 @@
         }
         &__buttonDetailed{
             bottom: 0;
-            transform: translateX(-50%);
+            transform: translate(-50%, 40%);
             left: 75%;
             position: absolute;
             .addBasket{     
-            transform: translateY(15px);
+            transform: translateY(10px);
             a{
                 padding: 10px;
             }

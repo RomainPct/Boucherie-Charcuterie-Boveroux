@@ -48,7 +48,8 @@
         }
         &__buttonDetailed{
             position: static;
-            transform: none;
+            left: 0;
+            transform: translateY(20px);
             .addBasket{
                 height: 5vw;
                 a{
