@@ -68,3 +68,20 @@
 #rightImg{
     padding-right: 0px;
 }
+noscript {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: $background-color;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p {
+        margin-bottom: 30px;
+    }
+    a.primaryButton {
+        margin-bottom: 90px;
+    }
+}

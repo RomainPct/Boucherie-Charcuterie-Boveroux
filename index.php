@@ -21,6 +21,16 @@
     <?php include 'pages/elements/header.php'; ?>
     <?php include 'php/rooter.php'; ?>
     <?php include 'pages/elements/footer.php'; ?>
+    <noscript>
+        <h3>Activez Javascript</h3>
+        <p>
+            Javascript doit être activé afin que ce site fonctionne<br>
+            Pour l'activer, rendez-vous dans les paramètres de votre navigateur web.<br>
+            Merci de votre compréhension
+        </p>
+        <a class="primaryButton" href="/" title="J'ai activé Javascript">J'ai activé Javascript</a>
+        <a class="secondaryButton" target="_blank" href="http://www.enable-javascript.com/fr/">Comment activer Javascript ?</a>
+    </noscript>
     <script src="/assets/scripts/main.min.js"></script>
 </body>
 </html>

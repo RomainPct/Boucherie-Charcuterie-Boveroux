@@ -30,7 +30,7 @@ $c = new CandidePage('terminer_ma_commande')
             <input type="hidden" name="basketContent" id="basketContentInput">
             <input type="hidden" name="cellphonechbt">
             <div class="finishOrder__container__right__form__message">
-                <label for="POST-message">Un petit message pour nous ?</label>
+                <label for="POST-message">Un petit message pour nous ? (optionnel)</label>
                 <textarea type="text" name="message" id="POST-message"></textarea>
             </div>
             <div class="finishOrder__container__right__form__send">
