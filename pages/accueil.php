@@ -2,7 +2,7 @@
 $c = new CandidePage('accueil')
 ?>
 <main class="home__main">
-    <section class="homeSection">
+    <section class="homeSection imageBox degradeBottomDark">
                         <div class="homeSection__textandimg__textBlock">
                         <h2><?php $c->text('titre');?></h2>
                     <div class="homeSection__textandimg__textBlock__text">
