@@ -15,11 +15,6 @@
         &__product{
             width: calc(100% - 30px);
             margin: 15px;
-            &__contain{
-                & :nth-child(3){
-                    padding-top: 0px;
-                }
-            }
         }
     }
 }
