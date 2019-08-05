@@ -44,3 +44,12 @@
 .primaryButton.whiteButton{
     background-color: $text-color;
 }
+
+.productButton{
+    display: flex;
+    justify-content: center;
+    height: 1.5vw;
+    &__add{
+        position: absolute;
+    }
+}
