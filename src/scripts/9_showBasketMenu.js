@@ -1,7 +1,7 @@
 let myBasket = document.querySelector("a.secondaryButton")
 let basketEmpty = document.querySelector(".headerContainer__inside__cat__menuBasketEmpty")
 let normalScreenMenu = document.querySelector(".normalScreen")
-// let darkScreen = document.querySelector(".normalScreen.darkScreenMenu")
+//let darkScreen = document.querySelector(".normalScreen.darkScreenMenu")
 
 myBasket.addEventListener('click', (e) =>{
     e.preventDefault()
@@ -24,6 +24,8 @@ window.onload = function(){
 } */
 
 /*
-darkScreen.addEventListener('click', () =>{
-    basketEmpty.classList.add("hideContentBasket")
+normalScreenMenu.addEventListener('click', () =>{
+    if(normalScreenMenu.classList.contains("darkScreenMenu")){
+        basketEmpty.classList.add("hideContentBasket")
+    }
 }) */
