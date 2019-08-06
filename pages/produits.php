@@ -1,4 +1,4 @@
-<main>
+<main class="comingFade">
 
     <!--
         Pour chaque produit, sur la même div que la class prodSectionList__product, faut ajouter
