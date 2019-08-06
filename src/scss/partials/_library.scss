@@ -1,4 +1,4 @@
-a {
+a{
     display: inline-block;
 }
 // Primary button
@@ -11,8 +11,8 @@ a.primaryButton, button.primaryButton{
     text-decoration: none;
     font-weight: bold;
     font-family: $font-secondary;
-    transition: 0.3s;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 a.primaryButton:hover, button.primaryButton:hover{
@@ -29,8 +29,8 @@ a.secondaryButton, button.secondaryButton{
     text-decoration: none;
     font-weight: bold;
     font-family: $font-secondary;
-    transition: 0.3s;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 a.secondaryButton:hover, button.secondaryButton:hover{
@@ -45,8 +45,8 @@ a.tertiaryButton, button.tertiaryButton{
     color: $text-color;
     text-decoration: none;
     font-family: $font-secondary;
-    transition: 0.3s;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 a.tertiaryButton:hover, button.tertiaryButton:hover{
@@ -68,8 +68,11 @@ a.tertiaryButton.selected, button.tertiaryButton.selected{
 
 .addBasket{
     position: absolute;
-    height: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px 15px;
+    height: 1vw;
     border: none;
     border-radius: 5px;
     background-color: $color-primary;
@@ -78,17 +81,14 @@ a.tertiaryButton.selected, button.tertiaryButton.selected{
     font-weight: bold;
     font-family: $font-secondary;
     transition: 0.3s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     & a{
-        text-decoration: none;
         color: $background-color;
+        text-decoration: none;
         cursor: pointer;
     }
     & p{
-        color: $background-color;
         padding: 0px 30px;
+        color: $background-color;
     }
 }
 
@@ -99,38 +99,54 @@ h1{
 
 // H2
 h2{
-    line-height: 1.3;
     margin: 0px;
     color: $text-color;
     font-size: $font-size-title;
     font-family: $font-primary;
+    line-height: 1.3;
 }
 
 // H3
 h3{
-    line-height: 1.55;
     margin-top: 0;
     margin-bottom: 10px;
     color: $text-color;
     font-size: $font-size-subtitle;
     font-family: $font-primary;
+    line-height: 1.55;
 }
 
 // H4
 h4{
-    line-height: 1.55;
     margin: 0px;
     color: $text-color;
     font-weight: bold;
     font-size: $font-size-body;
     font-family: $font-secondary;
+    line-height: 1.55;
 }
 
 // Body
 p{
     margin: 0px;
-    line-height: 1.8;
     color: $text-color;
     font-size: $font-size-body;
     font-family: $font-secondary;
+    line-height: 1.8;
+}
+
+// Open animation
+.comingFade{
+    animation: fade 2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

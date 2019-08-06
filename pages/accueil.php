@@ -3,7 +3,7 @@ $c = new CandidePage('accueil')
 ?>
 <main class="home__main">
     <section class="homeSection imageBox degradeBottomDark">
-                        <div class="homeSection__textandimg__textBlock">
+                        <div class="homeSection__textandimg__textBlock comingFade">
                         <h2><?php $c->text('titre');?></h2>
                     <div class="homeSection__textandimg__textBlock__text">
                         <h3><?php $c->text('sous_titre');?></h3>
@@ -18,7 +18,7 @@ $c = new CandidePage('accueil')
 
         </div>
     </section>
-    <section class="homeSection__valeurs">
+    <section class="homeSection__valeurs comingFade">
             <div class="homeSection__valeurs__leftDiv">
                 <div class="homeSection__valeurs__leftDiv__title">
                     <h3>Nos valeurs</h3>
