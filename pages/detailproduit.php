@@ -9,7 +9,7 @@ $productType = $_GET["type"];
 $c = new CandideCollectionItem ($productType,$productId);
 ?>
 <div
-    class="containerDetailedProducts" id="detailedProduct"
+    class="containerDetailedProducts comingFade" id="detailedProduct"
     data-id="<?php echo $productId ?>_<?php echo $productType ?>"
     data-productname="<?php $c->text('nom_du_produit') ?>"
     data-productprice="<?php $c->text('prix') ?>"
