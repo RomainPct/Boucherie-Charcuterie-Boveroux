@@ -1,7 +1,7 @@
 <?php
 $c = new CandidePage('terminer_ma_commande')
 ?>
-<main class="finishOrder__container">
+<main class="finishOrder__container comingFade">
     <h1>Terminer ma commande</h1>
     <div class="finishOrder__container__left">
         <h2><?php $c->text('titre_partie_terminer_ma_commande');?></h2>
