@@ -2,7 +2,7 @@ var menuBtn = document.querySelector('.menuButton')
 var subMenu = document.querySelector('.subMenu')
 var greyOpacity = document.querySelector('.greyOpacity')
 var basketHidden = document.querySelector('.headerContainer__inside__cat__menuBasketEmpty')
-var normalScreen = document.querySelector(".normalScreen")
+var darkScreen = document.querySelector(".dark-background")
 
 menuBtn.addEventListener(
     'click',
@@ -10,13 +10,13 @@ menuBtn.addEventListener(
         if(subMenu.classList.contains('visible') == true){
             subMenu.classList.remove('visible')
             greyOpacity.classList.remove('visible')
-            normalScreen.classList.remove("darkScreenMenu")
+            darkScreen.classList.add("hideDarkBackground")
             menuBtn.innerHTML = "Menu"
         } else {
             subMenu.classList.add('visible')
             greyOpacity.classList.add('visible')
             basketHidden.classList.remove('hideContentBasket')
-            normalScreen.classList.add("darkScreenMenu")
+            darkScreen.classList.remove("hideDarkBackground")
             menuBtn.innerHTML = "Fermer"
         }
     }

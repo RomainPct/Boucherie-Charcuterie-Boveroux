@@ -30,5 +30,6 @@
             <a href="#" class="secondaryButton menuButton">Menu</a>
             <div class="greyOpacity hiddenOpac"></div>
         </div>
+        <div class="dark-background hideDarkBackground"></div>
     </div>
 </header> 
