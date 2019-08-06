@@ -1,7 +1,7 @@
 <?php
 $c = new CandidePage('qui_sommes_nous')
 ?>
-<main class="whoweare__container">
+<main class="whoweare__container comingFade">
     <h1>Qui sommes nous ?</h1>
     <div class="whoweare__container__history">
         <div class="whoweare__container__history__text">
