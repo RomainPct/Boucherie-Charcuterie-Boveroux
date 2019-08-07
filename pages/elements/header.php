@@ -16,7 +16,7 @@
                     <div class="headerContainer__inside__cat__underButton__notif"></div>
                     <a href="#" title="Mon panier" class="secondaryButton">Mon Panier</a>
                 </div>
-                <div id="js_basket" class="headerContainer__inside__cat__menuBasketEmpty hideContentBasket basketIsEmpty">
+                <div id="js_basket" class="headerContainer__inside__cat__menuBasketEmpty hideContentBasket basketIsEmpty menuFade">
                     <h3>Mon panier</h3>
                     <p class="textEmpty">Vous n’avez pas encore ajouter de produits à votre panier</p>
                     <div class="headerContainer__inside__cat__menuBasketEmpty__menuBasketContents">
@@ -30,6 +30,6 @@
             <a href="#" class="secondaryButton menuButton">Menu</a>
             <div class="greyOpacity hiddenOpac"></div>
         </div>
-        <div class="dark-background hideDarkBackground"></div>
+        <div class="dark-background hideDarkBackground menuFade"></div>
     </div>
 </header> 
