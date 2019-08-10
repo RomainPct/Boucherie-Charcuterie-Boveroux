@@ -63,8 +63,9 @@
             transform: translate(-50%, 40%);
             left: 75%;
             position: absolute;
-            .addBasket{     
-            transform: translateY(10px);
+            .addBasket{
+            transform: translate(-70px, -20px);
+            min-height: 3vw;
             a{
                 padding: 10px;
             }
