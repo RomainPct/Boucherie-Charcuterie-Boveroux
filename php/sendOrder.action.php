@@ -2,7 +2,7 @@
 $isSend = "no";
 $orderSummary = "";
 $total = 0;
-foreach (json_decode($_POST["basketContent"]) as $id_text => $product) {
+foreach (json_decode($_POST["basketContent"], true) as $id_text => $product) {
     $pos = strpos($id_text, "_");
     $id = substr($id_text,0,$pos);
     $type = substr($id_text, $pos + 1); 
@@ -19,13 +19,13 @@ if (strlen($_POST["cellphonechbt"]) == 0) {
     $mailBoveroux = "romain.penchenat@gmail.com";
     $headersClient = 'From: '.$mailBoveroux." \r\n" .'X-Mailer: PHP/' . phpversion();
     $headersBoveroux = 'From: '.$mailBoveroux." \r\n" .'Reply-To: '.$mailClient . " \r\n" .'X-Mailer: PHP' . phpversion();
-    $messageClient = "Résumé de votre commande : \r\n".$orderSummary."\r\n\r\nMessage : ".$_POST["message"]."\r\n\r\nVotre commande sera traité dans les plus brefs délais,\r\nLa boucherie, charcuterie bio Boveroux & Fils";
-
-    $messageBoveroux = "Nouvelle commande de ".$_POST["name"]." ( ".$mailClient." )\r\n\r\n".$orderSummary."\r\n\r\nMessage : ".$_POST["message"];
+    $messageClient = "Résumé de votre commande : \r\n".$orderSummary."\r\n\r\nVotre commande sera traité dans les plus brefs délais,\r\nLa boucherie, charcuterie bio Boveroux & Fils";
+    $msg = strlen($_POST["message"]) > 0 ? "Message :\r\n".$_POST["message"] : "";
+    $messageBoveroux = "Nouvelle commande de ".$_POST["name"]." ( ".$mailClient." )\r\n\r\n".$orderSummary."\r\n\r\n".$msg;
     if (
-        !mail($mailBoveroux,"Nouvelle commande depuis le site",$messageBoveroux,$headersBoveroux)
+        mail($mailBoveroux,"Nouvelle commande depuis le site",$messageBoveroux,$headersBoveroux)
         &&
-        !mail($mailClient,"Résumé de votre commande",$messageClient,$headersClient)
+        mail($mailClient,"Résumé de votre commande",$messageClient,$headersClient)
         ) {
         $isSend = "yes";
     } else {
