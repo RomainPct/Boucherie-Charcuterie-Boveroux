@@ -2,9 +2,9 @@
 const devMode = true;
 const welcomeTitle = "Bienvenue sur votre espace administrateur Candide";
 const welcomeParagraph = "Vous pouvez modifier le contenu de vos pages via le menu de gauche.";
-const PROJECT_NAME = "candide_project";
+const PROJECT_NAME = "boveroux_et_fils";
 const ADMINISTRATORS = [
-    ["admin","4194D1706ED1F408D5E02D672777019F4D5385C766A8C6CA8ACBA3167D36A7B9"] // administrator
+    ["boveroux","65fc24ac4442feac5b10067bce4a2fa4bdca49ce184595e5d5753ec4296aaaa4"]
 ];
 const CANDIDE_FILES_FOLDERS = [
     "/",
