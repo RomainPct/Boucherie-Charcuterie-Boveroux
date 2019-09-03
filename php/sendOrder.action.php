@@ -16,7 +16,7 @@ foreach (json_decode($_POST["basketContent"], true) as $id_text => $product) {
 $orderSummary = $orderSummary."\r\nTotal : ".$total."€";
 if (strlen($_POST["cellphonechbt"]) == 0) {
     $mailClient = $_POST["email"];
-    $mailBoveroux = "romain.penchenat@gmail.com";
+    $mailBoveroux = "contact@boveroux-boucherie-charcuterie-bio.fr";
     $headersClient = 'From: '.$mailBoveroux." \r\n" .'X-Mailer: PHP/' . phpversion();
     $headersBoveroux = 'From: '.$mailBoveroux." \r\n" .'Reply-To: '.$mailClient . " \r\n" .'X-Mailer: PHP' . phpversion();
     $messageClient = "Résumé de votre commande : \r\n".$orderSummary."\r\n\r\nVotre commande sera traité dans les plus brefs délais,\r\nLa boucherie, charcuterie bio Boveroux & Fils";
