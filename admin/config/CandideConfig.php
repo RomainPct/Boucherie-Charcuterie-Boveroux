@@ -1,5 +1,5 @@
 <?php
-const devMode = true;
+const devMode = false;
 const welcomeTitle = "Bienvenue sur votre espace administrateur Candide";
 const welcomeParagraph = "Vous pouvez modifier le contenu de vos pages via le menu de gauche.";
 const PROJECT_NAME = "boveroux_et_fils";

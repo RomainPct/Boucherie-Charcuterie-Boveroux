@@ -1,11 +1,8 @@
-<?php
-$c = new CandidePage('terminer_ma_commande')
-?>
 <main class="finishOrder__container comingFade">
     <h1>Terminer ma commande</h1>
     <div class="finishOrder__container__left">
-        <h2><?php $c->text('titre_partie_terminer_ma_commande');?></h2>
-        <p><?php $c->text('texte_partie_terminer_ma_commande');?></p>
+        <h2>Terminer ma<br>commande</h2>
+        <p>Complétez vos informations et laissez nous un petit message si vous le souhaitez ! Une fois votre commande envoyée, nous vous tiendrons au courant de son avancé par email.</p>
     </div>
     <div class="finishOrder__container__right">
         <form action="commandeconfirmee" method="post" class="finishOrder__container__right__form">

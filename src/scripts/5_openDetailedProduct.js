@@ -28,7 +28,17 @@ function displayProduct(url){
 function setDetailedProductCloseButton(){
     let closeButton = document.querySelector('.closeDetailedProduct')
     closeButton.addEventListener('click',function(){
-        detailedProductContainer.innerHTML = ""
+        let detailedProduct = detailedProductContainer.querySelector('#detailedProduct')
+        let animPos = 1;
+        let anim = setInterval(function(){
+            if (animPos > 18) {
+                clearInterval(anim)
+                detailedProductContainer.innerHTML = ""
+            } else {
+                detailedProduct.style.opacity = 1 - ( animPos / 18 )
+            }
+            animPos ++;
+        }, 16)
     })
 }
 

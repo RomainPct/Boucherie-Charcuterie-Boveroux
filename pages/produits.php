@@ -7,7 +7,6 @@
         exemple : <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
     -->
 <?php
-$c = new CandidePage('produits');
 $c1 = new CandideCollection('charcuterie');
 $c2 = new CandideCollection('porc');
 $c3 = new CandideCollection('veau');
