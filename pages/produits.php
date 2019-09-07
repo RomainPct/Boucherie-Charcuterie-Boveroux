@@ -1,11 +1,6 @@
 <main class="comingFade">
-
-    <!--
-        Pour chaque produit, sur la même div que la class prodSectionList__product, faut ajouter
-        data-productid -> correspond à l'id de l'item de candide
-        data-producttype -> correspond au nom de la collection candide
-        exemple : <div class="prodSectionList__product" data-productid="19" data-producttype="boeuf">
-    -->
+    <h1>produits boveroux</h1>
+    <h1>viande bio</h1>
 <?php
 $c1 = new CandideCollection('charcuterie');
 $c2 = new CandideCollection('porc');
