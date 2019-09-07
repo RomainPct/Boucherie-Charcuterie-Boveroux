@@ -1,5 +1,8 @@
 .homeSection{
     &__textandimg{
+        &__img img{
+            width: 150%;
+        }
         &__textBlock{
             padding: 30px;
             padding-top: 120px;
