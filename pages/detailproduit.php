@@ -32,9 +32,9 @@ $c = new CandideCollectionItem ($productType,$productId);
         <div class="containerDetailedProducts__informationsDetailed__buttonDetailed productInBasket">
             <a href="#" title="Ajouter mon produit au panier" class="primaryButton buttonAddToBasket js_addToBasket">Ajouter au panier</a>
             <div class="addBasket">
-                <a href="#" class="js_minusButton" title="Diminuer le nombre de produits">-</a>
+                <a href="#" class="js_minusButton tertiaryButton" title="Diminuer le nombre de produits">-</a>
                 <p class="js_ProductAmount" title="Nombre de produits">2</p>
-                <a href="#" class="js_plusButton" title="Augmenter le nombre de produits">+</a>
+                <a href="#" class="js_plusButton tertiaryButton" title="Augmenter le nombre de produits">+</a>
             </div>
         </div>
     </div>
