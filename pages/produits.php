@@ -1,6 +1,3 @@
-<main class="comingFade">
-    <h1>produits boveroux</h1>
-    <h1>viande bio</h1>
 <?php
 $c1 = new CandideCollection('charcuterie');
 $c2 = new CandideCollection('porc');
@@ -8,6 +5,8 @@ $c3 = new CandideCollection('veau');
 $c4 = new CandideCollection('boeuf');
 $c5 = new CandideCollection('plats_cuisines');
 ?>
+<main class="comingFade">
+    <h1>Produits Boveroux (Viande bio)</h1>
     <section class="prodSection">
         <h2>Nos produits</h2>
         <div class="prodSection__cat">

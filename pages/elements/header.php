@@ -4,13 +4,13 @@
             <a href="/" title="Accueil élevage Boveroux et fils" class="headerContainer__inside__logo"></a>
             <nav class="headerContainer__inside__cat subMenu">
                 <div class="headerContainer__inside__cat__under underHidden">
-                    <a href="../accueil" class="tertiaryButton">Accueil</a>
+                    <a href="/accueil" class="tertiaryButton">Accueil</a>
                 </div>
                 <div class="headerContainer__inside__cat__under">
-                    <a href="../quisommesnous" class="tertiaryButton">Qui sommes-nous ?</a>
+                    <a href="/quisommesnous" class="tertiaryButton">Qui sommes-nous ?</a>
                 </div>
                 <div class="headerContainer__inside__cat__under">
-                    <a href="../produits" class="tertiaryButton">Nos produits</a>
+                    <a href="/produits" class="tertiaryButton">Nos produits</a>
                 </div>
                 <div class="headerContainer__inside__cat__underButton">
                     <div class="headerContainer__inside__cat__underButton__notif"></div>

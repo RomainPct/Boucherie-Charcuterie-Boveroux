@@ -2,8 +2,7 @@
 $c = new CandidePage('accueil')
 ?>
 <main class="home__main">
-    <h1>Charcuterie Boveroux</h1>
-    <h1>Viande bio</h1>
+    <h1>Boucherie Charcuterie Boveroux (Viande bio)</h1>
     <section class="homeSection imageBox degradeBottomDark">
                         <div class="homeSection__textandimg__textBlock comingFade">
                         <h2><?php $c->text('titre');?></h2>

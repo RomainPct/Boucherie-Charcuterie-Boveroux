@@ -33,7 +33,6 @@
                     }
                     &__p2{
                         font-weight: bold;
-                        margin-bottom: 15px;
                     }
                 }
         }
@@ -48,8 +47,7 @@
 .productButton{
     display: flex;
     justify-content: center;
-    height: 20px;
     &__add{
-        position: absolute;
+        transform: translateY(50%);
     }
 }

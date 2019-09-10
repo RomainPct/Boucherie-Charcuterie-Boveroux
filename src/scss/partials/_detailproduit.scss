@@ -59,17 +59,10 @@
             }
         }
         &__buttonDetailed{
-            bottom: 0;
-            transform: translate(-50%, 40%);
-            left: 75%;
             position: absolute;
-            .addBasket{
-            transform: translate(-70px, -20px);
-            min-height: 3vw;
-            a{
-                padding: 10px;
-            }
-            }
+            left: 75%;
+            bottom: 0;
+            transform: translate(-50%, 50%);
         }
     }
 }
@@ -80,6 +73,7 @@
 
 .productInBasket .addBasket{
     display: flex;
+    padding: 5px 10px;
 }
 
 .addBasket{

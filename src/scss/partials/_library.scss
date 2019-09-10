@@ -67,12 +67,11 @@ a.tertiaryButton.selected, button.tertiaryButton.selected{
 }
 
 .addBasket{
-    position: absolute;
     display: flex;
+    transform: translateY(50%);
     align-items: center;
     justify-content: space-between;
     padding: 10px 15px;
-    height: 1vw;
     border: none;
     border-radius: 5px;
     background-color: $color-primary;
