@@ -11,7 +11,6 @@ class Basket {
     saveBasketOnLocalStorage(){
         // Enregistrer this.basket dans le local storage 
          localStorage.setItem('basketContents', JSON.stringify(this.basket))
-         console.log(this.basket)
     }
 
     getBasketFromLocalStorage(){

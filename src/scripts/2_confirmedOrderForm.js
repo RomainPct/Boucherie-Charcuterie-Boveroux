@@ -12,15 +12,12 @@ if(form != null){
     })
 
     form.addEventListener("submit", function (e){
-        console.log("submit")
-        console.log(inputs)
         if(inputs[0].value.length <= 0){
             inputs[0].classList.add('error')
             inputs[0].parentElement.lastElementChild.innerHTML = "Champ obligatoire"
             e.preventDefault()
         }else{
             localStorage.setItem('name', inputs[0].value) // Register the name in local storage
-            console.log(inputs[0].value)
         }
         if((inputs[1].value.length <= 0) || verifMail(inputs[1].value)){ // Mail verification
             inputs[1].classList.add('error')
@@ -28,7 +25,6 @@ if(form != null){
             e.preventDefault()
         }else{
             localStorage.setItem('mail', inputs[1].value) // Register the mail in local storage
-            console.log(inputs[1].value)
         }
     })
 
@@ -49,9 +45,6 @@ if(form != null){
         if(inputs[1].value == ""){ // If it is not empty -> set it to inputs[1]
             inputs[1].value = mail
         }
-
-        console.log(nom)
-        console.log(mail)
     }
     prefecthInputs()
 

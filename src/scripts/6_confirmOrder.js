@@ -2,7 +2,6 @@ const totalCostLine = document.querySelector('.finishOrder__container__right__fo
 const summaryBox = document.querySelector('.finishOrder__container__right__form__summary__summaryBox')
 
 function createLine(id,produit){
-    console.log(produit)
 
     const productLine = document.createElement('div')
     productLine.classList.add('finishOrder__container__right__form__summary__summaryBox__line')

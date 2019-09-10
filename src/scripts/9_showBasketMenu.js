@@ -16,7 +16,6 @@ myBasket.addEventListener('click', (e) =>{
 })
 
 darkBackground.addEventListener('click', () =>{
-    console.log("darkBackground click")
     basketEmpty.classList.add("hideContentBasket")
     darkBackground.classList.add("hideDarkBackground")
     // subMenu et innerHTML pour le responsive 

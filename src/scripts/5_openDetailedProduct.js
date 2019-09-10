@@ -7,7 +7,6 @@ function setOpenableProducts(){
             const id = product.getAttribute("data-productrealid"),
                 type = product.getAttribute("data-producttype"),
                 url = "/pages/detailproduit.php?id="+id+"&type="+type
-            console.log(url)
             displayProduct(url)
         })
     })
@@ -18,7 +17,6 @@ function displayProduct(url){
     xhr.open("GET",url)
     xhr.addEventListener('load',function () {
         detailedProductContainer.innerHTML = xhr.responseText
-        // console.log(xhr.responseText)
         detailedProductOpened()
         setDetailedProductCloseButton()
     })
