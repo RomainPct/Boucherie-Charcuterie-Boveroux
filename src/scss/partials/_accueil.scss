@@ -1,19 +1,14 @@
 .homeSection{
-    overflow: hidden;
+    position: relative;
     &__textandimg{ 
         position: absolute;
-        top: 0%;
-        right: 0%;
-        left: 0%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         z-index: -1; 
-        &__img{
-            position: relative;
-            top: 0%;
-            right: 0%;
-            left: 0%;
-            z-index: -1;   
-        }
-        &__img img{
+        overflow: hidden;
+        img{
             width: 100%;
         }
         &__textBlock{
@@ -22,7 +17,7 @@
             &__text{
                 padding-left: 15px;
                 &__paragraph{
-                    width: 40%;
+                    max-width: 460px;
                     margin-bottom: 30px;
                 }
             }

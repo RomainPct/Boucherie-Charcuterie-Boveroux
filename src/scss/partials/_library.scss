@@ -13,6 +13,7 @@ a.primaryButton, button.primaryButton{
     font-family: $font-secondary;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 1;
 }
 
 a.primaryButton:hover, button.primaryButton:hover{

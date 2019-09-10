@@ -1,7 +1,8 @@
 .homeSection{
     &__textandimg{
-        &__img img{
-            width: 150%;
+        img {
+            height: 100%;
+            width: auto;
         }
         &__textBlock{
             padding: 30px;
