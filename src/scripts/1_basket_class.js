@@ -138,6 +138,7 @@ class BasketView {
             updateProductOnOurProducts(id,product)
             let summaryLine = document.querySelector('.finishOrder__container__right__form__summary__summaryBox__line[data-productid="'+id+'"]')
             updateProductOnSummary(summaryLine,product)
+            updateTotalPriceSummary()
         }
         if (line == null) {
             this.addNewLine(id,product)

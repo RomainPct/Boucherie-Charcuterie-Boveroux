@@ -58,7 +58,9 @@ function createLine(id,produit){
 function updateTotalPriceSummary(){
     // Sélectionner le span en question
     let postTotalPrice = document.querySelector('#postTotalPrice')
-    postTotalPrice.innerHTML = basket.getTotalPrice()
+    if (postTotalPrice) {
+        postTotalPrice.innerHTML = basket.getTotalPrice()
+    }
 }
 
 function setSummaryPlusButton(button,line){
