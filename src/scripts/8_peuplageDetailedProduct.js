@@ -21,7 +21,7 @@ function updateDetailedProductPage(card){
         showButtonBasket.classList.add("productInBasket")
         // Mettre à jour la quantité sur le bouton +/-
         if(amountOfProduct != null){
-            amountOfProduct.innerHTML = product[2]
+            amountOfProduct.innerHTML = `${product[2]}g`
         }
     }
     updateProductOnOurProducts(id,product)

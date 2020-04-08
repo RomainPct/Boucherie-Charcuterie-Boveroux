@@ -10,9 +10,11 @@ foreach (json_decode($_POST["basketContent"], true) as $id_text => $product) {
     $name = $item->returnText("nom_du_produit");
     $amount = intval($product[2]);
     $price = floatval(str_replace(',','.',$item->returnText("prix")));
-    $orderSummary = $orderSummary.$amount."X ".$name." = ".$amount." X ".$price."€ = ".($amount * $price)."€\r\n";
-    $total += $price * $amount;
+    $totalPrice = ceil(($amount * $price / 1000) * 100) / 100;
+    $orderSummary .= $amount."g de ".$name." = ".$amount."g X ".$price."€/kg = ".$totalPrice."€\r\n";
+    $total += $price * $amount / 1000;
 }
+$total = ceil($total * 100) / 100;
 $orderSummary = $orderSummary."\r\nTotal : ".$total."€";
 if (strlen($_POST["cellphonechbt"]) == 0) {
     $mailClient = $_POST["email"];

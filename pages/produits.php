@@ -29,7 +29,7 @@ $c5 = new CandideCollection('plats_cuisines');
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c1->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p1"><?php $c1->text('nom_du_produit',$id)?></p>
-                        <p class="prodSectionList__product__contain__p2"><?php $c1->text('prix',$id)?>€</p>
+                        <p class="prodSectionList__product__contain__p2"><?php $c1->text('prix',$id)?>€/kg</p>
                         <div class="productButton">
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton productButton__add">Ajouter au panier</a>
                             <div class="addBasket">
@@ -50,7 +50,7 @@ $c5 = new CandideCollection('plats_cuisines');
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c2->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p js_productName"><?php $c2->text('nom_du_produit',$id)?></p>
-                        <p class="prodSectionList__product__contain__p"><?php $c2->text('prix',$id)?>€</p>
+                        <p class="prodSectionList__product__contain__p"><?php $c2->text('prix',$id)?>€/kg</p>
                         <div class="productButton">
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton productButton__add">Ajouter au panier</a>
                             <div class="addBasket">
@@ -72,7 +72,7 @@ $c5 = new CandideCollection('plats_cuisines');
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c3->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c3->text('nom_du_produit',$id)?></p>
-                        <p class="prodSectionList__product__contain__p"><?php $c3->text('prix',$id)?>€</p>
+                        <p class="prodSectionList__product__contain__p"><?php $c3->text('prix',$id)?>€/kg</p>
                         <div class="productButton">
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton productButton__add">Ajouter au panier</a>
                             <div class="addBasket">
@@ -94,7 +94,7 @@ $c5 = new CandideCollection('plats_cuisines');
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c4->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c4->text('nom_du_produit',$id)?></p>
-                        <p class="prodSectionList__product__contain__p"><?php $c4->text('prix',$id)?>€</p>
+                        <p class="prodSectionList__product__contain__p"><?php $c4->text('prix',$id)?>€/kg</p>
                         <div class="productButton">
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton productButton__add">Ajouter au panier</a>
                             <div class="addBasket">
@@ -116,7 +116,7 @@ $c5 = new CandideCollection('plats_cuisines');
                     <div class="prodSectionList__product__contain">
                         <img src="<?php $c5->image("image_du_produit",$id,[900,600]) ?>" alt="image du produit">
                         <p class="prodSectionList__product__contain__p"><?php $c5->text('nom_du_produit',$id)?></p>
-                        <p class="prodSectionList__product__contain__p"><?php $c5->text('prix',$id)?>€</p>
+                        <p class="prodSectionList__product__contain__p"><?php $c5->text('prix',$id)?>€/kg</p>
                         <div class="productButton">
                             <a href="" class="primaryButton buttonAddToBasket js_addToBasket whiteButton productButton__add">Ajouter au panier</a>
                             <div class="addBasket">

@@ -21,7 +21,7 @@ function updateProductOnOurProducts(id,product){
             const amount = card.querySelector(".js_ProductAmount")
             card.classList.add('productInBasket')
             if (amount != null) {
-                amount.innerHTML = product[2]
+                amount.innerHTML = `${product[2]}g`
             }
         }
     }

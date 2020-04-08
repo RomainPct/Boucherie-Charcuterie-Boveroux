@@ -29,9 +29,9 @@ class Basket {
         //Ajouter un produit au panier
         // Si deja dans le panier -> augmenter la quantité de 1
         if (this.basket[id] != null){
-            this.basket[id][2] += 1
+            this.basket[id][2] += 50
         } else {
-            this.basket[id] = [name, price, 1]
+            this.basket[id] = [name, price, 150]
         }
         this.endProductEdition(id)
     }
@@ -39,9 +39,9 @@ class Basket {
     removeAProduct(id){
         // Diminuer la quantité du produit dans le panier 
         if (this.basket[id]!= null){
-            this.basket[id][2] -= 1
+            this.basket[id][2] -= 50
             // Si nouvelle quantité = 0 -> supprimer du panier
-            if(this.basket[id][2] == 0){
+            if(this.basket[id][2] < 150){
                 delete this.basket[id]
             }
         }
@@ -72,17 +72,17 @@ class Basket {
         let totalPrice = 0
         for (let i in this.basket){
             if (this.basket[i]!= null){ 
-                totalPrice += ( parseFloat(this.basket[i][1].replace(',','.')) * (this.basket[i][2]) );
+                totalPrice += (parseFloat(this.basket[i][1].replace(',','.')) * (this.basket[i][2]) / 1000);
             }
         }
-        return totalPrice
+        return Math.ceil(totalPrice * 100) / 100
     }
 
     getBasketTotalAmount(){
         let totalAmount = 0
         for (let i in this.basket){
             if (this.basket[i]!= null){ 
-                totalAmount += this.basket[i][2]
+                totalAmount ++
             }
         }
         return totalAmount
@@ -142,7 +142,7 @@ class BasketView {
         if (line == null) {
             this.addNewLine(id,product)
         } else {
-            (product == null) ? line.remove() : line.querySelector('.js_amount').innerHTML = product[2]
+            (product == null) ? line.remove() : line.querySelector('.js_amount').innerHTML = `${product[2]}g`
         }
     }
 
@@ -162,7 +162,7 @@ class BasketView {
     
         const price = document.createElement('p')
         price.classList.add('priceOfProduct')
-        price.innerHTML = produit[1] + "€"
+        price.innerHTML = produit[1] + "€/kg"
         productLine.appendChild(price)
 
         const spec = document.createElement('div')
@@ -177,7 +177,7 @@ class BasketView {
     
         const quantity = document.createElement('p')
         quantity.classList.add('js_amount')
-        quantity.innerHTML = produit[2]
+        quantity.innerHTML = `${produit[2]}g`
         spec.appendChild(quantity)
     
         const more = document.createElement('a')
@@ -207,10 +207,10 @@ class BasketView {
             let id = line.getAttribute('data-productid')
             let produit = basket.getProduct(id)
             // Si sa nouvelle quantité actuelle -1 est égale à 0
-            if((produit[2] - 1) == 0){
-                if(confirm('Voulez-vous supprimer ce porduit de votre panier ?')){
+            if((produit[2] - 50) < 150){
+                if(confirm('Voulez-vous supprimer ce produit de votre panier ?')){
                     basket.view.reallyReduceProductAmount(line,produit)
-                    basket.view.updateBasket()
+                    basket.view.updateBasket(basket.getBasketTotalAmount())
                     updateProductOnOurProducts(id,null)
                 }
             } else {

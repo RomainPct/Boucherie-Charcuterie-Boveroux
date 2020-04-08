@@ -25,7 +25,7 @@ function createLine(id,produit){
 
     const priceEurosSymbole = document.createElement('div')
     priceEurosSymbole.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__price')
-    priceEurosSymbole.innerHTML = '€'
+    priceEurosSymbole.innerHTML = '€/kg'
     spec.appendChild(priceEurosSymbole)
 
     const minus = document.createElement('a')
@@ -38,7 +38,7 @@ function createLine(id,produit){
 
     const quantity = document.createElement('div')
     quantity.classList.add('finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
-    quantity.innerHTML = produit[2]
+    quantity.innerHTML = `${produit[2]}g`
     spec.appendChild(quantity)
 
     const more = document.createElement('a')
@@ -84,7 +84,7 @@ function setSummaryMinusButton(button,line){
             let id = line.getAttribute('data-productid')
             let produit = basket.getProduct(id)
             // Si sa nouvelle quantité actuelle -1 est égale à 0
-            if((produit[2] - 1) == 0){
+            if((produit[2] - 50) < 150){
                 if(confirm('Voulez-vous supprimer ce produit de votre panier ?')){
                     reallyReduceProductAmount(line,produit)
                 }
@@ -102,7 +102,7 @@ function reallyReduceProductAmount(line,product){
     basket.removeAProduct(id)
     updateProductOnSummary(line,product)
     // Si nouvelle quantité == 0
-    if(product[2] == 0){
+    if(product[2] < 150){
         // Supprimer la ligne visuellement
         line.remove()
     } else {
@@ -114,8 +114,12 @@ function reallyReduceProductAmount(line,product){
 
 function updateProductOnSummary(line,product){
     if (line != null) {
-        let amountDiv = line.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
-        amountDiv.innerText = product[2]
+        if (product[2] < 150) {
+            line.remove()
+        } else {
+            let amountDiv = line.querySelector('.finishOrder__container__right__form__summary__summaryBox__line__spec__quantity')
+            amountDiv.innerText = `${product[2]}g`
+        }
     }
 }
 

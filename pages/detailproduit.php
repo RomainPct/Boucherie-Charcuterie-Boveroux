@@ -23,7 +23,7 @@ $c = new CandideCollectionItem ($productType,$productId);
                 <h2><?php echo str_replace("_"," ",$productType) ?></h2>
                 <div class= "containerDetailedProducts__informationsDetailed__textDetailed__descriptionDetailed__priceProduct">
                     <h3><?php $c->text("nom_du_produit")?></h3>
-                    <h4><?php $c->text("prix")?>€</h4>
+                    <h4><?php $c->text("prix")?>€/kg</h4>
                 </div>
                 <p><?php $c->text("description_du_produit",false) ?></p>
             </div>
