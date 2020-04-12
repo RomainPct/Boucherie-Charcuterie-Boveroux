@@ -18,7 +18,7 @@ $total = ceil($total * 100) / 100;
 $orderSummary = $orderSummary."\r\nTotal : ".$total."€";
 if (strlen($_POST["cellphonechbt"]) == 0) {
     $mailClient = $_POST["email"];
-    $mailBoveroux = "contact@boveroux-boucherie-charcuterie-bio.fr";
+    $mailBoveroux = "commande.boverouxetfils@gmail.com";
     $headersClient = 'From: '.$mailBoveroux." \r\n" .'X-Mailer: PHP/' . phpversion();
     $headersBoveroux = 'From: '.$mailBoveroux." \r\n" .'Reply-To: '.$mailClient . " \r\n" .'X-Mailer: PHP' . phpversion();
     $messageClient = "Résumé de votre commande : \r\n".$orderSummary."\r\n\r\nVotre commande sera traité dans les plus brefs délais,\r\nLa boucherie, charcuterie bio Boveroux & Fils";
